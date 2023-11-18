@@ -1,0 +1,151 @@
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+#header-footer{
+    display: flex;
+    /* tung khoi div duoc hien thi theo hang ngang */
+    height: 200px;
+    /* chieu cao khoi main-content */
+    text-align: center;
+    background-color:  #BAD4E3;
+    margin: 0 auto;
+
+}
+.text-left{
+    flex-basis: 30%;
+}
+.text-right{
+    flex-basis: 70%;
+}
+.text-left img{
+    width: 140px;
+    padding-top: 24px;
+    padding-left: 200px;
+
+}
+ h1{
+    font-size: 50px;
+    color: #4F6F7D;
+}
+#footer-conten h3{
+    color: #4F6F7D;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+#footer-sidebar h3{
+    color: #4F6F7D;
+    font-size: 20px;
+}
+.text-right input{
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    width: 300px;
+    height: 40px;
+}
+.text-right button{
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    width: 50px;
+    height: 40px;
+    background-color: #728D98;
+    color: white;
+    
+}
+.text-right button:hover{
+    font-size: 15px;
+}
+
+
+#main-footer{
+    display: flex;
+    /* tung khoi div duoc hien thi theo hang ngang */
+    height: 300px;
+    padding: 0px 7%;
+}
+#footer-conten{
+    flex-basis: 60%;
+    
+}
+#footer-sidebar{
+    flex-basis: 40%;
+    background-color: #F2F2F2; 
+    
+
+}
+#footer-conten{
+    display: flex;
+    height: 200px;
+
+   
+}
+#conten1{
+    flex-basis: 33.33%;
+}
+#conten2{
+    flex-basis: 33.33%;
+}
+#contens{
+    flex-basis: 33.33%;
+}
+
+
+#footer-conten li a{
+   text-decoration: none;  
+}
+#footer-sidebar a{
+    text-decoration: none; 
+}
+#footer-conten li{
+    margin-bottom: 22px;   
+}
+#footer-conten a{
+    display: block;
+    color: #5A5252;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+
+}
+#footer-conten a:hover{
+    color: #4F6F7D;
+    transform: translate(3px, -3px);
+}
+#footer-conten ul{
+    list-style-type: disc;
+    
+}
+#footer-sidebar{
+    padding-left: 24px;
+}
+#footer-sidebar a:hover{
+   text-decoration: underline;
+
+}
+#footer-sidebar .icons1 a{
+    padding-bottom: 24px;
+}
+.icons2{
+    text-align:left;
+}
+.icons2 a{
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.icons2 a:hover{
+    transform: translate(3px, -3px);
+}
+#footer-end{
+
+    margin: -40px 30%;
+    font-size: 16px;
+    color: #5A5252;
+
+}
+
+
+   
+
