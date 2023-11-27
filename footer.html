@@ -2,84 +2,86 @@
 <html>
 <head>
   <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
    <title></title>
-   <link rel="stylesheet" type="text/css" href="footer.css">
-   <!--boxicon link-->
-   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+   <link rel="stylesheet" type="text/css" href="Footer.css">
+   <link rel="stylesheet" href="path/to/reset.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!---->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <style>
+  body{
+     font-family: Quicksand;
+    font-style: normal;
+    font-weight: 400
+  }
+  </style>
 </head>
 <body>
-    <div class="wrapper"></div>
-    <!-- go .wrapper tag -->
-        <div id="header-footer">
-          <div class="text-left">
-            <!--Anhr logo-->
-            <img src="images/401681703_122110608206095192_3716963046022657107_n-removebg-preview.png" alt="logo" > 
-          </div>
-          <div class="text-right">
-            <h1>Đăng kí tư vấn</h1>
-            <form action="">
-              <input type="text" placeholder="Nhập email" >
-              <button>Gửi</button>
-            </form>
-          </div>
-        </div>
-        
-        <!-- end header-footer -->
-        <div id="main-footer">
-            <div id="footer-conten"> 
-                <div id="conten1">
-                    <h3>Chuyện Bae Boutique</h3>
-                    <ul>
-                        <li><a href="">Hoạt động</a></li>
-                        <li><a href="">Giải đáp</a></li>
-                        <li><a href="">Chứng nhận</a></li>
-                    </ul>
-                </div>
-                <div id="conten2">
-                    <h3>Chính sách </h3>
-                    <ul>
-                        <li><a href="">Chính sách thanh toán</a></li>
-                        <li><a href="">Chính sách kiểm hàng</a></li>
-                        <li><a href="">Chính sách đổi và trả hàng</a></li>
-                        <li><a href="">Chính sách vẫn chuyển</a></li>
-                    </ul>
-                 
-                </div>
-                <div id="conten3">
-                    <h3>Thông tin </h3>
-                    <ul>
-                        <li><a href="">Tổng đài hỗ trợ</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="">Danh sách địa chỉ bán</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div id="footer-sidebar">
-                <h3>Liên hệ</h3>
-                    <div class="icons1">
-                        <a href="#"><i class='bx bx-map' ></i></box-icon>   Địa chỉ: Phường Trương Định, quận Hai Bà Trưng, Hanoi, Vietnam</a><br><br>
-                        <a href="#"><i class='bx bx-phone' ></i></box-icon>   Hotline: 039 972 5203</a><br><br>
-                        <a href="#"><i class='bx bx-envelope'></i></box-icon>   Mail: baeboutique04@gmail.com</a>
-                    </div>
 
-                <h3>Mạng xã hội</h3>
-                    <div class="icons2">
-                           <span><a href="#"><i class='bx bxl-facebook-circle' ></i></a></span>
-                            <span><a href="#"><i class='bx bxl-instagram-alt' ></i></a></span>
-                        </div>
-                
-                    
-            </div> 
-        </div>
-        <!-- end content -->
-        <div id="footer-end">
-            <p>Copyright &copy; by Bae Boutique</p>
-        </div>
-        <!-- end footer -->
+<div class="container-header">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="images/401681703_122110608206095192_3716963046022657107_n-removebg-preview.png" alt="logo" >
     </div>
-       
+    <div class="col-sm-8">
+      <h1>Đăng kí tư vấn</h1>
+                <form action="">
+                  <input type="text" placeholder="Nhập email" >
+                  <button>Gửi</button>
+                </form>
+    </div>
+  </div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <h3>Chuyện Bae </h3>
+      <ul>
+        <li><a href="">Hoạt động</a></li>
+        <li><a href="">Giải đáp</a></li>
+        <li><a href="">Chứng nhận</a></li>
+    </ul>
+    </div>
+    <div class="col-sm-3">
+      <h3 style=" font-weight: 400">Chính sách</h3>
+      <ul>
+        <li><a href="">Chính sách thanh toán</a></li>
+        <li><a href="">Chính sách kiểm hàng</a></li>
+        <li><a href="">Chính sách đổi và trả hàng</a></li>
+        <li><a href="">Chính sách vẫn chuyển</a></li>
+    </ul>
+    </div>
+    <div class="col-sm-2">
+      <h3>Thông tin</h3>        
+      <ul>
+        <li><a href="">Tổng đài hỗ trợ</a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Danh sách địa chỉ bán</a></li>
+    </ul>
+    </div>
+    <div class="col-sm-5">
+      <h3>Liên hệ</h3>
+        <div class="icons1">
+            <a href="https://www.google.com/maps/place/Ngh.+2+Ng.+Gi%E1%BA%BFng+M%E1%BB%A9t,+Tr%C6%B0%C6%A1ng+%C4%90%E1%BB%8Bnh,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9983524,105.8472903,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ac72f6dbdd87:0x2f4258c9dab3dd80!8m2!3d20.9983524!4d105.8498652!16s%2Fg%2F11ngt3gzh5?entry=ttu" target="_blank"><i class='bx bx-map' ></i></box-icon>   Địa chỉ: Phường Trương Định, quận Hai Bà Trưng, Hà Nội</a><br><br>
+            <a href="#"><i class='bx bx-phone' ></i></box-icon>   Hotline: 039 972 5203</a><br><br>
+            <a href="https://baeboutique04@gmail.com/" target="_blank"><i class='bx bx-envelope'></i></box-icon>   Mail: baeboutique04@gmail.com</a>
+        </div>
+        <h3>Mạng xã hội</h3>
+        <div class="icons2">
+               <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
+                <span><a href="#"><i class='bx bxl-instagram-alt' ></i></a></span>
+            </div>
+    </div>
+
+  </div>
+  <div class="row"><p>Copyright &copy; <a href="#">Bae Boutique</a></p></div>
+</div>
+
 
 </body>
+</html>
+
+

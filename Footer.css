@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    width: 100%; /*loại bỏ khoảng cách 2 bên*/
+    margin: 0;
+    padding: 0;
+    /*position: fixed; /*gim footer cố định ở phía dưới trang
+    bottom: 0;*/
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    height: 500px;  
+}
+.container-header{
+    text-align: center;
+    background-color:  #BAD4E3;
+}
+.col-sm-4 img{
+    width: 140px;
+}
+.col-sm-8 h1{
+    font-size: 50px;
+    color: #4F6F7D;
+    
+}
+.col-sm-8 input{
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    width: 350px;
+    height: 40px;
+}
+
+.col-sm-8 button{
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    width: 50px;
+    height: 40px;
+    background-color: #728D98;
+    color: white;
+    
+}
+.col-sm-8 button:hover{
+    font-size: 15px;
+}
+.col-sm-3 h3,
+.col-sm-2 h3,
+.col-sm-3 h3{
+    color: #4F6F7D;
+    padding-left: 20px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.col-sm-3 li a,
+.col-sm-2 li a,
+.col-sm-3 li a{
+   text-decoration: none;  
+}
+
+.col-sm-3 li,
+.col-sm-2 li,
+.col-sm-3 li{
+    
+    padding-top: 19px;
+}
+.col-sm-3 a,
+.col-sm-2 a,
+.col-sm-3 a{
+    display: block;
+    color: #5A5252;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+.col-sm-3 a:hover,
+.col-sm-2 a:hover,
+.col-sm-3 a:hover{
+    color: rgb(34, 154, 154);
+    transform: translate(3px, -3px);
+}
+.col-sm-3 ul,
+.col-sm-2 ul,
+.col-sm-3 ul{
+    list-style-type: disc;
+    
+}
+.col-sm-2 ul,
+.col-sm-3 ul{
+    padding-left: 0;
+}
+.col-sm-5 h3{
+    color: #4F6F7D;
+    font-size: 22px;
+}
+.col-sm-5 a{
+    color: #5A5252;
+    font-size: 15px;
+}
+.icons2{
+    text-align:left;
+    
+}
+.icons2 a{
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+}
+.icons2 a:hover{
+    transform: translate(3px, -3px);
+}
+
+.col-sm-5{
+    background-color:#F2F2F2; 
+    height:300px;
+}
+.col-sm-5 h3,a{
+   padding-left: 20px;
+}
+
+.row p{
+    margin-left: 250px;
+    color: #5A5252;
+    font-size: 15px;
+    padding-top: -30px;
+}
