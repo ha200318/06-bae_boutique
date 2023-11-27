@@ -1,0 +1,74 @@
+*{
+    font-family: quicksand;
+}
+
+.icon{
+    color: #728D98;
+}
+
+a{
+    text-decoration: none;
+    color: #646464;
+}
+
+/* Reset margin và padding cho các phần tử mặc định */
+.myheader {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset margin và padding cho phần header và main menu */
+.myheader{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /* Cố định header và main menu lên trên cùng */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; */
+}
+
+.nav{
+    justify-content: center;
+    font-weight: bold;
+}
+.nav-item{
+    margin: 0 23px;
+    font-size: 1.2rem;
+}
+
+.icon-menu{
+    margin-right: 10px;
+}
+
+/* CSS để căn chỉnh các phần tử trong thanh điều hướng */
+.nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Ẩn biểu tượng trái tim ban đầu */
+  .active-img {
+    display: none;
+    margin-left: 0px; /* Khoảng cách giữa văn bản và biểu tượng */
+  }
+  
+  /* Hiển thị biểu tượng trái tim khi di chuột vào */
+  .nav-item:hover .active-img {
+    display: block;
+  }
+
+  .nav-link:hover{
+    color: #728D98
+}
+
+/*banner*/
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+  
+  
