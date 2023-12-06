@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <section id="popup-login" class="modal3 modal-wrapper" style="display: block;">
+	<div class="wrapper modal-content">
+
+		<div class="btn-close">
+			<span id="close_modal15" class="close">×</span>
+		</div>
+		<!-- /templates/customers[login].liquid -->
+
+		<div class="grid">
+
+			<div class="grid__item large--one-whole text-center">
+
+				
+				<div class="note form-success" id="ResetSuccess" style="display:none;">
+					Chúng tôi đã gửi một email với đường dẫn để giúp bạn cập nhật mật khẩu.
+				</div>
+
+				<div id="CustomerLoginForm" class="form-vertical" style="display: block;">
+					<form accept-charset="UTF-8" action="/account/login" id="customer_login" method="post">
+<input name="form_type" type="hidden" value="customer_login">
+<input name="utf8" type="hidden" value="✓">
+
+
+					<h2>Đăng nhập</h2>
+
+					
+
+					<label for="CustomerEmail" class="hidden-label">Email</label>
+					<input type="email" name="customer[email]" id="CustomerEmail" class="input-full" placeholder="Email" autocapitalize="off">
+
+					
+					<label for="CustomerPassword" class="hidden-label">Mật khẩu</label>
+					<input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full" placeholder="Mật khẩu">
+					
+
+					<p>
+						<input type="submit" class="btn btn--full" value="Đăng nhập">
+					</p>
+					<p><a id="show_content_register" class="reg" href="javascript:void(0)" title="Đăng ký">Đăng ký</a></p>
+					
+					<p><a href="#recover" id="RecoverPassword">Quên mật khẩu?</a></p>
+					
+
+					
+<input id="2cb26fd9ecea4e3699bd25f4204b581c" name="g-recaptcha-response" type="hidden" value="03AFcWeA5lPRlZA3wxkmAsdiLsqTOMsGLT6378gwBWjChLyDOqzTr5cBp63X5QtP9lIvSXfESSJjC6HB3O1iSsze2j-ikyVh2YfXLhr94hDvPzqI_qASQZrlRdi5y7EBn7kDf4uWpR8CBHjS0G1ANruyR9JoGn7bz4M6heP7lVVZzQB2xaszHLoqIVBl66pp_VZpPIlAl3mZVOXf6OsoIrdJGI88tumvs7AgTUDhjaJX2HFlsQ6jlx-TIsYcH3SI-NyLbqbbV9xI9LlunePd2uRmrn6k_Zc2szP8-kjesCvRbMxmF_TyckfI-gZYUGXimrgASS9vqxYGQUuV3qq9Aqs3BlwV4sPYZI8zf54_5MkQJAxgG_nAyy3XE93NoXdVjS7JLKqgFtz3czXA0nfvsXOApzxOcFLrOZE7aalSRUKUvGu3FSKa3HyaVj9pumnsrx1rTfLpOP9TNxYac71HpTqoijLJ67SRQ2JkNkgx4zRwThbbsS281B9HsyBvMVQGatsAqgaePA3XShDzC2wX2bs_6KJ6EjCxNDSJypYFZxy9il693HGqFMb4jjtodr1aunkKSX4rLTw799heenGWnf3dsGNOR0XFQtfiIadwVz9lYdASc0IL8IvXI"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('2cb26fd9ecea4e3699bd25f4204b581c').value = token;});});</script></form>
+				</div>
+				<div id="CustomerRegisterForm" style="display:none">
+					<h2>Tạo tài khoản</h2>
+
+					<div class="form-vertical">
+						<form accept-charset="UTF-8" action="/account" id="create_customer" method="post">
+<input name="form_type" type="hidden" value="create_customer">
+<input name="utf8" type="hidden" value="✓">
+
+
+						
+
+						<label for="FirstName" class="hidden-label">Tên</label>
+						<input type="text" name="customer[first_name]" id="FirstName" class="input-full" placeholder="Tên" autocapitalize="words">
+
+						<label for="LastName" class="hidden-label">Họ</label>
+						<input type="text" name="customer[last_name]" id="LastName" class="input-full" placeholder="Họ" autocapitalize="words">
+
+						<label for="Email" class="hidden-label">Email</label>
+						<input type="email" name="customer[email]" id="EmailLogin" class="input-full" placeholder="Email" autocapitalize="off">
+
+						<label for="CreatePassword" class="hidden-label">Mật khẩu</label>
+						<input type="password" name="customer[password]" id="CreatePassword" class="input-full" placeholder="Mật khẩu">
+
+						<p>
+							<input type="submit" value="Đăng ký" class="btn btn--full">
+						</p>
+						<a id="back_login" href="javascript:void(0)">Trở về</a>
+
+						
+<input id="91b056e67ac341fba508ff3fe4421fe3" name="g-recaptcha-response" type="hidden" value="03AFcWeA7f0N0KmCuOFZUSWYyOQZho178ZRWVTJgvKYjDPZJKNH5eR9kBhNB4YgyWnGtx0O0juFI5z1cCr7Q2cuO4G3WrubsF16f6I-eUtOdVHqKLh49_1vlpcuF_3c25uaIWaSxyGdB2_pdXxaE4sCYq8tS5X5rHGFk_b5oFKiyV12OKOnEB5YZRxI-Tyy8H_887dBSvM2zNrBNVtSgKKGm2SnOUhb0Q_cu0TQCnv4FfqLyqlATfEnTev_P7X48R3dPXmv-Q_SEM28oGJ3Tigrx0KkzD6_DYPCya-A_I0pBJK9sr65EJH6zUMA-J9BOJ-CGkzIQLoiRK44tb-oeGHio4qCZJAsZVh3V1zhT25on_jVzVNvdDGFQR2rp9NRB4nBx78UfopkaTLBeA9cgAYRPNV-3KQFzolkECDCUcvNFrU_IvhIhM1Xrlji-gXnzShZiQdyuP-rPKBBf9k2t14en4re5OTCA_BVYh9GLtguWVsbW0PHdtRJZYcNlhpCt0yhVFXuyMKr-Twg8jMM-Ar6exswjSwRR2adH-_j0yKwvjN7ajiRVHBJcC8b5GF5dVUwFZtlzSLO6n_YzYYbtwi5isU1ybnRRaGSCvBlUMDrVoV2NmIKXOTbsI"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('91b056e67ac341fba508ff3fe4421fe3').value = token;});});</script></form>
+
+					</div>
+				</div>
+				
+				<div id="RecoverPasswordForm" style="display: none;">
+
+					<h2>Cài đặt lại mật khẩu</h2>
+					<p>Mật khẩu mới sẽ được gửi về email của bạn.</p>
+
+					<div class="form-vertical">
+						<form accept-charset="UTF-8" action="/account/recover" method="post">
+<input name="form_type" type="hidden" value="recover_customer_password">
+<input name="utf8" type="hidden" value="✓">
+
+
+						
+
+						
+						
+
+						<label for="RecoverEmail" class="hidden-label">Email</label>
+						<input type="email" value="" name="email" id="RecoverEmail" class="input-full" placeholder="Email" autocapitalize="off">
+
+						<p>
+							<input type="submit" class="btn btn--full" value="Gửi">
+						</p>
+						<button type="button" id="HideRecoverPasswordLink" class="text-link">Bỏ qua</button>
+						
+<input id="6b031478e089499e8fb2a80b767a0383" name="g-recaptcha-response" type="hidden" value="03AFcWeA5W2EGpmHhbAcjcUMmwqIs6q13zV6UxJ3Vbe3zA0CR0xApbqXNfKH0OBmlhPOQKOC9sMPk3y1np9wLeQmgbDmOIMHsSlSyFAYGxCymqEH_DYuPbFTtlt7ElBXUfr2NsGRlA6mfOMHvYeDYb0mc5SsaSpRTrJabQo6q2C9QXEACcsuYoTE74Cy2tkE6uFmwPOFhN_amsYyWu9Iqudc_7V2WEsBdHH6Q-0KtQI1s3bbwKYNES45rsoIqSC_xstGTOwayQ8ezffjYWQoUnF_H5duXMU45Xu_gfvV5ri_d1JDC5FLZTJvr4TwLxrAqwWpQ3qymtrvRMRb3eA_b8Epg_nqlAm-u1M5zAqFyJwwrqVI2hn5oTSWngP7RiLQJoHwGQfIsPDC43p0RG_dRq2Om0K_r8edrWS7LMpox7lO0CptF4w6Wj2w74QIMYiYfYumSHguzrHYLl10sHPRGBryn6tD3PhVQcyfkSMxEBGoG2TpFfaGkyYbJUeWHeT8bRw77xVXA5P_p3KFvL1eLZUEaytlm67weaqznL1-32ud2Mn9aEYTXPVpV_gmaMddH59N6d5rIpRZKxo5erdjXu8kEwKyuQqw-09g"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('6b031478e089499e8fb2a80b767a0383').value = token;});});</script></form>
+					</div>
+
+				</div>
+				<div class="login_social">
+					<button id="btn-facebook-login"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</button>
+					<button id="btn-google-login"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+				</div>
+				
+				
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+<script>
+    $( "#show_content_register" ).click(function() {
+        $("#CustomerLoginForm").css("display", "none");
+        $("#CustomerRegisterForm").css("display", "block");
+    });
+    $( "#back_login" ).click(function() {
+        $("#CustomerRegisterForm").css("display", "none");
+        $("#CustomerLoginForm").css("display", "block");
+    });
+    $( "#show_register" ).click(function() {
+        $("#CustomerLoginForm").css("display", "none");
+        $("#CustomerRegisterForm").css("display", "block");
+    });
+    $( "#show_login" ).click(function() {
+        $("#CustomerRegisterForm").css("display", "none");
+        $("#CustomerLoginForm").css("display", "block");
+    });
+    </script>
+    <script>
+        var modal15 = document.getElementById("popup-login");
+        var btn16 = document.getElementById("show_register");
+        // Get the button that opens the modal
+        var btn15 = document.getElementById("show_login");
+        
+        // Get the <span> element that closes the modal
+        var span15 = document.getElementById("close_modal15");
+        if(btn15){
+            // When the user clicks on the button, open the modal 
+            btn15.onclick = function() {
+                modal15.style.display = "block";
+            }
+        }
+        if(btn16){
+            // When the user clicks on the button, open the modal 
+            btn16.onclick = function() {
+                modal15.style.display = "block";
+            }
+        }
+        // When the user clicks on <span> (x), close the modal
+        span15.onclick = function() {
+            console.log('aaa');
+            modal15.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener("click", function(event) {
+            if (event.target == modal15) {
+                modal15.style.display = "none";
+            }
+        });
+        </script>
+        <div class="promotion-fixed ">
+
+	
+            <div id="circle-nav-wrapper" class="circle-nav-wrapper">
+                <div class="circle-nav-toggle">		
+                    <img src="//theme.hstatic.net/200000165197/1000646484/14/promotion_left_image.png?v=7030" alt="promotion left img">		
+                </div>
+                <div class="circle-nav-panel"></div>
+                <ul class="circle-nav-menu">
+                    
+                    
+                    
+                    
+        
+                    
+                    
+                    
+                    
+        
+                    <div id="btn-promotion-1">
+                        <li class="circle-nav-item circle-nav-item-1 item-1" id="item1">
+                            <a href="javascript:void(0)" data-id="1">SNUGGY </a>
+                        </li>
+                    </div>
+                    
+                    
+        
+                    
+        
+                    
+                    
+                    
+                    
+        
+                    <div id="btn-promotion-2">
+                        <li class="circle-nav-item circle-nav-item-1 item-2" id="item2">
+                            <a href="javascript:void(0)" data-id="2">FLEECY </a>
+                        </li>
+                    </div>
+                    
+                    
+        
+                    
+        
+                    
+                    
+                    
+                    
+        
+                    <div id="btn-promotion-3">
+                        <li class="circle-nav-item circle-nav-item-1 item-3" id="item3">
+                            <a href="javascript:void(0)" data-id="3">MIRACLE BOX </a>
+                        </li>
+                    </div>
+                    
+                    
+        
+                    
+                </ul>
+            </div>
+            
+        
+            
+            <div class="circular-menu">
+                <div class="circle">
+                    
+                    <a href="http://m.me/bubaby.com.vn" target="_blank" class="messager-icon fb-icon positionfb" id="icon_help_fb">
+                        <img src="//theme.hstatic.net/200000165197/1000646484/14/messager.png?v=7030" alt="">
+                    </a>
+                    
+        
+                    
+        
+                    
+                    <a href="tel:0969463299" class="phone-icon p-icon" id="icon_help_phone">
+                        <img src="//theme.hstatic.net/200000165197/1000646484/14/phone_helpp.png?v=7030" alt="">
+                    </a>
+                    <div id="phone_desktop">
+                        <span class="phone_number_desktop">Call:0969463299</span>
+                        <img src="//theme.hstatic.net/200000165197/1000646484/14/phone_helpp.png?v=7030" alt="">				
+                    </div>
+                    
+        
+                </div> 
+                <div class="promotion-item help-item">		
+                    <a href="" class="btn-primary menu-button">
+                        <div class="question">
+                            <i class="fa fa-question-circle"></i>Hỗ trợ
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        
+            <div id="promotions-banner-1" class="modal-wrapper">
+                <!-- Modal content -->
+                <div class="modal-content modal-promotion">
+                    <button class="promotion-close"><i class="fa fa-times"></i></button>
+                    <div class="promotion-img">
+                        <a href="https://bubaby.com.vn/collections/bst-snuggy-2023/"><img class="lazyload" src="//theme.hstatic.net/200000165197/1000646484/14/lazyload.png?v=7030" data-src="//theme.hstatic.net/200000165197/1000646484/14/promotion_popup_img.png?v=7030" alt="promotion image"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Modal-2-->
+            <div id="promotions-banner-2" class="modal-wrapper">
+                <!-- Modal content -->
+                <div class="modal-content modal-promotion">
+                    <button class="promotion-close promotion-close-2"><i class="fa fa-times"></i></button>
+                    <div class="promotion-img">
+                        <a href="https://bubaby.com.vn/collections/bst-little-fleecy"><img class="lazyload" src="//theme.hstatic.net/200000165197/1000646484/14/lazyload.png?v=7030" data-src="//theme.hstatic.net/200000165197/1000646484/14/popup2.png?v=7030" alt="promotion image"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Modal-3-->
+        
+            <div id="promotions-banner-3" class="modal-wrapper">
+                <!-- Modal content -->
+                <div class="modal-content modal-promotion">
+                    <button class="promotion-close promotion-close-3"><i class="fa fa-times"></i></button>
+                    <div class="promotion-img">
+                        <a href="https://bubaby.com.vn/collections/miracle-box/"><img class="lazyload" src="//theme.hstatic.net/200000165197/1000646484/14/lazyload.png?v=7030" data-src="//theme.hstatic.net/200000165197/1000646484/14/popup3.png?v=7030" alt="promotion image"></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <script>
+            $(document).ready(function(){
+        
+                // Get the modal
+                var promotion = document.getElementById("promotions-banner-1");
+                var promotion2 = document.getElementById("promotions-banner-2");
+                var promotion3 = document.getElementById("promotions-banner-3");
+                
+                $(".circle-nav-item.circle-nav-item-1 a").click(function(){
+                    const id = $(this).attr('data-id');
+                    console.log('id:',id);
+                    $(".modal-wrapper").css("display", "none");
+                    $("#promotions-banner-"+id).css("display", "block");
+                });
+        
+                $(".promotion-close").click(function(){
+                    $(".modal-wrapper").css("display", "none");
+                });
+        
+                window.addEventListener("click", function(event) {
+                    if (event.target == promotion || event.target == promotion2 || event.target == promotion3) {
+                        promotion.style.display = "none";
+                        promotion2.style.display = "none";
+                        promotion3.style.display = "none";
+                    }
+                });
+            })
+        
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#phone_desktop").click(function(){
+                    $(".phone_number_desktop").toggleClass("addphone");
+                });
+            })	
+        </script>
+        <script>
+            $(document).ready(function(){
+        
+                const fbIcon=document.getElementById("icon_help_fb");
+                const zaloIcon=document.getElementById("icon_help_zalo");
+                const phoneIcon=document.getElementById("icon_help_phone");
+        
+                if(fbIcon && !zaloIcon && !phoneIcon){
+                    $(".fb-icon").removeClass("messager-icon")	
+                }
+                if(fbIcon && zaloIcon && !phoneIcon || fbIcon && phoneIcon && !zaloIcon  ){
+                    $(".fb-icon").addClass("positionfb")
+                    $(".zl-icon").addClass("positionzl")
+                }
+                if(fbIcon && zaloIcon && phoneIcon){
+                    $(".fb-icon").addClass("messager-icon")
+                    $(".zl-icon").addClass("zalo-icon")
+                }
+                if(zaloIcon && !fbIcon && !phoneIcon){
+                    $(".zl-icon").removeClass("zalo-icon")
+                }
+            })
+        </script>
+        <script>
+
+            (function ($, window, document, undefined) {
+        
+                // Plugin definition
+                $.fn.circleNav = function (options) {
+        
+                    // Default settings
+                    var settings = $.extend({}, $.fn.circleNav.settings, options);
+        
+                    // Plugin code
+                    return this.each( function () {
+                        var $container = $(this); /* Navigation container: #circle-nav-wrapper */
+                        var $toggle = $('.circle-nav-toggle');
+                        var $panel = $('.circle-nav-panel');
+                        var $menu = $('.circle-nav-menu');
+                        // breakpointChk();
+        
+                        // Overlay
+        
+        
+                        // Toggle click event
+                        $('.circle-nav-toggle, .circle-nav-overlay').on('click', function () {
+                            $container.stop().toggleClass('circle-nav-open');
+                            $toggle.stop().toggleClass('circle-nav-open');
+                            $panel.stop().toggleClass('circle-nav-open');
+                            $menu.stop().toggleClass('circle-nav-open');
+                            $('.circle-nav-overlay').fadeToggle();
+        
+                            if ( $('body').css("overflow") ) {
+                                $('body, html').css("overflow", "");
+                            } else {
+                                $('body, html').css("overflow", "hidden");
+                            }
+                        });
+        
+        
+                    });
+                };
+        
+                // Default settings
+                $.fn.circleNav.settings = {
+                    overlay: true,
+                    overlayColor: "#fff",
+                    overlayOpacity: ".7"
+                };
+        
+            })(jQuery, window, document);
+        
+            $(function(){
+                $('#circle-nav-wrapper').circleNav();
+            })
+        
+        
+        </script>
+        <script>
+            document.querySelector('.menu-button').onclick = function(e) {
+                e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
+            }
+        </script>
+        <script>
+            $(document).ready(function(){
+                const item1=document.getElementById("item1");
+                const item2=document.getElementById("item2");
+                const item3=document.getElementById("item3");
+        
+                if(item1 && !item2 && !item3){
+                    $(".item1").removeClass("circle-nav-item-1")
+                    $(".item1").addClass("position-item1")
+                }
+                if(item1 && item2 && !item3 || item1 && item3 && !item2 ){
+                    $(".item1").addClass("position-item1_1")
+                }
+                if(item1 && item2 && item3){
+                    $(".item1").addClass("circle-nav-item-1")
+                    $(".item2").addClass("circle-nav-item-2")
+                }
+                if(item2 && !item1 && !item3)
+                    $(".item2").removeClass("circle-nav-item-2")
+                $(".item2").addClass("position-item2")
+        
+            })
+        </script>
+        <!-- Thêm livechat facebook và google ở đây -->
+        <!-- Cờ -->
+        <div class="theme__template d-none hide">index</div>
+        <script>
+			$(function(){
+				var url = window.location.href;
+				if(sessionStorage.getItem('template') == 'en'){
+					if(url.indexOf('?') > -1){
+						window.location = url + '&view=en'; 
+					}else{
+						window.location = url + '?view=en';
+					}
+				}
+				$('.lang__vi').on('click', function(){
+					window.location = url;
+				})
+				$('.lang__en').on('click', function(e){
+					e.preventDefault();
+					sessionStorage.setItem('template','en');
+					if(url.indexOf('?') > -1){
+						window.location = url + '&view=en'; 
+					}else{
+						window.location = url + '?view=en';
+					}
+				})
+
+
+
+
+
+			})
+		</script>
+        <section id="popup-login" class="modal3 modal-wrapper" style="display: none;">
+	<div class="wrapper modal-content">
+
+		<div class="btn-close">
+			<span id="close_modal15" class="close">×</span>
+		</div>
+		<!-- /templates/customers[login].liquid -->
+
+		<div class="grid">
+
+			<div class="grid__item large--one-whole text-center">
+
+				
+				<div class="note form-success" id="ResetSuccess" style="display:none;">
+					Chúng tôi đã gửi một email với đường dẫn để giúp bạn cập nhật mật khẩu.
+				</div>
+
+				<div id="CustomerLoginForm" class="form-vertical" style="display: block;">
+					<form accept-charset="UTF-8" action="/account/login" id="customer_login" method="post">
+<input name="form_type" type="hidden" value="customer_login">
+<input name="utf8" type="hidden" value="✓">
+
+
+					<h2>Đăng nhập</h2>
+
+					
+
+					<label for="CustomerEmail" class="hidden-label">Email</label>
+					<input type="email" name="customer[email]" id="CustomerEmail" class="input-full" placeholder="Email" autocapitalize="off">
+
+					
+					<label for="CustomerPassword" class="hidden-label">Mật khẩu</label>
+					<input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full" placeholder="Mật khẩu">
+					
+
+					<p>
+						<input type="submit" class="btn btn--full" value="Đăng nhập">
+					</p>
+					<p><a id="show_content_register" class="reg" href="javascript:void(0)" title="Đăng ký">Đăng ký</a></p>
+					
+					<p><a href="#recover" id="RecoverPassword">Quên mật khẩu?</a></p>
+					
+
+					
+<input id="2cb26fd9ecea4e3699bd25f4204b581c" name="g-recaptcha-response" type="hidden" value="03AFcWeA5lPRlZA3wxkmAsdiLsqTOMsGLT6378gwBWjChLyDOqzTr5cBp63X5QtP9lIvSXfESSJjC6HB3O1iSsze2j-ikyVh2YfXLhr94hDvPzqI_qASQZrlRdi5y7EBn7kDf4uWpR8CBHjS0G1ANruyR9JoGn7bz4M6heP7lVVZzQB2xaszHLoqIVBl66pp_VZpPIlAl3mZVOXf6OsoIrdJGI88tumvs7AgTUDhjaJX2HFlsQ6jlx-TIsYcH3SI-NyLbqbbV9xI9LlunePd2uRmrn6k_Zc2szP8-kjesCvRbMxmF_TyckfI-gZYUGXimrgASS9vqxYGQUuV3qq9Aqs3BlwV4sPYZI8zf54_5MkQJAxgG_nAyy3XE93NoXdVjS7JLKqgFtz3czXA0nfvsXOApzxOcFLrOZE7aalSRUKUvGu3FSKa3HyaVj9pumnsrx1rTfLpOP9TNxYac71HpTqoijLJ67SRQ2JkNkgx4zRwThbbsS281B9HsyBvMVQGatsAqgaePA3XShDzC2wX2bs_6KJ6EjCxNDSJypYFZxy9il693HGqFMb4jjtodr1aunkKSX4rLTw799heenGWnf3dsGNOR0XFQtfiIadwVz9lYdASc0IL8IvXI"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('2cb26fd9ecea4e3699bd25f4204b581c').value = token;});});</script></form>
+				</div>
+				<div id="CustomerRegisterForm" style="display:none">
+					<h2>Tạo tài khoản</h2>
+
+					<div class="form-vertical">
+						<form accept-charset="UTF-8" action="/account" id="create_customer" method="post">
+<input name="form_type" type="hidden" value="create_customer">
+<input name="utf8" type="hidden" value="✓">
+
+
+						
+
+						<label for="FirstName" class="hidden-label">Tên</label>
+						<input type="text" name="customer[first_name]" id="FirstName" class="input-full" placeholder="Tên" autocapitalize="words">
+
+						<label for="LastName" class="hidden-label">Họ</label>
+						<input type="text" name="customer[last_name]" id="LastName" class="input-full" placeholder="Họ" autocapitalize="words">
+
+						<label for="Email" class="hidden-label">Email</label>
+						<input type="email" name="customer[email]" id="EmailLogin" class="input-full" placeholder="Email" autocapitalize="off">
+
+						<label for="CreatePassword" class="hidden-label">Mật khẩu</label>
+						<input type="password" name="customer[password]" id="CreatePassword" class="input-full" placeholder="Mật khẩu">
+
+						<p>
+							<input type="submit" value="Đăng ký" class="btn btn--full">
+						</p>
+						<a id="back_login" href="javascript:void(0)">Trở về</a>
+
+						
+<input id="91b056e67ac341fba508ff3fe4421fe3" name="g-recaptcha-response" type="hidden" value="03AFcWeA7f0N0KmCuOFZUSWYyOQZho178ZRWVTJgvKYjDPZJKNH5eR9kBhNB4YgyWnGtx0O0juFI5z1cCr7Q2cuO4G3WrubsF16f6I-eUtOdVHqKLh49_1vlpcuF_3c25uaIWaSxyGdB2_pdXxaE4sCYq8tS5X5rHGFk_b5oFKiyV12OKOnEB5YZRxI-Tyy8H_887dBSvM2zNrBNVtSgKKGm2SnOUhb0Q_cu0TQCnv4FfqLyqlATfEnTev_P7X48R3dPXmv-Q_SEM28oGJ3Tigrx0KkzD6_DYPCya-A_I0pBJK9sr65EJH6zUMA-J9BOJ-CGkzIQLoiRK44tb-oeGHio4qCZJAsZVh3V1zhT25on_jVzVNvdDGFQR2rp9NRB4nBx78UfopkaTLBeA9cgAYRPNV-3KQFzolkECDCUcvNFrU_IvhIhM1Xrlji-gXnzShZiQdyuP-rPKBBf9k2t14en4re5OTCA_BVYh9GLtguWVsbW0PHdtRJZYcNlhpCt0yhVFXuyMKr-Twg8jMM-Ar6exswjSwRR2adH-_j0yKwvjN7ajiRVHBJcC8b5GF5dVUwFZtlzSLO6n_YzYYbtwi5isU1ybnRRaGSCvBlUMDrVoV2NmIKXOTbsI"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('91b056e67ac341fba508ff3fe4421fe3').value = token;});});</script></form>
+
+					</div>
+				</div>
+				
+				<div id="RecoverPasswordForm" style="display: none;">
+
+					<h2>Cài đặt lại mật khẩu</h2>
+					<p>Mật khẩu mới sẽ được gửi về email của bạn.</p>
+
+					<div class="form-vertical">
+						<form accept-charset="UTF-8" action="/account/recover" method="post">
+<input name="form_type" type="hidden" value="recover_customer_password">
+<input name="utf8" type="hidden" value="✓">
+
+
+						
+
+						
+						
+
+						<label for="RecoverEmail" class="hidden-label">Email</label>
+						<input type="email" value="" name="email" id="RecoverEmail" class="input-full" placeholder="Email" autocapitalize="off">
+
+						<p>
+							<input type="submit" class="btn btn--full" value="Gửi">
+						</p>
+						<button type="button" id="HideRecoverPasswordLink" class="text-link">Bỏ qua</button>
+						
+<input id="6b031478e089499e8fb2a80b767a0383" name="g-recaptcha-response" type="hidden" value="03AFcWeA5W2EGpmHhbAcjcUMmwqIs6q13zV6UxJ3Vbe3zA0CR0xApbqXNfKH0OBmlhPOQKOC9sMPk3y1np9wLeQmgbDmOIMHsSlSyFAYGxCymqEH_DYuPbFTtlt7ElBXUfr2NsGRlA6mfOMHvYeDYb0mc5SsaSpRTrJabQo6q2C9QXEACcsuYoTE74Cy2tkE6uFmwPOFhN_amsYyWu9Iqudc_7V2WEsBdHH6Q-0KtQI1s3bbwKYNES45rsoIqSC_xstGTOwayQ8ezffjYWQoUnF_H5duXMU45Xu_gfvV5ri_d1JDC5FLZTJvr4TwLxrAqwWpQ3qymtrvRMRb3eA_b8Epg_nqlAm-u1M5zAqFyJwwrqVI2hn5oTSWngP7RiLQJoHwGQfIsPDC43p0RG_dRq2Om0K_r8edrWS7LMpox7lO0CptF4w6Wj2w74QIMYiYfYumSHguzrHYLl10sHPRGBryn6tD3PhVQcyfkSMxEBGoG2TpFfaGkyYbJUeWHeT8bRw77xVXA5P_p3KFvL1eLZUEaytlm67weaqznL1-32ud2Mn9aEYTXPVpV_gmaMddH59N6d5rIpRZKxo5erdjXu8kEwKyuQqw-09g"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('6b031478e089499e8fb2a80b767a0383').value = token;});});</script></form>
+					</div>
+
+				</div>
+				<div class="login_social">
+					<button id="btn-facebook-login"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</button>
+					<button id="btn-google-login"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+				</div>
+				
+				
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+        <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-7m58m5e7wgwe" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-&amp;co=aHR0cHM6Ly9idWJhYnkuY29tLnZuOjQ0Mw..&amp;hl=en&amp;v=-QbJqHfGOUB8nuVRLvzFLVed&amp;size=invisible&amp;cb=aiggnjagyq90"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        <div><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-hbyobka1igh2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-&amp;co=aHR0cHM6Ly9idWJhYnkuY29tLnZuOjQ0Mw..&amp;hl=en&amp;v=-QbJqHfGOUB8nuVRLvzFLVed&amp;size=invisible&amp;cb=y9m8wnj0mr76"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100001" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        <div><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-rmz5vpv416o9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-&amp;co=aHR0cHM6Ly9idWJhYnkuY29tLnZuOjQ0Mw..&amp;hl=en&amp;v=-QbJqHfGOUB8nuVRLvzFLVed&amp;size=invisible&amp;cb=iy65ffup3nhv"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100002" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+        <div><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-ph9u8pismpba" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-&amp;co=aHR0cHM6Ly9idWJhYnkuY29tLnZuOjQ0Mw..&amp;hl=en&amp;v=-QbJqHfGOUB8nuVRLvzFLVed&amp;size=invisible&amp;cb=ge1b0yag1h3m"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100003" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+        <div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div>
+</body>
+</html>
