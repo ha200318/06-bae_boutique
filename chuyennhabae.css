@@ -1,0 +1,134 @@
+*{
+    font-family: quicksand;
+}
+/*header*/
+header{
+    background-image: url('images/bannerchuyenmuc.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+.mymainmenu{
+    background-color:#BED2E0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+.navbar-nav{
+    font-size: 1.2rem;
+    color: #646464;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+}
+
+/* CSS để dàn trang các mục */
+.nav-item {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ẩn biểu tượng trái tim ban đầu */
+.active-img {
+  display: none;
+}
+
+/* Hiển thị biểu tượng trái tim khi hover */
+.nav-item:hover .active-img {
+  display: inline-block;
+  margin-left: 0px; /* Khoảng cách giữa chữ và biểu tượng trái tim */
+}
+/* Đảm bảo chữ và biểu tượng trái tim trên cùng 1 hàng */
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Đảm bảo khoảng cách giữa chữ và biểu tượng trái tim */
+.text {
+  margin-right: 5px; /* Khoảng cách giữa chữ và biểu tượng trái tim */
+}
+
+
+
+/*content*/
+.breadcrumb-item a{
+   color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.breadcrumb-item.active{
+  color: black;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+/*modun1*/
+.story_module_title{
+  color: #8295A1;
+  font-weight: bolder; 
+  text-align: center; 
+}
+/*story1*/
+.story_row1  .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img-modun1{ /*ảnh ra giữa*/
+  vertical-align: middle;
+}
+.story_module_image {
+  position: relative;
+  z-index: 1;
+}
+/* .story-modun-1 .row .col .story_module_image2::after { tạo độ mờ sau ảnh */
+  /* content: "";
+  width: 1000px;
+  height: 579px;
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(0, -50%);
+  z-index: -1;
+  background-image: linear-gradient(to left,  #BCD5E3,#fff,);
+  opacity: 0.4;
+} */
+/* .story-modun-1 .row .col .story_module_image1::after { tạo độ mờ sau ảnh */
+  /* content: "";
+  width: 1000px;
+  height: 579px;
+  position: absolute;
+  top: 50%;
+  right:  63%;
+  transform: translate(0, -50%);
+  z-index: -1;
+  background-image: linear-gradient(to left, #fff, #BCD5E3);
+  opacity: 0.4;
+} */
+.story-modun-1 .row .col .story_module_content {
+  padding-right: 50px;
+  padding-top: 50px;
+}
+.story-modun-1 .row .col p {
+  font-family: Quicksand;
+  font-style: normal;
+  color: black;
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+.img-modun1 {
+  max-width: 100%;  
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+}
