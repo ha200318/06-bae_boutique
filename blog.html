@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bae Boutique</title>
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--font icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--css Hà-->
+    <link rel="stylesheet" href="bae.css">
+    <!--phong chu-->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!--banner-->
+    <link rel="stylesheet" href="path/to/reset.css">
+    <!--css blogct-->
+    <link rel="stylesheet" type="text/css" href="blogct1.css">
+    <!--css icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--css blogmain-->
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <!--css footer-->
+    <link rel="stylesheet" type="text/css" href="Footertn.css">
+    
+</head>
+<body>
+  <!--Header-->
+   <section class="myheader">
+    <div class="container py-2" >
+      <div class="row">
+        <!--logo-->
+        <div class="col-lg-3 col-md-2">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" class="logo" style="width: 110px; height: 90px;">
+          </a>
+        </div>
+        <!--thanh tìm kiếm-->
+        <div class="col-md-5 col-12 py-4">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Nhập nội dung cần tìm" name="sản phẩm" style="border-radius: 30px;">
+              <span class="input-group-text" style="border-radius: 30px;">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+              </span>
+            </div>
+        </div>
+        <!--Liên hệ-->
+        <div class="col-md-2">
+          
+        </div>
+  
+        <!--công cụ-->
+       <div class="col-md-2 py-4">
+        <div class="row">
+          <div class="col">
+            <a href="#" class="position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <span class="fs-3">
+                <i class="fa-regular fa-heart icon"></i>
+              </span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <span class="fs-3">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+              </span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="position-relative">
+              <div class="col">      
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="fs-3">
+                    <i class="fa-regular fa-user icon"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a id="loginLink" class="dropdown-item" href="#">Đăng nhập</a></li>
+                  <li><a id="registerLink" class="dropdown-item" href="#">Đăng ký</a></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+         <!--các-->
+         <div class="thanh_menu">
+          <div class="nav">
+        <nav class="navbar navbar-expand-lg justify-content: space-between">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Trang chủ</a>
+              <div class="active-img nav justify-content-end">
+                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="chuyennhabae.html">Chuyện nhà Bae</a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="text">Sản phẩm</span>
+                    </a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Thời trang cho bé</a></li>
+                      <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Blog</a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Bộ sưu tập</a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Giftset</a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disable" href="#">Đội ngũ</a>
+                    <div class="active-img nav justify-content-end">
+                      <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                    </div>
+                  </li>
+          
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </div>  
+        </div>
+      </div>
+     </div> 
+   </section>
+<!--banenr-->
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+  
+      <img src="images/heart.webp" alt="Slide 1" data-bs-target="#demo" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px;">
+      <img src="images/heart.webp" alt="Slide 2" data-bs-target="#demo" data-bs-slide-to="1" style="width: 10px; height: 10px;">
+      <img src="images/heart.webp" alt="Slide 3" data-bs-target="#demo" data-bs-slide-to="2" style="width: 10px; height: 10px;">
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.png" alt="banner 1" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.png" alt="banner 2" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.png" alt="banner 3" class="d-block" style="width:100%">
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!--Blog-->
+
+  <section id="myblog">
+    <div class="wrapper-footer"  >
+      <div class="container">
+        <div class="row">   
+            <nav aria-label="breadcrumb" style="margin-top: 40px;">
+              <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #0C543C;"><span style="color:#0C543C; "><strong style="font-size: 16px">Trang chủ</strong></span></a></li>
+                <li class="breadcrumb-item"><a href="blog.html" style="color: #0C543C;"><span style="color: #0C543C;"> <strong style="font-size: 16px; text-decoration: underline">Blog</strong></span></a></li>               
+              </ol>
+            </nav>
+          </div>
+        </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">    
+            <div class="blogmain">         
+                <div class="blogmain-text">
+                    <h1 class="title">BAE ĐỒNG HÀNH CÙNG MẸ CHĂM SÓC TRẺ</h1>
+                    <h5>Bé khỏe mẹ yên tâm là một hành trình dài của mẹ cùng bé phát triển. Những kiến thức hành trang vững vàng giúp mẹ tự tin hơn trên hành trình ấy</h5>
+                    <div class="btl_blog">
+                      <a class="btnl1" href="blogct2.html" style="padding-left: 0px;">Xem thêm</a>
+                    </div>                   
+                </div>
+            </div>
+            <!---->
+            <div class="blogmenu">
+              <div class="container">
+                <div class="row mt-5">
+                  <div class="col-sm-6 col-md-4 mb-5">
+                    <div class="card">
+                      <img src="images/giac-ngu-trua-2.jpg"width="100%" height="154px">
+                      <div class="card-body">
+                        <a href="blogct1.html" class="card-link">Giấc ngủ đối với sự phát triển của trẻ</a><br>
+                        <p>Giấc ngủ ảnh hưởng tới sự phát triển của bé như thế nào</p>
+                        <button><a href="blogct1.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                      <img src="images/369407843_1713574155815699_4307216640728822132_n.png"width="100%" height="154px">
+                      <div class="card-body">
+                        <a href="blogct3.html" class="card-link">Thời trang cho bé dễ dàng vận động</a><br>
+                        <p>Những bộ đồ có chất liệu mềm dành cho bé</p>
+                        <button><a href="blogct3.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                      <img src="images/9. blog bai 9.jpg"width="100%" height="154px">
+                      <div class="card-body">
+                        <a href="blogct4.html" class="card-link">Thực đơn bổ xung dinh dưỡng cho trẻ</a><br>
+                        <p>Bổ xung nhóm chất giúp trẻ phát triển </p>
+                        <button><a href="blogct4.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                      <img src="images/qua-giang-sinh-cho-tre-em.jpg"width="100%" height="154px" >
+                      <div class="card-body">
+                        <a href="blogct6.html" class="card-link">Qùa giáng sinh xinh xắn dành tặng bé</a><br>
+                        <p>Giáng sinh sắp đến, mẹ lựa chọn  những món quà ý nghĩa</p>
+                        <button><a href="blogct6.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                      <img src="images/blog thời trang cho bé.jpg"width="100%" height="154px">
+                      <div class="card-body">
+                        <a href="blogct2.html" class="card-link">Thời trang cho bé vào mùa hè thoáng mát</a><br>
+                        <p>Những bộ quần áo với chất liệu mát cho con vào mùa hè</p>
+                        <button><a href="blogct2.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="card mb-5">
+                      <img src="images/phat-trien-kha-nang-van-dong-cua-tre-2-0730.jpg"width="100%" height="154px">
+                      <div class="card-body">
+                        <a href="blogct3.html" class="card-link">Vận động giúp trẻ phát triển toàn diện</a><br>
+                        <p>Thể dục thể thao là cách tốt nhất giúp con phát triển nhanh</p>
+                        <button><a href="blogct3.html">Xem thêm</a></button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+                
+            </div>
+            
+      </div>
+
+    <!---->
+        <div class="col-md-4"> 
+            <h3>Tin tức cho mẹ</h3>
+            <div class="small-news">
+              <div class="left">
+                  <img src="images/giac-ngu-trua-2.jpg">
+              </div>
+              <div class="right">
+                  <a href="blogct1.html" >Giấc ngủ ảnh hưởng đến sự phát triển chiều cao trẻ</a>
+                  <span class="date">1/12/2023</span>
+              </div>
+          </div> 
+          <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+            <div class="small-news">
+                <div class="left">
+                    <img src="images/6. blog bai 6.jpg">
+                </div>
+                <div class="right">
+                    <a href="blogct5.html">Cách bổ sung acid folic cho bà bầu đúng và đủ</a>
+                    <span class="date">1/12/2023</span>
+                </div>
+            </div>
+
+            <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+            <!---->
+            <div class="small-news">
+                <div class="left">
+                    <img src="images/9. blog bai 9.jpg">
+                </div>
+                <div class="right">
+                    <a href="blogct4.html">Thực đơn bổ sung vi chất dinh dưỡng cho trẻ mẹ cần biết</a>
+                    <span class="date">24/11/2023</span>
+                </div>
+            </div> 
+            <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+            <!---->
+            <div class="small-news">
+                <div class="left">
+                    <img src="images/1. blog bai 1.jpg">
+                </div>
+                <div class="right">
+                    <a href="blogct4.html">Có nên kết hợp sữa non với sữa công thức hay không?</a>
+                    <span class="date">13/11/2023</span>
+                </div>
+            </div> 
+            <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+            <!---->
+            <div class="small-news">
+                <div class="left">
+                    <img src="images/blog thời trang cho bé.jpg">
+                </div>
+                <div class="right">
+                    <a href="blogct2.html">Thời trang mùa hè cho bé cho bé trai mẹ có thể tham khảo</a>
+                    <span class="date">10/11/2023</span>
+                </div>
+            </div> 
+            <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+            
+            <!---->
+            <div class="small-news">
+                <div class="left">
+                    <img src="images/7. blog bai 7.jpg">
+                </div>
+                <div class="right">
+                    <a href="blogct4.html">Có nên cho bé ăn kết hợp sữa công thức</a>
+                    <span class="date">8/11/2023</span>
+                </div>
+            </div> 
+          </div>
+
+        </div>
+
+ </section>
+
+  <!--Footer-->
+  <div class="contact_us">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+          <div class="logo_bottom wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="0.75s">
+            <img src="images/logo.png" alt="logo" class="img-fluid" style="width: 11vw;">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
+          <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
+            <h3 class="title">Đăng ký nhận tin</h3>
+            <div class="ft-sub-wrapper">
+              <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                <input name="form_type" type="hidden" value="customer">
+                <input name="utf8" type="hidden" value="✓">
+                <div class="input-group">
+                  <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" aria-label="email@example.com" style="border-radius: 20px !important;
+                  border: 1px solid #DBDCDD;">
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <span class="input-group-btn">
+                    <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
+                  </span>
+                </div>
+                <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
+                <!-- Script Google Recaptcha -->
+                <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
+                <script>
+                  grecaptcha.ready(function() {
+                    grecaptcha.execute('...', { action: 'submit' }).then(function(token) {
+                      document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
+                    });
+                  });
+                </script>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="myfooter">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-2 mt-4">
+            <h3 style="text-align:left;">Chuyện nhà Bae </h3>
+            <ul>
+              <li><a href="">Hoạt động</a></li>
+              <li><a href="">Giải đáp</a></li>
+              <li><a href="">Chứng nhận</a></li>
+          </ul>
+          </div>
+          <div class="col-md-3 mt-4">
+            <h3>Chính sách</h3>
+            <ul>
+              <li><a href="">Chính sách thanh toán</a></li>
+              <li><a href="">Chính sách kiểm hàng</a></li>
+              <li><a href="">Chính sách đổi và trả hàng</a></li>
+              <li><a href="">Chính sách vẫn chuyển</a></li>
+          </ul>
+          </div>
+          <div class="col-md-2 mt-4">
+            <h3>Thông tin</h3>        
+            <ul>
+              <li><a href="">Tổng đài hỗ trợ</a></li>
+              <li><a href="">Liên hệ</a></li>
+              <li><a href="">Danh sách địa chỉ bán</a></li>
+          </ul>
+          </div>
+          <div class="col-md-5">
+            <h3>Liên hệ</h3>
+              <div class="icons1">
+                  <a href="https://www.google.com/maps/place/Ngh.+2+Ng.+Gi%E1%BA%BFng+M%E1%BB%A9t,+Tr%C6%B0%C6%A1ng+%C4%90%E1%BB%8Bnh,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9983524,105.8472903,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ac72f6dbdd87:0x2f4258c9dab3dd80!8m2!3d20.9983524!4d105.8498652!16s%2Fg%2F11ngt3gzh5?entry=ttu" target="_blank"><i class='bx bx-map' ></i></box-icon>   Địa chỉ: Phường Trương Định, quận Hai Bà Trưng, Hà Nội</a><br><br>
+                  <a href="#"><i class='bx bx-phone' ></i></box-icon>   Hotline: 039 972 5203</a><br><br>
+                  <a href="https://baeboutique04@gmail.com/" target="_blank"><i class='bx bx-envelope'></i></box-icon>   Mail: baeboutique04@gmail.com</a>
+              </div>
+              <h3>Mạng xã hội</h3>
+              <div class="icons2">
+                     <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
+                      <span><a href="#"><i class='bx bxl-instagram-alt' ></i></a></span>
+                  </div>
+          </div>
+        </div>
+        <div class="row"><p>Copyright &copy; <a href="#">Bae Boutique</a></p></div>
+      </div>
+      </div>
+  </footer>
+</body>  

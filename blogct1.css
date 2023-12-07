@@ -1,0 +1,103 @@
+
+#myblogct1 h3{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+
+}
+#myblogct1 p{
+    text-align: justify;
+}
+.infor_article i{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.infor_article p{
+
+    margin-left: 0px;
+}
+
+#myblogct1 .col-md-4{
+    padding-left: 50px;
+}
+#myblogct1 .col-md-8{
+    padding-right: 30px;
+}
+.main-content h3{
+    font-weight: bold;
+}
+
+.small-news {
+    display: flex;
+}
+.small-news .left{
+    width: 30%;
+}
+.small-news .right{
+    width: 65%;
+    padding-left: 5px;
+   padding-left: 10px;
+   padding-right: 5px;
+}
+.right span{
+    padding-left: 20px;
+}
+.left img{
+    width: 100%;
+    border:  0.75px solid grey;
+    border-radius: 5px;
+    float: left;
+  
+}
+.right a,
+.right span{
+    display: block;
+    color: #5A5252;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.right a:hover{
+    color: rgb(28, 120, 120);
+    transform: translate(3px, -3px);
+    text-decoration:underline;
+}
+.col-lg-6 input{
+    width: 100%;
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    height: 40px;
+}
+
+.content-comment{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.comment h4{
+    color: #4F6F7D;;
+    font-weight: 400;
+}
+.comment button{
+    width: 15%; 
+    height: 40px; 
+    border-radius: 5px;
+    border: 0.75px solid grey;
+    background-color: #728D98; 
+    margin-top: 20px;
+    color:aliceblue; 
+    font-weight: bold;
+}
+.comment button:hover{
+    font-size: 15px;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
