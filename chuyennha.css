@@ -297,6 +297,7 @@ input, textarea, select {
   align-items: center;
 }
 /*footer*/
+/*footer*/
 .myfooter .col-md-2 h3,
 .myfooter .col-md-3 h3,
 .myfooter .col-md-2 h3{
@@ -329,6 +330,7 @@ input, textarea, select {
 .myfooter .col-md-2 a:hover,
 .myfooter .col-md-3 a:hover{
   color: #8295A1;
+  font-weight: 600;
   transform: translate(3px, -3px);
 }
 .myfooter .col-md-3 ul,
@@ -352,7 +354,7 @@ input, textarea, select {
 }
 .myfooter .icons1 a:hover{
   color: #8295A1;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 16px;
   text-decoration: underline;
 }
@@ -384,8 +386,22 @@ input, textarea, select {
 }
 
 .myfooter .row p{
-  margin-left: 250px;
   color: #5A5252;
   font-size: 16px;
   padding-top: -30px;
+}
+.brand-icon button {
+  margin: 5px;
+  border-radius: 20px; /* Bo tròn viền */
+  transition: transform 0.3s ease, border 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
+  background-color:#FFFDFD; 
+ border: 1px solid #8295A1;
+}
+.brand-icon button:hover {
+  transform: scale(1.01); /* Tăng kích thước khi di chuột qua */
+  border: 2px solid #8295A1; /* Border đậm */
+}
+html,body{
+  width: 100%;
+  overflow-x: hidden;
 }

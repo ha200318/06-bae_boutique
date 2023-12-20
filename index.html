@@ -8,11 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--font icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!--css Hà-->
     <link rel="stylesheet" href="bae.css">
     <!--phong chu-->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <!--banner-->
+    <!--brand-->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
     
   </head>
 <body>
@@ -23,7 +26,7 @@
           <!--logo-->
           <div class="col-lg-3 col-md-2">
             <a href="index.html">
-              <img src="images/logo.png" alt="logo" class="logo" style="width: 110px; height: 90px;">
+              <img src="images/Bae Boutique.png" alt="logo" class="logo" >
             </a>
           </div>
           <!--thanh tìm kiếm-->
@@ -130,13 +133,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">Bộ sưu tập</a>
-                      <div class="active-img nav justify-content-end">
-                        <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">Giftset</a>
+                      <a class="nav-link " href="giftset.html">Giftset</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
@@ -147,7 +144,12 @@
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
-            
+                    <li class="nav-item">
+                      <a class="nav-link " href="contact.html">Liên hệ</a>
+                      <div class="active-img nav justify-content-end">
+                        <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -158,16 +160,13 @@
        </div> 
      </section>
 <!--banenr-->
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
+<div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 50px;">
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
     <img src="images/heart.webp" alt="Slide 1" data-bs-target="#demo" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px;">
     <img src="images/heart.webp" alt="Slide 2" data-bs-target="#demo" data-bs-slide-to="1" style="width: 10px; height: 10px;">
     <img src="images/heart.webp" alt="Slide 3" data-bs-target="#demo" data-bs-slide-to="2" style="width: 10px; height: 10px;">
   </div>
-  
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -188,12 +187,702 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-     
-
-
+     <!--Content-->
+     <section class="mycontent">
+      <!--banner-->
+      <div class="container">
+        <div class="row">
+          <div class="col"> 
+            <div class="banner-img" >
+            <div class="content-img">
+                <img id="image1" src="images/aodo.png" alt="" style="width: 15em;display: flex;">
+            </div>
+            <div class="text-content">
+                <div class="text-content-1">
+                    <h2 >Giftset</h2>
+                    <p >Full month for boy baby</p>
+                </div>
+                <div class="content-text-2" >
+                    <h3 >Xem sản phẩm</h3>
+                    <span ></span>
+                </div>
+            </div>
+        </div></div>
+          <div class="col">
+             <div class="banner-img">
+                <div class="content-img">
+                    <img id="image1" src="images/aophaogau.png" alt="" style="width: 15em;display: flex;">
+                </div>
+                <div class="text-content" >
+                    <div class="text-content-1">
+                        <h2 >Giftset</h2>
+                        <p>Full month for girl baby</p>
+                    </div>
+                    <div class="content-text-2" >
+                        <h3 >Xem sản phẩm</h3>
+                        <span ></span>
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+          <div class="col">
+            <div class="banner-img">
+              <div class="content-img">
+                  <img id="image1" src="images/bobodysuite.png" alt="" style="width: 15em;display: flex;">
+              </div>
+              <div class="text-content">
+                  <div class="text-content-1">
+                      <h2 >Giftset</h2>
+                      <p>For mum and baby</p>
+                  </div>
+                  <div class="content-text-2">
+                      <h3 >Xem sản phẩm</h3>
+                      <span ></span>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+       <!--sản phẩm mới-->
+       <section class="sanphammoi">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span style="   background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat; display: flex; height: 50px; padding: 0 200px 0 0;  margin: auto;  text-align: left;"></span>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">SẢN PHẨM MỚI VỀ</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span style=" background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;  display: flex;  height: 50px; padding: 0 200px 0 0;  margin: auto; text-align: left;"></span>
+            </div>
+          </div>
+          <section id="story-modun-5" class="py-2" style="margin-bottom: 30px;">
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="owl-carousel owl-theme">
+                  <div class="card " style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/new-mum-baby-girl-hamper-basket.jpg?v=1683103431&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby girl 01</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-welcome.jpg?v=1674218658&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby girl 02</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/baby-girl-gifts-hamper-bunny-rattle.jpg?v=1699346747&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby girl 03</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-steiff-bear_2a6e366a-e7d4-45bb-8913-60ba18ceae12.jpg?v=1678362778&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby girl 04</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div>
+                  <!--boy-->
+                  <div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/Baby-boy-hamper-gift-steiff-bunny.jpg?v=1667323792&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby boy 01</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-gifts-hamper-love-mummy.jpg?v=1674155316&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby boy 02</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-precious-little-one.jpg?v=1669222252&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby boy 03</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-welcome.jpg?v=1674216507&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for baby boy 04</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-basket-bunny.jpg?v=1683650210&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for morther and baby 01</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-gift-froggin-awesome_5.jpg?v=1683787738&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for mother and baby 02</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-basket-noughty.jpg?v=1673555947&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for mother and baby 03</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div><div class="card" style="max-width: 90%;">
+                    <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-box-cook-voucher.jpg?v=1674503395&width=1080" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bae - Giftset fullmonth for mother and baby 04</h4>
+                      <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </section>
+        </div>
+      </section>
+      <!--end sản phẩm mới-->
+      <!--chinh sach của bae-->
+      <section class="Chinhsach" style="background-color: #E4F2FC; margin-bottom: 30px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+              <div class="tz-about-item">
+                <div class="about-item-img hidden-xs">
+                  <a class="" href="">
+                    <img src="images/freeship.png" alt="" style="width: 8vw; margin: 15px; cursor: pointer;" class="chinhsach">
+                  </a>
+                </div>
+                <div class="tz-about-ds">
+                  <h4><div style="color: #8295A1; font-weight: bold;">MIỄN PHÍ VẬN CHUYỂN </div></h4>
+                  <p style="font-weight: bold;">Chúng tôi vận chuyển miễn phí với đơn hàng từ 499.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+              <div class="tz-about-item">
+                <div class="about-item-img hidden-xs">
+                  <a class="" href="">
+                    <span class="fs-1">
+                      <img src="images/gift.png" alt=""  style="width: 8vw; margin: 15px; cursor: pointer;" class="chinhsach">
+                    </span>
+                  </a>
+                </div>
+                <div class="tz-about-ds">
+                  <h4><div style="color:#8295A1; font-weight: bold;">KHUYẾN MẠI CUỐI NĂM</div></h4>
+                  <p style="font-weight: bold;">Giảm giá tới 5% toàn bộ sản phẩm của cửa hàng trong tháng 12 này!!!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+              <div class="tz-about-item">
+                <div class="about-item-img hidden-xs">
+                  <a class="img_3" href="">
+                    <img src="images/đổi trả.png" alt=""style="width: 8vw; margin: 15px; cursor: pointer;" class="chinhsach">
+                  </a>
+                </div>
+                <div class="tz-about-ds">
+                  <h4><div style="color:#8295A1; font-weight: bold;">HỖ TRỢ ĐỔI TRẢ</div></h4>
+                  <p style="font-weight: bold;">Hỗ trợ miễn phí đổi trả sản phẩm nếu thỏa mãn chính sách đổi trả</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+         <!--Sản phẩm bán chạy-->
+      <section class="product hot">
+        <div class="container">
+          <!--tieu de-->
+          <div class="row"> 
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span style="   background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+              display: flex;
+              height: 50px;
+              padding: 0 200px 0 0;
+              margin: auto;
+              text-align: left;"></span>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">SẢN PHẨM BÁN CHẠY</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span style=" background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+              display: flex;
+              height: 50px;
+              padding: 0 200px 0 0;
+              margin: auto;
+              text-align: left;"></span>
+            </div>
+          </div>
+          <!--san pham-->
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/aodo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Bộ áo liền quần dày dặn chống lạnh</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/chimcanhcut.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Bộ quần áo liền quần cho bé freesize</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/tat.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Tất trẻ em trơn hai bông hoa cổ cao</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/mubongchya.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Mũ bóng chày bằng vải cotton mùa hè</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/aophaogau.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Áo phao tai gấu dễ thương cho bé</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
+              <div class="card" style="max-width: 90%;">
+                <img src="images/bobodysuite.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bae - Bộ bodysuite chất cotton kèm mũ cho bé</h5>
+                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-product">
+            <a href="">Xem thêm</a>
+        </div>
+        </div>
+      </section>
+        <!--tin tức-->
+        <section class="blognhabae" style="margin-bottom: 30px;">
+          <div class="container">
+            <div class="row" style="margin-top: 20px;"> 
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <span style="   background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+                display: flex;
+                height: 50px;
+                padding: 0 200px 0 0;
+                margin: auto;
+                text-align: left;"></span>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">BLOG NHÀ BAE</p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <span style=" background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+                display: flex;
+                height: 50px;
+                padding: 0 200px 0 0;
+                margin: auto;
+                text-align: left;"></span>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <a class="col-lg-6 d-none d-lg-block" href="chuyennhabae.html" title="Chuyện nhà Bae" >
+                  <img src="images/CHUYỆN NHÀ.png" alt="" style="max-width: 100%; border-radius: 15px;">
+                </a>
+                <div class="col-lg-6 col-12 col-md-12">
+                  <ul class="blog_wrap">
+                    <li class="item-blog">
+                      <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
+                        <a class="thumb" href="#" title="Không chỉ là trang sức, ngọc trai còn ẩn chứa hàng trăm điều kỳ diệu khác">  
+                          <img src="images/blog1.png" style="max-width: 100%;border-radius: 15px; ">                        
+                        </a>
+                        <div class="content_blog">
+                          <h3><a href="#" title="5 bí quyết chăm sóc da cho bé yêu mùa khô" class="a-title" style="font-size: 0.75em; color: #7995a3; font-weight: bold;">5 bí quyết chăm sóc da cho bé yêu mùa khô</a></h3>
+                          <div class="date">
+                            <span>15/09/2022</span>
+                            <br>
+                            <a href="#" title="Xem thêm">Xem thêm</a>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item-blog">
+                      <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
+                        <a class="thumb" href="#" title="Món quà nào khiến chị em muôn phần may mắn?">
+                          <img src="images/blog2.png" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                        <div class="content_blog">
+                          <h3><a href="#" title="8 sai lầm thường gặp khi mua quần áo cho bé" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">8 sai lầm thường gặp khi mua quần áo cho bé</a></h3>
+                          <div class="date">
+                            <span>15/09/2022</span>
+                            <br>
+                            <a href="#" title="Xem thêm">Xem thêm</a>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item-blog">
+                      <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
+                        <a class="thumb" href="#" title="baeboutique">
+                          <img src="images/blog3.png" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                        <div class="content_blog">
+                          <h3><a href="#" title="Tip để mẹ bỉm sữa bớt stress" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">Tip để mẹ bỉm sữa bớt stress, trầm cảm sau sinh</a></h3>
+                          <div class="date">
+                            <span>15/09/2022</span>
+                            <br>
+                            <a href="#" title="Xem thêm">Xem thêm</a>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end tin tức-->
+         <!--danh gua khach hang-->
+         <section class="danhgiakhachhang" style="margin-bottom: 30px;">
+          <div class="container">
+            <div class="row" style="margin-top: 20px;"> 
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <span style="   background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+                display: flex;
+                height: 50px;
+                padding: 0 200px 0 0;
+                margin: auto;
+                text-align: left;"></span>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">ĐÁNH GIÁ KHÁCH HÀNG</p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <span style=" background: url(//bizweb.dktcdn.net/100/502/606/themes/932771/assets/thiet_ke_chua_co_ten_-11.png?1702621250705) center no-repeat;
+                display: flex;
+                height: 50px;
+                padding: 0 200px 0 0;
+                margin: auto;
+                text-align: left;"></span>
+              </div>
+            </div>
+          </div>
+          <div id="danhgiakhachhang" class="carousel slide" data-bs-ride="carousel">
+            <!--dot-->
+            <div class="carousel-indicators">
+              <img src="images/heart.webp" alt="Slide 1" data-bs-target="#danhgiakhachhang" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px;">
+              <img src="images/heart.webp" alt="Slide 2" data-bs-target="#danhgiakhachhang" data-bs-slide-to="1" style="width: 10px; height: 10px;">
+              <img src="images/heart.webp" alt="Slide 3" data-bs-target="#danhgiakhachhang" data-bs-slide-to="2" style="width: 10px; height: 10px;">
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <img src="images/truonggiang.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
+                  <div style = 'font-weight:bold; color:#8295A1; font-size: 18px;'>Gia đình anh Trường Giang và chị Nhã Phương</div>
+                  <p style="font-weight: bolder; font-size: 0.8em;">"Không biết đã là lần thứ bao nhiêu chúng tôi mua sắm tại Bae Boutique và chúng tôi vẫn rất hài lòng với trải nghiệm của mình. Sản phẩm ở đây luôn vượt quá mong đợi của chúng tôi. Chúng tôi đã trở thành khách hàng trung thành với cửa hàng này vì dịch vụ tận tâm và sự đa dạng của sản phẩm. Và chắc chắn rằng, tôi sẽ tiếp tục ủng hộ Bae Boutique trong tương lai."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-80" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <img src="images/nhi.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
+                  <div  style = 'font-weight:bold; color: #8295A1; font-size: 18px;'>Gia đình bé Winnie</div>
+                  <p style="font-weight: bolder; font-size: 0.8em;">"Chúng tôi biết đến cửa hàng qua lời giới thiệu từ bạn bè và thực sự không hề thất vọng. Nhân viên rất nhiệt tình và sản phẩm thực sự đáng để mua. Sự đa dạng của sản phẩm và chất lượng dịch vụ làm  chúng tôi tin tưởng vào thương hiệu này. Chúng tôi cũng đã giới thiệu Bae Boutique cho một số người bạn và họ cũng rất hài lòng. Sẽ tiếp tục ủng hộ cửa hàng này trong tương lai!"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="..." style="max-width: 100%;">
+                <div class="carousel-caption d-md-block">
+                  <img src="images/hari.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
+                  <div style = 'font-weight:bold; color:#8295A1; font-size: 18px;'>Gia đình anh Trấn Thành, chị Hari Won</div>
+                  <p style="font-weight: bolder; font-size: 0.8em;">"Chúng tôi chưa có em bé nhưng đã mua một bộ giftset - đầy tháng cho con của bạn thân tại Bae Boutique và thực sự rất ấn tượng. Sản phẩm trong bộ quà tặng rất đẹp và chất lượng. Chúng tôi rất hạnh phúc khi nhận được phản hồi tích cực từ bạn thân của mình khi tặng bộ quà này. Mặc dù không có cơ hội mua hàng thường xuyên tại cửa hàng dành cho bé, nhưng trải nghiệm này chắc chắn khiến chúng tôi muốn quay lại nếu có cơ hội trong tương lai! ❤️❤️❤️"</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <!--end đánh giá khách hàng-->
+      <!--doi tac-->
+      <section id="story-modun-5" class="py-2" style="margin-bottom: 30px;">
+        <div class="container">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://chicco.com.vn/cham-so-c-da-va-to-c?q=collections:2960617&view=grid" style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/chicco.png" alt="brand 1" class="img-fluid">
+                      </a>
+                    </button>    
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://www.huggies.com.vn/san-pham/ta-quan-huggies-tram-tra-tu-nhien?gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64VeJfM21lwFa9r9SJ87exmpP0KdsbJQEGIVXdcCI4LZ2ceAcofB58BoCwt8QAvD_BwE"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/huggies.png" alt="brand 2" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://www.gerber.com/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD">
+                        <img src="images/gerber.png" alt="brand 3" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://vn.moony.com/vi/home.html" 
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/moony.png" alt="brand 4" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button > 
+                      <a href="https://www.hipp.vn/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/hipp.png" alt="brand 5" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://www.kao.com/vn/index.html" style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/kao.png" alt="brand 6" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://www.wakodo.co.jp/english/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/wokado.png" alt="brand 7" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://suabottot.com/?gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64YVQOTJk3CrrpIkwrcCopyaKRFN3pAwqAVCGnus0bX_ExibOk6sbOBoCefcQAvD_BwE"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/suabottot.png" alt="brand 8" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://web.kao.com/vn/merries/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/merries.png" alt="brand 9" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://store.pigeon.com.vn/collections/tam-goi-cap-am-moi"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/pigeon.png" alt="brand 10" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </section>
+     </section>
+   <!--liên hệ cho ctoi-->
+ <div class="contact_us">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+        <div class="logo_bottom wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="0.75s">
+          <img src="images/Bae Boutique.png" alt="logo" class="img-fluid" style="width: 15vw;">
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
+        <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
+          <h3 class="title">Đăng ký nhận tin</h3>
+          <div class="ft-sub-wrapper">
+            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+              <input name="form_type" type="hidden" value="customer">
+              <input name="utf8" type="hidden" value="✓">
+              <div class="input-group">
+                <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" aria-label="email@example.com" style="border-radius: 20px !important;
+                border: 1px solid #DBDCDD;">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <span class="input-group-btn">
+                  <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
+                </span>
+              </div>
+              <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
+              <!-- Script Google Recaptcha -->
+              <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
+              <script>
+                grecaptcha.ready(function() {
+                  grecaptcha.execute('...', { action: 'submit' }).then(function(token) {
+                    document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
+                  });
+                });
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="myfooter">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-2 mt-4">
+          <h3 style="text-align:left;">Chuyện nhà Bae </h3>
+          <ul>
+            <li><a href="">Hoạt động</a></li>
+            <li><a href="">Giải đáp</a></li>
+            <li><a href="">Chứng nhận</a></li>
+        </ul>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h3>Chính sách</h3>
+          <ul>
+            <li><a href="">Chính sách thanh toán</a></li>
+            <li><a href="">Chính sách kiểm hàng</a></li>
+            <li><a href="">Chính sách đổi và trả hàng</a></li>
+            <li><a href="">Chính sách vẫn chuyển</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2 mt-4">
+          <h3>Thông tin</h3>        
+          <ul>
+            <li><a href="">Tổng đài hỗ trợ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="">Danh sách địa chỉ bán</a></li>
+        </ul>
+        </div>
+        <div class="col-md-5">
+          <h3>Liên hệ</h3>
+            <div class="icons1">
+                <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
+                  <i class='bx bx-map' ></i>
+                </box-icon> Địa chỉ: 12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội, Vietnam</a><br><br>
+                <a href="#"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
+                <a href="https://baeboutique04@gmail.com/" target="_blank">
+                  <i class='bx bx-envelope'></i>
+                </box-icon> Email: baeboutique04@gmail.com</a>
+            </div>
+            <h3>Mạng xã hội</h3>
+            <div class="icons2">
+                   <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
+                    <span><a href="https://www.instagram.com/baeboutique04/"><i class='bx bxl-instagram-alt' ></i></a></span>
+                </div>
+        </div>
+      </div>
+      <div class="row"><p>Copyright 2023 &copy; by <a href="#" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
+    </div>
+    </div>
+</footer>
+  <!--script cua brand-->
+  <script src="assets/vendors/jquery.min.js"></script>
+  <script src="assets/owlcarousel/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav:true, //an mui ten
+        dots:false, //an dau cham de dich chuyen thanh
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 4,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+    });
+  </script>
   
     <!--script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!--backtop-->
+   <div id="backtop" >
+    <i class='bx bxs-chevrons-up' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 40px; right: 20px; cursor: pointer;"></i>
+   </div>
+   <script>
+    $(document).ready(function() {
+      $(window).scroll(function(){
+        if($(this).scrollTop()){
+          $('#backtop').fadeIn();
+        }else{
+          $('#backtop').fadeOut();
+        }
+      });
+      $('#backtop').click(function(){
+      $('html, body').animate({scrollTop: 0}, 100);
+    });
+    });
+   </script>
   </body>
 </html>
 </body>
