@@ -7,6 +7,7 @@
     <!--css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--fonticon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--css Hà-->
     <link rel="stylesheet" href="chuyennha.css">
@@ -17,189 +18,349 @@
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
     <!--footer-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  </head>
+    <style>
+      .accordion-button:not(.collapsed) {
+    color: white;
+    font-weight: 700;
+    background-color: #BED2DF;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+    </style>
+</head>
 <body>
-  <!--facebook, mess for web-->
-  <!-- Messenger Plugin chat Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Plugin chat code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "164415083416551");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v18.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!--end fb mes-->
     <!--Menu-->
     <header>     
-        <section class="mymainmenu">
-            <div class="container-fluid"style="box-shadow: 0px 0px 10px rgb(0 0 0/10%);">
-             <div class="container">
-                <div class="thanh_menu">
-                 <nav class="navbar navbar-expand-lg">
-                   <div class="container-fluid">
-                    <!--logo-->
-                     <a class="navbar-brand" href="index.html">
-                        <img src="images/Bae Boutique.png" alt="logo" >
-                     </a>
-                     <!--menu>-->
-                     <div class="nav justify-content-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link " href="chuyennhabae.html">Chuyện nhà Bae</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Sản phẩm
-                                </a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Thời trang cho bé</a></li>
-                                  <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link " href="#">Blog</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link " href="#">Bộ sưu tập</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link " href="#">Giftset</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link " href="#">Đội ngũ</a>
-                                <div class="active-img nav justify-content-end">
-                                  <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                                </div>
-                              </li>
-                           
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="fa-regular fa-user icon"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                                  <li><a class="dropdown-item" href="#">Đăng ký</a></li>
-                                </ul>
-                              </li>
-
-                            </ul>
-                          </div>
-                     </div>
+      <section class="mymainmenu">
+          <div class="container-fluid"style="box-shadow: 0px 0px 10px rgb(0 0 0/10%);">
+           <div class="container">
+              <div class="thanh_menu">
+               <nav class="navbar navbar-expand-lg">
+                 <div class="container-fluid">
+                  <!--logo-->
+                   <a class="navbar-brand" href="index.html">
+                      <img src="images/Bae Boutique.png" alt="logo" >
+                   </a>
+                   <!--menu>-->
+                   <div class="nav justify-content-end">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="chuyennhabae.html">Chuyện nhà Bae</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a href="test.html" class="san-pham">Sản Phẩm</a>
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="test.html"></a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="test.html">Thời trang cho bé</a></li>
+                                <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="blog.html">Blog</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="giftset.html">Giftset</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Đội ngũ</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="contact.html">Liên hệ</a>
+                              <div class="active-img nav justify-content-end">
+                                <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="dangki.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-user icon"></i>
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="dangki.html">Đăng ký</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
                    </div>
-                </nav>
-               </div>
+                 </div>
+              </nav>
              </div>
-            </section>
-            <!-- xam xi-->
-            <div class="trichdan d-none d-md-block d-ms-block">
-              <div class="container-fluid" style="position: relative;">
-                <div class="row">
-                  <div class="navbar justify-content: space-between;" style="padding-top: 100px;">
-                    <div class="col-md-6" style="margin-bottom: 100px; ">
-                      <h2 style="text-align: center; margin: 20px 30px; color: white; font-family: dancing script; font-size: 2.3vw; ;">
-                        "Mỗi bước đi chập chững, mỗi âm thanh cười đùa đều làm cho căn nhà trở nên ấm áp và hạnh phúc hơn bao giờ hết. Sự hiện diện ngọt ngào của em là nguồn động viên lớn lao cho chúng tôi mỗi ngày"
-                      </h2>
-                        <p class="justify-content-end nav" style="color: white; font-weight: bolder; font-size: 1.5vh;">
-                          Founder - Rynna
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="banner-right justify-content-end nav pt-5" >
-                        <img src="images/tim1.png" alt="banner xinh" style="position: relative; width: 700px; height: 600px; margin-right: 20px; 
-                          max-width: 90%;
-                          height: auto;
-                          display: block;
-                          margin: 0 auto;
-                      ">
-                      </div>
+           </div>
+          </section>
+          <!-- xam xi-->
+          <div class="trichdan d-none d-md-block d-ms-block">
+            <div class="container-fluid" style="position: relative;">
+              <div class="row">
+                <div class="navbar justify-content: space-between;" style="padding-top: 100px;">
+                  <div class="col-md-6" style="margin-bottom: 100px; ">
+                    <h2 style="text-align: center; margin: 20px 30px; color: white; font-family: dancing script; font-size: 2.3vw; ;">
+                      "Mỗi bước đi chập chững, mỗi âm thanh cười đùa đều làm cho căn nhà trở nên ấm áp và hạnh phúc hơn bao giờ hết. Sự hiện diện ngọt ngào của em là nguồn động viên lớn lao cho chúng tôi mỗi ngày"
+                    </h2>
+                      <p class="justify-content-end nav" style="color: white; font-weight: bolder; font-size: 1.5vh;">
+                        Founder - Rynna
+                      </p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-right justify-content-end nav pt-5" >
+                      <img src="images/tim1.png" alt="banner xinh" style="position: relative; width: 700px; height: 600px; margin-right: 20px; 
+                        max-width: 90%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                    ">
                     </div>
                   </div>
                 </div>
-               </div>
-            </div>
-    </header>    
+              </div>
+             </div>
+          </div>
+  </header>      
     <!--content-->
+    <br>
+    <br>
     <div class="container">
         <!--breadcrumb: trang chủ -> chuyện nhà bae-->
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Giftset</li>
+              <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
             </ol>
         </nav>
-    </div>
         <!--Gioi thieu-->
-     <!--gioi thieu-->
-     
-     <div class="tabs_" style="height: 150px; overflow: hidden; width: auto;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-          <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #F2F2F2;"></path>
-        </svg>
-      </div>   
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span style="   background: url(images/tim.png) center no-repeat;
+                display: flex;
+                height: 50px;
+                padding: 0 200px 0 0;
+                margin: auto;
+                text-align: left;"></span></div>           
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><h1 style="font-size: 1.5em;color: black;font-weight: bolder; text-align: center; line-height: 2;">Giới thiệu về Gifset của chúng tôi</h1>  </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <span style=" background: url(images/tim.png) center no-repeat;
+                    display: flex;
+                    height: 50px;
+                    padding: 0 200px 0 0;
+                    margin: auto;
+                    text-align: left;"></span>
+                  </div>
+            <p style="font-size: 18px; color: black; font-weight: 100; text-align: center;">Tại Bae, chúng tôi tin rằng mỗi khoảnh khắc đầu đời của bé là một dịp để chia sẻ tình yêu thương và hạnh phúc. Bae không chỉ là nơi để bạn tìm thấy những sản phẩm tuyệt vời cho bé yêu của bạn, mà còn là nơi để chúng tôi chia sẻ những món quà ý nghĩa, tươi đẹp nhất cho những dịp đặc biệt."</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="font-size: 18px; color: black; font-weight: 100; ">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne" >
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Về chúng tôi
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Một em bé mới chào đời là một khoảnh khắc thiêng liêng, đầy kỳ vọng và hạnh phúc tột cùng. 🤗🤗 Đó là thời điểm mà trái tim người cha, người mẹ và cả những người xung quanh đều tràn ngập niềm vui và yêu thương không ngừng.  
+                  Sứ mệnh của chúng tôi là góp phần tạo nên niềm vui và kỷ niệm đáng nhớ trong cuộc sống của gia đình bạn. Những món quà sang trọng, ý nghĩa mà chúng tôi mang đến không chỉ là những vật dụng thông thường mà còn chứa đựng tình yêu, sự quan tâm và sẵn sàng chia sẻ của chúng tôi với bạn và em bé.
+                  Chúng tôi hi vọng rằng những lựa chọn quà tặng đặc biệt của chúng tôi sẽ làm bạn hạnh phúc và tạo nên những kỷ niệm đẹp đẽ giỏ đựng đồ cho trẻ em, đồ chơi dễ thương, quần áo tinh tế, tất cả đều được chọn lựa kỹ càng để góp phần tạo nên không gian ấm áp và ý nghĩa cho gia đình mới.                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Sản phẩm của chúng tôi
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Hầu hết các món quà dành cho trẻ sơ sinh có trong giỏ quà tặng dành cho trẻ sơ sinh của chúng tôi cũng có thể được mua riêng lẻ để tạo thành bộ quà tặng dành cho trẻ sơ sinh của riêng bạn hoặc dưới dạng riêng biệt. 
+                    Chúng tôi cung cấp các lựa chọn tắm em bé được thiết kế phù hợp với các giai đoạn sau của thai kỳ và thời gian ngay sau khi sinh. 
+                    Hoặc đối với những quý đầu của thai kỳ, món quà mà mẹ chúng ta dành cho mẹ chúng ta là chứa một loạt các sản phẩm hữu ích, an toàn khi sử dụng trong thai kỳ. Khi em bé chào đời, những món quà dành cho em bé mới chào đời của chúng tôi sẽ rất hoàn hảo cho dịp này, được đóng gói với những sản phẩm thiết thực và siêu dễ thương. 
+                    Nếu bạn muốn đối xử tốt với mẹ cũng như em bé sau khi sinh thì hãy xem những món quà dành cho mẹ và bé mới sinh của chúng tôi. Bạn có thể tìm thấy bộ sưu tập mọi thứ từ chăn, vải mỏng và quần áo trẻ em cho đến gọng quét, nhật ký về các cột mốc quan trọng và hộp đựng tiền trong cửa hàng của chúng tôi. Với hàng trăm món quà dành cho em bé để lựa chọn, bạn chắc chắn sẽ tìm thấy những gì bạn đang tìm kiếm cũng như một vài món quà bổ sung dành cho em bé mà bạn chưa từng nghĩ đến!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Đóng gói và giao hàng
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Tất cả những món quà dành cho trẻ sơ sinh của chúng tôi đều được chọn lọc thủ công và sắp xếp đẹp mắt để mang đến cho cha mẹ và em bé một món quà tuyệt vời. Nếu bạn gửi món quà em bé của mình trực tiếp đến người nhận, chúng tôi cũng cung cấp dịch vụ gói quà đẹp mắt để tăng thêm yếu tố bất ngờ.
+                    Chúng tôi không bao giờ đưa thông tin về hóa đơn hoặc giá cả vào bưu kiện của mình để quà tặng của bạn luôn sẵn sàng được nhận.                    
+                    Chúng tôi cũng cung cấp dịch vụ chuyển phát nhanh cho những món quà vào phút cuối. Vui lòng xem trang giao hàng của chúng tôi để biết thời gian vận chuyển và giá cả hiện tại.</div>
+              </div>
+            </div>
+          </div>
+        <!--Danh mục-->
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span style="   background: url(images/tim.png) center no-repeat;
+              display: flex;
+              height: 50px;
+              padding: 0 200px 0 0;
+              margin: auto;
+              text-align: left;"></span></div>           
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><h1 style="font-size: 1.5em;color: black;font-weight: bolder; text-align: center; line-height: 2;">Danh mục Giftset</h1>  </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <span style=" background: url(images/tim.png) center no-repeat;
+                  display: flex;
+                  height: 50px;
+                  padding: 0 200px 0 0;
+                  margin: auto;
+                  text-align: left;"></span>
+                </div>
+      </div>
+    </div>
+
+      <!--brand-->
+      <div class="container">
+        <section id="story-modun-5" class="py-1">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://chicco.com.vn/cham-so-c-da-va-to-c?q=collections:2960617&view=grid" style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/chicco.png" alt="brand 1" class="img-fluid">
+                      </a>
+                    </button>    
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://www.huggies.com.vn/san-pham/ta-quan-huggies-tram-tra-tu-nhien?gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64VeJfM21lwFa9r9SJ87exmpP0KdsbJQEGIVXdcCI4LZ2ceAcofB58BoCwt8QAvD_BwE"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/huggies.png" alt="brand 2" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://www.gerber.com/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD">
+                        <img src="images/gerber.png" alt="brand 3" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://vn.moony.com/vi/home.html" 
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/moony.png" alt="brand 4" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button > 
+                      <a href="https://www.hipp.vn/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/hipp.png" alt="brand 5" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://www.kao.com/vn/index.html" style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/kao.png" alt="brand 6" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://www.wakodo.co.jp/english/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/wokado.png" alt="brand 7" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://suabottot.com/?gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64YVQOTJk3CrrpIkwrcCopyaKRFN3pAwqAVCGnus0bX_ExibOk6sbOBoCefcQAvD_BwE"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/suabottot.png" alt="brand 8" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button>
+                      <a href="https://web.kao.com/vn/merries/"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/merries.png" alt="brand 9" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="brand-icon">
+                    <button >
+                      <a href="https://store.pigeon.com.vn/collections/tam-goi-cap-am-moi"
+                      style="display: block; overflow: hidden;padding: 5px;border-radius: 20px;margin: 15px; background: #FFFDFD;">
+                        <img src="images/pigeon.png" alt="brand 10" class="img-fluid">
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </section>  
+      </div>
+      
+      
+   </div>
+
+  
    
     <!--liên hệ cho ctoi-->
-  <div class="contact_us" >
+  <div class="contact_us">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+          <div class="logo_bottom wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="0.75s">
             <img src="images/Bae Boutique.png" alt="logo" class="img-fluid" style="width: 20vw;">
+          </div>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
           <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
             <h3 class="title">Đăng ký nhận tin</h3>
             <div class="ft-sub-wrapper">
-              <form onsubmit="sendEmail(); reset(); return false;">
+              <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
                 <input name="form_type" type="hidden" value="customer">
                 <input name="utf8" type="hidden" value="✓">
                 <div class="input-group">
@@ -209,11 +370,19 @@
                   border: 1px solid #DBDCDD;">
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <span class="input-group-btn">
-                    <button type="submit" name="subscribe" id="subscribe" class="btn" 
-                    style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">
-                    Gửi</button>
+                    <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
                   </span>
                 </div>
+                <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
+                <!-- Script Google Recaptcha -->
+                <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
+                <script>
+                  grecaptcha.ready(function() {
+                    grecaptcha.execute('...', { action: 'submit' }).then(function(token) {
+                      document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
+                    });
+                  });
+                </script>
               </form>
             </div>
           </div>
@@ -221,22 +390,6 @@
       </div>
     </div>
   </div>
-  <!--script gán đến email-->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail(){
-      Email.send({
-    Host : "smtp.gmail.com",
-    Username : "username",
-    Password : "password",
-    To : 'baeboutique04@gmail.com',
-    From : document.getElementById("email").value,
-   
-}).then(
-  message => alert(message)
-);
-    }
-  </script>
 <!--footer-->
   <footer>
     <div class="myfooter">
@@ -263,12 +416,11 @@
             <h3>Thông tin</h3>        
             <ul>
               <li><a href="">Tổng đài hỗ trợ</a></li>
-              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="">Liên hệ</a></li>
               <li><a href="">Danh sách địa chỉ bán</a></li>
           </ul>
           </div>
-          
-          <div class="col-md-5" >
+          <div class="col-md-5">
             <h3>Liên hệ</h3>
               <div class="icons1">
                   <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
@@ -282,7 +434,7 @@
               <h3>Mạng xã hội</h3>
               <div class="icons2">
                      <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
-                      <span><a href="https://www.instagram.com/baeboutique04/"><i class='bx bxl-instagram-alt' ></i></a></span>
+                      <span><a href="#"><i class='bx bxl-instagram-alt' ></i></a></span>
                   </div>
           </div>
         </div>
@@ -319,11 +471,12 @@
        })
      });
    </script>
-   <!--them moi-->
-   <!--backtop-->
    <div id="backtop" >
     <i class='bx bxs-chevrons-up' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 40px; right: 20px; cursor: pointer;"></i>
    </div>
+   <!--jquery-->
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+   <!--backtop-->
    <script>
     $(document).ready(function() {
       $(window).scroll(function(){

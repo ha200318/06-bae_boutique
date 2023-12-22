@@ -1,0 +1,39 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .product-card {
+    margin: 10px;
+    position: relative; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    height:auto;
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.5s ease; /* Thêm hiệu ứng chuyển đổi màu tối */
+  }
+  
+  .buy-now-btn {
+    background-color: #7691A4;
+    border-color: #4e6474;
+    display: none;
+    position: absolute; /* Đặt vị trí tuyệt đối cho nút */
+    top: 40%; /* Đặt vị trí theo chiều dọc giữa card */
+    left: 50%; /* Đặt vị trí theo chiều ngang giữa card */
+    transform: translate(-50%, -50%); /* Để nút nằm chính giữa card */
+    z-index: 1; /* Đặt chỉ số z để nút hiển thị đè lên ảnh */
+  }
+  
+  .card-title{
+    cursor: pointer;
+    color: #7691A4;
+    font-weight: bolder;
+  }
+  

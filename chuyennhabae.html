@@ -18,41 +18,8 @@
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
     <!--footer-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
   </head>
 <body>
-  <!--facebook, mess for web-->
-  <!-- Messenger Plugin chat Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Plugin chat code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "164415083416551");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v18.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!--end fb mes-->
     <!--Menu-->
     <header>     
         <section class="mymainmenu">
@@ -85,27 +52,26 @@
                                 </div>
                               </li>
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Sản phẩm
-                                </a>
+                                <a href="test.html" class="san-pham">Sản Phẩm</a>
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="test.html"></a>
                                 <div class="active-img nav justify-content-end">
                                   <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                                 </div>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Thời trang cho bé</a></li>
+                                  <li><a class="dropdown-item" href="test.html">Thời trang cho bé</a></li>
                                   <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
                                   <li><hr class="dropdown-divider"></li>
                                   <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
                                 </ul>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link " href="#">Blog</a>
+                                <a class="nav-link " href="blog.html">Blog</a>
                                 <div class="active-img nav justify-content-end">
                                   <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                                 </div>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link " href="#">Giftset</a>
+                                <a class="nav-link " href="giftset.html">Giftset</a>
                                 <div class="active-img nav justify-content-end">
                                   <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                                 </div>
@@ -123,12 +89,12 @@
                                 </div>
                               </li>
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="dangki.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   <i class="fa-regular fa-user icon"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                                  <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                                  <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                                  <li><a class="dropdown-item" href="dangki.html">Đăng ký</a></li>
                                 </ul>
                               </li>
                             </ul>
@@ -519,7 +485,6 @@
     Password : "password",
     To : 'baeboutique04@gmail.com',
     From : document.getElementById("email").value,
-   
 }).then(
   message => alert(message)
 );
@@ -541,9 +506,9 @@
           <div class="col-md-3 mt-4">
             <h3>Chính sách</h3>
             <ul>
-              <li><a href="">Chính sách thanh toán</a></li>
-              <li><a href="">Chính sách kiểm hàng</a></li>
-              <li><a href="">Chính sách đổi và trả hàng</a></li>
+              <li><a href="chinhsachthanhtoan.html">Chính sách thanh toán</a></li>
+              <li><a href="chinhsachkiemhang.html">Chính sách kiểm hàng</a></li>
+              <li><a href="chinhsachdoitra.html">Chính sách đổi và trả hàng</a></li>
               <li><a href="">Chính sách vẫn chuyển</a></li>
           </ul>
           </div>
@@ -562,8 +527,8 @@
                   <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
                     <i class='bx bx-map' ></i>
                   </box-icon> Địa chỉ: 12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội, Vietnam</a><br><br>
-                  <a href="#"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
-                  <a href="https://baeboutique04@gmail.com/" target="_blank">
+                  <a href="tel:0399725203"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
+                  <a href="mailto:https://baeboutique04@gmail.com/" target="_blank">
                     <i class='bx bx-envelope'></i>
                   </box-icon> Email: baeboutique04@gmail.com</a>
               </div>
@@ -574,7 +539,7 @@
                   </div>
           </div>
         </div>
-        <div class="row"><p>Copyright 2023 &copy; by <a href="#" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
+        <div class="row"><p>Copyright 2023 &copy; by <a href="index.html" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
       </div>
       </div>
   </footer>

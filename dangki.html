@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="dangki.css">
+   <title></title>
+</head>
+<body>
+    <div class="wrapper-login">
+        <div class="login">
+            <form action="" method="GET">
+                <div class="title">Tạo tài khoản</div>
+                <div class="group">
+                    <input type="text" id="username" placeholder="Họ và tên">
+                </div>
+                <div class="group">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="group">
+                    <input type="password" id="password" placeholder="Mật khẩu">
+                    <span id="showPassword">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </span>
+                </div>
+                <div class="recovery">
+                    <a href="">Recovery Password</a>
+                </div><!--lam moi mk-->
+
+                <div class="signIn">
+                   <p id="errorMessage" hidden></p>
+                    <button type="submit"  style="font-family: quicksand; font-size: 20px; font-weight:bold;">Đăng ký</button>
+                </div>
+                <div class="or" style="color: #7995A3 ;font-size: 15px; font-weight: 600;">Or continue with</div>
+                <div class="list">
+                    <div class="item" >
+                        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=840539422652232&kid_directed_site=0&app_id=840539422652232&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26scope%3Demail%26display%3Dpopup%26state%3DI2ykoZgR-7zqlZFs_gGqQD1xBrtz9qLw%26redirect_uri%3Dhttps%253A%252F%252Fsocialloginplus-apps.haravan.com%252Fsocialloginplus%252Fapi%252Fzauth%252Ffacebook%252Fcallback%26client_id%3D840539422652232%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D42d41615-716c-4d1a-9d02-604d4cb8f610%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DI2ykoZgR-7zqlZFs_gGqQD1xBrtz9qLw%23_%3D_&display=popup&locale=vi_VN&pl_dbl=0"><img src="images/Facebook_Logo_(2019).png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=profile%20openid%20email&state=I2ykoZgR-7zqlZFs_gGqQD1xBrtz9qLw&response_type=code&client_id=3371183033-dcda1sl1an7h46p6qapglonr245r8ccl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Fgoogle%2Fcallback&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow"><img src="images/Gglogo.png" alt=""></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="dangki.js"></script>
+    </div>
+</body>
