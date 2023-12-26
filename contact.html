@@ -438,29 +438,17 @@
           <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
             <h3 class="title">Đăng ký nhận tin</h3>
             <div class="ft-sub-wrapper">
-              <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-                <input name="form_type" type="hidden" value="customer">
-                <input name="utf8" type="hidden" value="✓">
+              <form accept-charset="UTF-8" action="" method="post">
                 <div class="input-group">
-                  <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" 
+                  <input type="email" value="" placeholder="Nhập email..." name="email" id="Email" class="form-control" 
                   aria-label="email@example.com" 
                   style="border-radius: 20px !important;
                   border: 1px solid #DBDCDD;">
-                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="hidden" name="tags" value="newsletter">
                   <span class="input-group-btn">
-                    <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
+                    <button type="submit" name="subscribe" value="Gửi"  id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
                   </span>
                 </div>
-                <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
-                <!-- Script Google Recaptcha -->
-                <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
-                <script>
-                  grecaptcha.ready(function() {
-                    grecaptcha.execute('...', { action: 'submit' }).then(function(token) {
-                      document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
-                    });
-                  });
-                </script>
               </form>
             </div>
           </div>

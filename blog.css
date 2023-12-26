@@ -87,26 +87,27 @@
 }
 .card-body button{
     border-radius: 10px;
-    border: 0.75px  #BAD4E3;
+    border: 0.75px solid #8295A1;
     height: 30px;
-    background-color: #d4ebf8;;
+    border-radius: 10px;
+    background-color: white;
+
 }
 .card-body button:hover{
-    border-radius: 5px;
-    border: 0.75px  #BAD4E3;
+    border-radius: 10px;
+    border: 0.75px solid  #8295A1;
     font-size: 16px;
-    text-decoration: underline;
 }
 .card-body a{
     display: block;
-    color: #779db0;
-    font-size: 17px;
-    transition: transform 0.3s ease;
+    color: #8295A1;
+    font-size: 18px;
+    transition: transform 0.9s ease;
     font-weight: bold;
 }
 .card-body  .card-link a:hover{
         color: rgb(28, 120, 120);
-        transform: translate(3px, -3px);
+        transform: translate(1px, 1px);
 }
 .card-body p{
     font-size: 16px;

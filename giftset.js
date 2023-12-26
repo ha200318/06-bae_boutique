@@ -1,111 +1,97 @@
-$(document).ready(function () {
-    // Khi di chuột vào ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseover(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(70%)"); // Giảm độ sáng
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeIn(); // Hiện nút mua ngay
-    });
-
-    // Khi di chuột ra khỏi ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseleave(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(100%)"); // Khôi phục độ sáng ban đầu
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeOut(); // Ẩn nút mua ngay
-    });
-});
 
 /* -------------------------------------------------------------------------- */
 /*                                  CODE MỚI                                  */
 /* -------------------------------------------------------------------------- */
 var products = [
     {
-        name: "Bộ váy Giáng sinh",
+        name: "Bae - Giftset fullmonth for baby girl 01",
+        price: 500000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/files/new-mum-baby-girl-hamper-basket.jpg?v=1683103431&width=1080",
+        gift: "girl",
+    },
+    {
+        name: "Bae - Giftset fullmonth for baby girl 02",
         price: 600000,
         discount: 10,
-        size: ["3-6M","9-12M"],
-        gender: "girl",
-        img: "images/c1/bộ_váy_giáng_sinh.jpg",
+        img: "https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-welcome.jpg?v=1674218658&width=1080",
+        gift: "girl",
     },
     {
-        name: "Set váy Giáng sinh",
-        price: 590000,
-        discount: 5,
-        size: "18-24M",
-        gender: "girl",
-        img: "images/c1/set_váy_giáng_sinh.jpg",
+        name: "Bae - Giftset fullmonth for baby girl 03",
+        price: 650000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/files/baby-girl-gifts-hamper-bunny-rattle.jpg?v=1699346747&width=1080",
+        gift: "girl",
     },
     {
-        name: "Choàng tắm unicorn",
-        price: 350000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/choàng_tắm_unicorn.jpg",
+        name: "Bae - Giftset fullmonth for baby girl 04",
+        price: 529000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-steiff-bear_2a6e366a-e7d4-45bb-8913-60ba18ceae12.jpg?v=1678362778&width=1080",
+        gift: "girl",
     },
     {
-        name: "Vòi sen mini",
-        price: 1290000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/vòi_sen_mini.jpg",
-    },
-    {
-        name: "Bộ liền Giáng sinh",
+        name: "Bae - Giftset fullmonth for baby boy 01",
         price: 390000,
-        discount: 20,
-        size: "9-12M",
-        gender: "boy",
-        img: "images/c1/bộ_liền_giáng_sinh.jpg",
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/Baby-boy-hamper-gift-steiff-bunny.jpg?v=1667323792&width=1080",
+        gift: "boy",
     },
     {
-        name: "Set cắt móng tay",
-        price: 199000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/set_cắt_móng_tay.jpg",
+        name: "Bae - Giftset fullmonth for baby boy 02",
+        price: 599000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/baby-boy-gifts-hamper-love-mummy.jpg?v=1674155316&width=1080",
+        gift: "boy",
     },
     {
-        name: "Yếm len Giáng sinh",
-        price: 360000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/yếm_len_giáng_sinh.jpg",
+        name: "Bae - Giftset fullmonth for baby boy 03",
+        price: 560000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-precious-little-one.jpg?v=1669222252&width=1080",
+        gift: "boy",
     },
     {
-        name: "Xe tập đi",
-        price: 1190000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/xe_tập_đi.jpg",
+        name: "Bae - Giftset fullmonth for baby boy 04",
+        price: 490000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-welcome.jpg?v=1674216507&width=1080",
+        gift: "boy",
     },
     {
-        name: "Xe đẩy",
-        price: 2390000,
-        discount: 5,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/xe_đẩy.jpg",
+        name: "Bae - Giftset fullmonth for morther and baby 01",
+        price: 639000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-basket-bunny.jpg?v=1683650210&width=1080",
+        gift:"two",
+    }, {
+        name: "Bae - Giftset fullmonth for morther and baby 02",
+        price: 600000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-gift-froggin-awesome_5.jpg?v=1683787738&width=1080",
+        gift:"two",
+    }, {
+        name: "Bae - Giftset fullmonth for morther and baby 03",
+        price: 539000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-basket-noughty.jpg?v=1673555947&width=1080",
+        gift:"two",
+    }, {
+        name: "Bae - Giftset fullmonth for morther and baby 04",
+        price: 439000,
+        discount: 10,
+        img: "https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-box-cook-voucher.jpg?v=1674503395&width=1080",
+        gift:"two",
     },
-    // { name: "Choàng tắm gấu trắng", price: 350000, discount: 10, size: "9-12M", gender: "unisex", img: "images/c1/choàng_tắm_gấu_trắng.jpg" },
-    // Có thể thêm sản phẩm tương tự nhé
+
 ];
 
 /* ------------------------- Tạo các biến cần thiết ------------------------- */
 var listProductElement = document.getElementById("listProduct");
 var favoritesListElement = document.getElementById("favoritesList");
 var searchInputElement = document.getElementById("searchInput");
-var sizeFilterElement = document.getElementById("sizeFilter");
-var priceFilterElement = document.getElementById("priceFilter");
-var sortOrderElement = document.getElementById("sortOrder");
-var genderFilterElement = document.getElementById("genderFilter");
+var giftElement = document.getElementById("gift");
 /* ------------------------- Tạo các biến cần thiết ------------------------- */
 
 /* ------------------------- Thêm sản phẩm yêu thích ------------------------ */
@@ -168,7 +154,7 @@ function displayProducts(filteredProducts) {
             product.price - product.price * (product.discount / 100);
         var productHtml = `
             <div class="col-6 col-md-4 col-xl-3">
-            <div class="card product-card">
+            <div class="card product-card" style="max-width: 90%;>
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
             }">
             <div class="card-body">
@@ -202,45 +188,57 @@ function displayProducts(filteredProducts) {
 /* ---------------------------- Hiển thị sản phẩm --------------------------- */
 
 /* ---------------------------- Hàm lọc và sắp xếp sản phẩm --------------------------- */
-function filterAndSortProducts() {
-    var searchQuery = searchInputElement.value.toLowerCase();
-    var sizeFilter = sizeFilterElement.value;
-    var priceFilter = priceFilterElement.value;
-    var sortOrder = sortOrderElement.value;
-    var genderFilter = genderFilterElement.value; // Thêm giới tính
 
-    var filteredProducts = products.filter(function (product) {
-        return (
-            product.name.toLowerCase().includes(searchQuery) &&
-            (!sizeFilter || product.size.includes(sizeFilter)) &&
-            (priceFilter === "" || product.price <= parseInt(priceFilter)) &&
-            (genderFilter === "" || product.gender === genderFilter)
-        );
+  function filterProduct(category) {
+    //Lấy phần tử đã được hiển thị
+    const listProduct = document.getElementById('listProduct');
+    listProduct.innerHTML = ''; // Xóa các thẻ sản phẩm trước đó
+  
+    let filteredProducts = [];
+  
+    if (category === 'all') {
+      filteredProducts = products; //Nếu là all thì in ra tất cả sản phẩm
+    } else {
+      filteredProducts = products.filter(product => product.gift === category);//in ra sp theo loại
+    }
+  
+    filteredProducts.forEach(product => {
+      const discountedPrice = product.price * (1 - product.discount / 100);
+      const productCard = `
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="card product-card">
+        <img src="${product.img}" class="card-img-top product-image" alt="${product.name}">
+        <div class="card-body">
+          <a href="./product-detail.html"><h5 class="card-title">${product.name}</h5></a>
+          <div class="box-pro-prices">
+            <p class="pro-price-highlight">
+              <span style="font-weight: bold; font-size: large;">${discountedPrice.toLocaleString()}₫</span>
+              ${product.discount ? `<span class="discount">${product.price.toLocaleString()}₫</span>` : ""}
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-8" style="text-align: left;">
+              <button class="btn buy-now-btn" onclick="addToCart(${JSON.stringify(product).replace(/"/g, "&quot;")})">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="col-4 fs-2" style="color: #8295A1; text-align: end;">
+              <button class="love fs-2" onclick="addToFavorites(${JSON.stringify(product).replace(/"/g, "&quot;")})">
+                <i class='bx bx-heart'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      `;
+      listProduct.innerHTML += productCard;
     });
+  }
+    
 
-    // Sắp xếp sản phẩm
-    filteredProducts = sortProducts(filteredProducts, sortOrder);
 
-    // Hiển thị sản phẩm đã lọc và sắp xếp
-    displayProducts(filteredProducts);
-}
 /* ---------------------------- Hàm lọc và sắp xếp sản phẩm --------------------------- */
 
 /* ---------------------------- Hàm sắp xếp sản phẩm --------------------------- */
-function sortProducts(filteredProducts, sortOrder) {
-    if (sortOrder === "az") {
-        return filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (sortOrder === "za") {
-        return filteredProducts.sort((a, b) => b.name.localeCompare(a.name));
-    }
-    if (sortOrder === "asc") {
-        return filteredProducts.sort((a, b) => a.price - b.price);
-    } else if (sortOrder === "desc") {
-        return filteredProducts.sort((a, b) => b.price - a.price);
-    } else {
-        return filteredProducts;
-    }
-}
 /* ---------------------------- Hàm sắp xếp sản phẩm --------------------------- */
 /* ---------------------------- Tìm kiếm sản phẩm --------------------------- */
 function searchProducts() {
@@ -275,7 +273,7 @@ products.forEach(function (product) {
     var discountedPrice =
         product.price - product.price * (product.discount / 100);
     var productHtml = `
-        <div class="col-6 col-md-4 col-xl-3">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <div class="card product-card">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
         }">
@@ -291,15 +289,19 @@ products.forEach(function (product) {
         }
                   </p>
               </div>
-              <button class="btn btn-primary buy-now-btn" onclick="addToCart(${JSON.stringify(
-            product
-        ).replace(/"/g, "&quot;")})">Thêm vào giỏ hàng</button>
-              <button class="love" onclick="addToFavorites(${JSON.stringify(
-            product
-        ).replace(
-            /"/g,
-            "&quot;"
-        )})"><i class="fa-regular fa-heart"></i></button>
+              <div class="row">
+                      <div class="col-8" style="text-align: left;"> <button class="btn buy-now-btn" onclick="addToCart(${JSON.stringify(
+                        product
+                    ).replace(/"/g, "&quot;")})">Thêm vào giỏ hàng</button></div>
+                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"> <button class="love fs-2" onclick="addToFavorites(${JSON.stringify(
+                        product
+                    ).replace(
+                        /"/g,
+                        "&quot;"
+                    )})"><i class='bx bx-heart' ></i></button>
+                    </div>
+             
+            
               </div>
               </div>
               </div>

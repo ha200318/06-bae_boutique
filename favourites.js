@@ -54,7 +54,7 @@ $(document).ready(function() {
                     <img width="150px" src="${product.img}" alt="">
                     <span>${product.name}</span>
                     <span>${product.price.toLocaleString()}₫</span>
-                    <button class="btn btn-danger delete-btn" onclick="deleteFromFavorites('${product.name}')">Xóa</button>
+                    <button class="btn btn-danger delete-btn" onclick="deleteFromFavorites('${product.name}')">Loại bỏ</button>
                     `;
                     favoritesListElement.appendChild(listItem);
                 });

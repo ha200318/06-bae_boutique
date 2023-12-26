@@ -24,9 +24,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- ------------------------------ LINK MỚI ------------------------------- -->
-
 </head>
-
 <body>
   <!--Header-->
   <section class="myheader">
@@ -35,7 +33,7 @@
         <!--logo-->
         <div class="col-lg-3 col-md-2">
           <a href="index.html">
-            <img src="images/logo.png" alt="logo" class="logo" style="width: 110px; height: 90px;">
+            <img src="images/Bae Boutique.png" alt="logo" class="logo" >
           </a>
         </div>
         <!--thanh tìm kiếm-->
@@ -60,7 +58,6 @@
               <a href="./favourites.html" class="position-relative" id="open-love">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="favoritesCount">
                   0
-                  <span class="visually-hidden">unread messages</span>
                 </span>
                 <span class="fs-3">
                   <i class="fa-regular fa-heart icon"></i>
@@ -71,7 +68,6 @@
               <a href="./cart.html" class="position-relative">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartsCount">
                   0
-                  <span class="visually-hidden">unread messages</span>
                 </span>
                 <span class="fs-3">
                   <i class="fa-solid fa-bag-shopping icon"></i>
@@ -147,12 +143,6 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">Bộ sưu tập</a>
-                      <div class="active-img nav justify-content-end">
-                        <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                      </div>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link " href="#">Giftset</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
@@ -164,7 +154,12 @@
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
-
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Liên hệ</a>
+                      <div class="active-img nav justify-content-end">
+                        <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -214,16 +209,14 @@
       <div class="row align-items-center">
         <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
           <div class="logo_bottom wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="0.75s">
-            <img src="images/logo.png" alt="logo" class="img-fluid" style="width: 11vw;">
+            <img src="images/Bae Boutique.png" alt="logo" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
           <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
             <h3 class="title">Đăng ký nhận tin</h3>
             <div class="ft-sub-wrapper">
-              <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-                <input name="form_type" type="hidden" value="customer">
-                <input name="utf8" type="hidden" value="✓">
+              <form accept-charset="UTF-8" action="" class="contact-form" method="post">
                 <div class="input-group">
                   <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email"
                     class="form-control" aria-label="email@example.com" style="border-radius: 20px !important;
@@ -234,16 +227,6 @@
                       style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
                   </span>
                 </div>
-                <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
-                <!-- Script Google Recaptcha -->
-                <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
-                <script>
-                  grecaptcha.ready(function () {
-                    grecaptcha.execute('...', { action: 'submit' }).then(function (token) {
-                      document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
-                    });
-                  });
-                </script>
               </form>
             </div>
           </div>

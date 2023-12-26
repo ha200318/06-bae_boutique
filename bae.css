@@ -305,14 +305,14 @@ input, textarea, select {
 width: 20rem;  
 margin-bottom: 20px;
 }
-.mua-ngay{
+.buy-now-btn{
   border: 1px solid #8295A1;
   background-color: white;
   color: #8295A1;
   font-weight: 700;
   border-radius: 20px;
 }
-.mua-ngay:hover{
+.buy-now-btn:hover{
   border: 1px solid #8295A1;
   background-color: #8295A1;
   color: white;
