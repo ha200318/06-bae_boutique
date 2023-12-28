@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Danh mục sản phẩm</title>
+  <title>Chính sách thanh toán</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!--Css Ly-->
   <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="chinhsach.css">
   <!--font icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!--css Hà-->
@@ -189,83 +190,76 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
         <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-        <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Tất cả sản phẩm</li>
+        
+        <li class="breadcrumb-item active" aria-current="page">Chính sách vận chuyển</li>
       </ol>
     </nav>
   </div>
 
+  <div class="container my-5">
+    <div id="chinhsach" class="chinhsach">
+        <h4>CHÍNH SÁCH VẬN CHUYỂN</h4>
+                <p>Bae Boutique có dịch vụ giao hàng tận nơi trên toàn quốc, áp dụng cho khách mua hàng trên website, fanpage và gọi điện thoại, không áp dụng cho khách mua trực tiếp tại cửa hàng.</p>
 
-
-  <div class="container">
-    <!-- ------------------------------- LỌC SP -------------------------------- -->
-    <div class="filterProducts">
-      <span>Bộ lọc</span>
-      <div>
-        <div>
-          <label for="sizeFilter">Lọc theo size:</label>
-          <select id="sizeFilter" onchange="searchProducts()">
-            <option value="">Tất cả</option>
-            <option value="0-3M">0-3M</option>
-            <option value="3-6M">3-6M</option>
-            <option value="6-9M">6-9M</option>
-            <option value="9-12M">9-12M</option>
-            <option value="12-18M">12-18M</option>
-            <option value="18-24M">18-24M</option>
-           
-          </select>
-        </div>
-        <div>
-          <label for="priceFilter">Lọc theo giá:</label>
-          <select id="priceFilter" onchange="searchProducts()">
-            <option value="">Tất cả</option>
-            <option value="500000">Dưới 500,000₫</option>
-            <option value="1000000">Dưới 1,000,000₫</option>
-          
-          </select>
-        </div>
-        <div>
-          <label for="genderFilter">Lọc theo giới tính:</label>
-          <select id="genderFilter" onchange="searchProducts()">
-              <option value="">Tất cả</option>
-              <option value="boy">Nam</option>
-              <option value="girl">Nữ</option>
-              <option value="unisex">Unisex</option>
-          </select>
-      </div>
-      
-        <div>
-          <label for="sortOrder">Sắp xếp:</label>
-          <select id="sortOrder" onchange="searchProducts()">
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="asc">Giá tăng dần</option>
-            <option value="desc">Giá giảm dần</option>
-          </select>
-        </div>
-      </div>
+                <p>Đơn hàng sẽ được chuyển phát đến tận địa chỉ khách hàng cung cấp thông qua công ty vận chuyển trung gian như: Giao Hàng Tiết Kiệm, Giao hàng nhanh, Grab, Ahamove...</p>
+        <h4>1. PHÍ GIAO HÀNG</h4>
+            <p>Phí ship giao động từ 15.000đ - 35.000đ tùy theo khu vực.</p>
+        <h4>2. THỜI GIAN GIAO HÀNG DỰ KIẾN</h4>
+            <ul>
+                <li>Đơn hàng nội và ngoại thành Hà Nội:
+                    <br>Thời gian giao hàng là 1 - 2 ngày sau khi đặt hàng.
+                </li>
+                <li>Đơn hàng ở các tỉnh thành khác:
+                    <br>Thời gian là 2 - 3 ngày đối với khu vực trung tâm tỉnh thành phố, 3 - 7 ngày đối với khu vực ngoại thành, huyện, xã, thị trấn…
+                </li>
+            </ul>
+        <h4>3. CHÍNH SÁCH GIAO HÀNG</h4>
+            <ul>
+                <li>Đơn hàng của quý khách sẽ được giao tối đa trong 3 lần. Trường hợp lần đầu giao hàng không thành công, sẽ có nhân viên giao hàng liên hệ để sắp xếp lịch giao hàng lần 2 với quý khách. Sau 3 lần liên hệ không thành công, đơn hàng sẽ không còn hiệu lực.</li>
+                <li>Để kiểm tra thông tin hoặc tình trạng đơn hàng, quý khách vui lòng liên lạc với Bae Boutique qua hotline 039 972 5203, cung cấp tên, số điện thoại để được kiểm tra.</li>
+                <li>Khi hàng được giao đến quý khách, vui lòng ký xác nhận với nhân viên giao hàng và kiểm tra lại số lượng cũng như loại hàng hóa được giao có chính xác không. Quý khách vui lòng giữ lại biên lại vận chuyển và hóa đơn mua hàng để đối chiếu kiểm tra.</li>
+            </ul>
+        <h4>4. PHÂN ĐỊNH TRÁCH NHIỆM CỦA THƯƠNG NHÂN,TỔ CHỨC CUNG ỨNG DỊCH VỤ LOGISTICS VỀ CUNG CẤP CHỨNG TỪ HÀNG HÓA TRONG QUÁ TRÌNH GIAO NHẬN</h4>
+            <h5>Nghĩa vụ của bên vận chuyển</h5>
+                <ul>
+                    <li>Bảo đảm vận chuyển tài sản đầy đủ, an toàn đến địa điểm đã định, theo đúng thời hạn.</li>
+                    <li>Giao tài sản cho người có quyền nhận.</li>
+                    <li>Chịu chi phí liên quan đến việc chuyên chở tài sản, trừ trường hợp có thỏa thuận khác.</li>
+                    <li>Mua bảo hiểm trách nhiệm dân sự theo quy định của pháp luật.</li>
+                    <li>Bồi thường thiệt hại cho bên thuê vận chuyển trong trường hợp bên vận chuyển để mất, hư hỏng tài sản, trừ trường hợp có thỏa thuận khác hoặc pháp luật có quy định khác.</li>
+                </ul>
+            <h5>Quyền của bên vận chuyển</h5>
+                <ul>
+                    <li>Kiểm tra sự xác thực của tài sản, của vận đơn hoặc chứng từ vận chuyển tương đương khác.</li>
+                    <li>Từ chối vận chuyển tài sản không đúng với loại tài sản đã thỏa thuận trong hợp đồng.</li>
+                    <li>Yêu cầu bên thuê vận chuyển thanh toán đủ cước phí vận chuyển đúng thời hạn.</li>
+                    <li>Từ chối vận chuyển tài sản cấm giao dịch, tài sản có tính chất nguy hiểm, độc hại, nếu bên vận chuyển.</li>
+                </ul>
+            <h5>Nghĩa vụ của bên thuê vận chuyển</h5>         
+                <ul>
+                    <li>Trả đủ tiền cước phí vận chuyển cho bên vận chuyển theo đúng thời hạn, phương thức đã thỏa thuận.</li>
+                    <li>Cung cấp thông tin cần thiết liên quan đến tài sản vận chuyển để bảo đảm an toàn cho tài sản vận chuyển.</li>
+                    <li>Trông coi tài sản trên đường vận chuyển, nếu có thỏa thuận. Trường hợp bên thuê vận chuyển trông coi tài sản mà tài sản bị mất, hư hỏng thì không được bồi thường.</li>
+                </ul>
+            <h5>Quyền của bên thuê vận chuyển</h5>
+                <ul>
+                    <li>Yêu cầu bên vận chuyển chuyên chở tài sản đến đúng địa điểm, thời điểm đã thỏa thuận.</li>
+                    <li>Trực tiếp hoặc chỉ định người thứ ba nhận lại tài sản đã thuê vận chuyển.</li>
+                </ul>
+            <h5>Trách nhiệm bồi thường thiệt hại</h5>
+                <ul>
+                    <li>Bên vận chuyển phải bồi thường thiệt hại cho bên thuê vận chuyển nếu để tài sản bị mất hoặc hư hỏng.</li>
+                    <li>Trường hợp bất khả kháng dẫn đến tài sản vận chuyển bị mất, hư hỏng hoặc bị hủy hoại trong quá trình vận chuyển thì bên vận chuyển không phải chịu trách nhiệm bồi thường thiệt hại, trừ trường hợp có thỏa thuận khác hoặc pháp luật có quy định khác.</li>
+                </ul>
+            
+            
+            
+            
+            
+                
     </div>
-    <!-- ------------------------------- LỌC SP -------------------------------- -->
-    <!-- Card sản phẩm -->
-    <div id="listProduct" class="row">
-      <!-- Sản phẩm sẽ được tải ra tại đây -->
-    </div>
-    <!-- Card sản phẩm -->
-    <!-- ------------------------------ YÊU THÍCH ------------------------------ -->
-    
-    <div style="display: none;" id="favorites" class="favourites">
-      <div>
-        <h2>Sản phẩm yêu thích</h2>
-        <button id="close-love"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <ul id="favoritesList">
-        <!-- Sản phẩm yêu thích sẽ được hiển thị tại đây -->
-      </ul>
-    </div>
-
-    <!-- ------------------------------ YÊU THÍCH ------------------------------ -->
   </div>
- 
+
   <!--liên hệ cho ctoi-->
   <div class="contact_us">
     <div class="container">
@@ -368,7 +362,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./product_clothes.js"></script>
+    <script src="./product.js"></script>
 
 
 </body>
