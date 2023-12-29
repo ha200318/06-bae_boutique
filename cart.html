@@ -209,12 +209,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
   <!--Trang chủ- Danh mục - sản Phẩm-->
   <div class="container my-5">
     <nav aria-label="breadcrumb" style="font-size: 18px; font-weight: bolder;">
@@ -225,20 +219,22 @@
       </ol>
     </nav>
   </div>
-
   <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
   <div class="container">
     <!-- -------------------------------- CART --------------------------------- -->
   <!-- Cart List -->
   <div id="cartList" class="cartList">
     <h2 style="font-weight: 600; text-align: center;">GIỎ HÀNG CỦA BẠN</h2>
-
     <ul id="cartItemsList">
-      <!-- Cart items will be dynamically added here -->
     </ul>
     <p style="text-align: right; font-weight: bold; font-size: 1rem;">Tổng cộng: <span id="totalAmount">0₫</span></p>
     <div class="btn-checkout">    
-      
+      <button class="btn btn-danger delete-all-btn" onclick="clearCart()" style="border-radius: 10px;">Xóa tất cả</button>
+      <script>function clearCart() {
+        localStorage.removeItem("cart"); // Xóa giỏ hàng
+        displayCart(); // Gọi lại hàm displayCart để cập nhật giao diện
+    }
+    </script>
       <a href="thanhtoan.html" title="Thanh toan">Thanh toán ngay</a>
     </div>
   </div>

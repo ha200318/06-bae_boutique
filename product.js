@@ -266,12 +266,14 @@ function displayProducts(filteredProducts) {
         var discountedPrice =
             product.price - product.price * (product.discount / 100);
         var productHtml = `
-            <div class="col-6 col-md-4 col-xl-3">
-            <div class="card product-card">
+            <div class="col-6 col-md-4 col-xl-3 mb-3">
+            <div class="card product-card h-100">
+            <div class="zoom-effect">
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-            }">
+            }"></div>
             <div class="card-body">
-            <a href="./product-detail.html"><h5 class="card-title">${product.name
+            <a href="./${product.name
+            }.html"><h5 class="card-title">${product.name
             }</h5></a>
             <div class="box-pro-prices">
             <p class="pro-price-highlight">
@@ -374,12 +376,15 @@ products.forEach(function (product) {
     var discountedPrice =
         product.price - product.price * (product.discount / 100);
     var productHtml = `
-        <div class="col-6 col-md-4 col-xl-3">
-        <div class="card product-card">
+        <div class="col-6 col-md-4 col-xl-3 mb-3">
+        <div class="card product-card h-100">
+        <div class="zoom-effect">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
         }">
+        </div>
         <div class="card-body">
-        <a href="./product-detail.html"><h5 class="card-title">${product.name
+        <a href="./${product.name
+        }.html"><h5 class="card-title">${product.name
         }</h5></a>
         <div class="box-pro-prices">
         <p class="pro-price-highlight">

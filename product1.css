@@ -88,4 +88,25 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.card{
+    box-shadow: 0 10px 20px rgba(26, 144, 187, 0.2);
+    transition: .4s;
+    cursor: pointer;
+  }
+/* Định dạng kích thước cố định cho hình ảnh và border */
+.zoom-effect {
+    overflow: hidden;
+    width: 100%;
+    transition: border 0.3s ease, transform 0.3s ease; /* Thêm transition cho hiệu ứng zoom và border */
+  }
+  
+  .zoom-effect img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .zoom-effect:hover img {
+    transform: scale(1.1); /* Khi di chuột qua, phóng to ảnh lên 110% (1.1 lần kích thước ban đầu) */
+  }
+  

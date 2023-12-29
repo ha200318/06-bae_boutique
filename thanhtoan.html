@@ -278,7 +278,22 @@
           <div class="btn-checkout"> 
             <div class="row">
                 <div class="col-lg-4"></div>
-                <div class="col-lg-3"> <a href="" title="Thanh toan">Đặt hàng</a></div>
+                <div class="col-lg-3"> <a href="" title="Thanh toan" onclick="placeOrder()">Đặt hàng</a></div>
+                <script>
+                function clearCart() {
+        localStorage.removeItem("cart"); // Xóa giỏ hàng
+        displayCart(); // Gọi lại hàm displayCart để cập nhật giao diện
+    }
+                function placeOrder() {
+                  // Xử lý đặt hàng ở đây (có thể thêm các logic xử lý đơn hàng nếu cần)
+              
+                  // Hiển thị thông báo đặt hàng thành công
+                  alert("Đặt hàng thành công!");
+              
+                  // Xóa giỏ hàng
+                  clearCart();
+              }
+              </script>
                 <div class="col-lg-4" style="text-align: right;"><a href="cart.html">Quay lại giỏ hàng</a></div>
             </div>   
           </div></div>

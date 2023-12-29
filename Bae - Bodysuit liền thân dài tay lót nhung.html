@@ -379,7 +379,20 @@
                       </div>
                     <div class="buttons d-flex my-3">
                             <div class="block" style="margin-right: 10px;">
-                                <a href="checkout.html" class=" btn custom-btn "><span><i class='bx bx-cart'></i></span><span> Mua ngay</span></a>
+                                <a href="javascript:void(0)" id="myButton" class=" btn custom-btn " onclick="addToCartAndRedirect()"><span><i class='bx bx-cart'></i></span><span> Mua ngay</span></a>
+                                <script>
+                                  function clearCart() {
+                                  localStorage.removeItem("cart"); // Xóa giỏ hàng
+                                            }
+                                            function addToCartAndRedirect() {
+                                              clearCart();
+                                            var product = { };    
+                                            addToCart(product);
+                                        }
+                                        document.getElementById("myButton").addEventListener("click", function() {
+                                            window.location.href = "thanhtoan.html"; // Thay thế bằng URL của trang bạn muốn chuyển hướng đến
+                                        });
+                                </script>
                             </div>
                             <div class="block" style="margin-right: 10px;">
                                 <button class=" btn custom-btn" onclick="addToCart()"><span><i class='bx bx-id-card' ></i></span><span> Thêm vào giỏ hàng</span></button>

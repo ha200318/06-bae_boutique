@@ -155,7 +155,7 @@ function displayProducts(filteredProducts) {
       var discountedPrice =
           product.price - product.price * (product.discount / 100);
       var productHtml = `
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3 d-flex justify-content-cente">
           <div class="card product-card" style="max-width: 90%;>
           <img src="${product.img}" class="card-img-top product-image" alt="${product.name
           }">
@@ -208,16 +208,17 @@ function filterProduct(category) {
   filteredProducts.forEach(product => {
     const discountedPrice = product.price * (1 - product.discount / 100);
     const productCard = `
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
     <div class="card product-card">
-      <img src="${product.img}" class="card-img-top " alt="${product.name}">
+    <div class="zoom-effect">
+      <img src="${product.img}" class="card-img-top" alt="${product.name}"></div>
       <div class="card-body">
         <a href="./${product.name
         }.html"><h5 class="card-title">${product.name}</h5></a>
         <div class="box-pro-prices">
           <p class="pro-price-highlight">
-            <span style="font-weight: bold; font-size: large;">${discountedPrice.toLocaleString()}₫</span>
-            ${product.discount ? `<span class="discount">${product.price.toLocaleString()}₫</span>` : ""}
+            <span style="font-weight: bold; font-size: large; ">${discountedPrice.toLocaleString()}₫</span>
+            ${product.discount ? `<span class="discount" style="text-decoration: line-through;">${product.price.toLocaleString()}₫</span>` : ""}
           </p>
         </div>
         <div class="row">
@@ -277,10 +278,11 @@ products.forEach(function (product) {
   var discountedPrice =
       product.price - product.price * (product.discount / 100);
   var productHtml = `
-      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-      <div class="card product-card">
-      <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-      }">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
+      <div class="card product-card" >
+      <div class="zoom-effect">
+      <img src="${product.img}" class="card-img-top " alt="${product.name
+      }"></div>
       <div class="card-body">
       <a href="./${product.name
       }.html"><h5 class="card-title">${product.name
@@ -289,7 +291,7 @@ products.forEach(function (product) {
       <p class="pro-price-highlight">
       <span style="font-weight: bold; font-size: large;">${discountedPrice.toLocaleString()}₫</span>
       ${product.discount
-          ? `<span class="discount">${product.price.toLocaleString()}₫</span>`
+          ? `<span class="discount" style="text-decoration: line-through;">${product.price.toLocaleString()}₫</span>`
           : ""
       }
                 </p>

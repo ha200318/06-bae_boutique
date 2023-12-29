@@ -153,10 +153,11 @@ function displayProducts(filteredProducts) {
         var discountedPrice =
             product.price - product.price * (product.discount / 100);
         var productHtml = `
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-md-4 col-xl-3 d-flex justify-content-center">
             <div class="card product-card" style="max-width: 90%;>
+            <div class="zoom-effect">
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-            }">
+            }"></div>
             <div class="card-body">
             <a href="./${product.name
             }.html"><h5 class="card-title">${product.name
@@ -206,10 +207,11 @@ function displayProducts(filteredProducts) {
     filteredProducts.forEach(product => {
       const discountedPrice = product.price * (1 - product.discount / 100);
       const productCard = `
-      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
       <div class="card product-card">
-        <img src="${product.img}" class="card-img-top product-image" alt="${product.name}">
-        <div class="card-body">
+      <div class="zoom-effect">
+        <img src="${product.img}" class="card-img-top product-image" alt="${product.name}"></div>
+        <div class="card-body">\
           <a href="./${product.name
           }.html"><h5 class="card-title">${product.name}</h5></a>
           <div class="box-pro-prices">
@@ -275,10 +277,11 @@ products.forEach(function (product) {
     var discountedPrice =
         product.price - product.price * (product.discount / 100);
     var productHtml = `
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
         <div class="card product-card">
+        <div class="zoom-effect">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-        }">
+        }"></div>
         <div class="card-body">
         <a href="./${product.name
         }.html"><h5 class="card-title">${product.name

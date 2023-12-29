@@ -201,4 +201,19 @@ transform: scale(1.01); /* Tăng kích thước khi di chuột qua */
 border: 2px solid #8295A1; /* Border đậm */
 }
 
-  
+/* Định dạng kích thước cố định cho hình ảnh và border */
+.zoom-effect {
+  overflow: hidden;
+  width: 100%;
+  transition: border 0.3s ease, transform 0.3s ease; /* Thêm transition cho hiệu ứng zoom và border */
+}
+
+.zoom-effect img {
+  width: 100%;
+  height: auto;
+}
+
+
+.zoom-effect:hover img {
+  transform: scale(1.1); /* Khi di chuột qua, phóng to ảnh lên 110% (1.1 lần kích thước ban đầu) */
+}

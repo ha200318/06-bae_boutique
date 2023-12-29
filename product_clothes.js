@@ -145,8 +145,9 @@ function displayProducts(filteredProducts) {
         var productHtml = `
             <div class="col-6 col-md-4 col-xl-3">
             <div class="card product-card">
+            <div class="zoom-effect">
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-            }">
+            }"></div>
             <div class="card-body">
             <a href="./product-detail.html"><h5 class="card-title">${product.name
             }</h5></a>
@@ -253,8 +254,9 @@ products.forEach(function (product) {
     var productHtml = `
         <div class="col-6 col-md-4 col-xl-3">
         <div class="card product-card">
+        <div class="zoom-effect">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
-        }">
+        }"></div>
         <div class="card-body">
         <a href="./${product.name
         }.html"><h5 class="card-title">${product.name
