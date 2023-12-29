@@ -28,7 +28,7 @@
     content: "";
     display: block;
     background: rgba(0, 0, 0, 0.35);
-    border-radius: 30px;
+    border-radius: 40px;
     
 }
 
@@ -47,11 +47,15 @@
     border-radius: 16px;
     display: inline-block;
     color: #fff;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100px;
     padding: 5px;  
+    margin: 10px;
+    font-weight: 600;
 }
 .btl_blog a:hover{
-    font-size: 18px;
+    font-size: 19px;
 }
 .blogmain-text h1{
    margin: 50px 50px 40px 50px;
@@ -64,18 +68,27 @@
     padding: 0px 20px;
     color: #fff;
     filter: brightness(1.5);
-    font-size: 16px;
+    font-size: 18px;
    
 }
 .card {
     transition: all 0.3s;
+    border-radius: 20px;
+    height: auto;
 }
+
+.card img{
+    border-radius: 20px;
+}
+
 .card:hover{
     transform: scale(1.05);
 }
 .card-body button{
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0.75px  #BAD4E3;
+    height: 30px;
+    background-color: #d4ebf8;;
 }
 .card-body button:hover{
     border-radius: 5px;
@@ -85,8 +98,8 @@
 }
 .card-body a{
     display: block;
-    color: #5A5252;
-    font-size: 16px;
+    color: #779db0;
+    font-size: 17px;
     transition: transform 0.3s ease;
     font-weight: bold;
 }
@@ -95,10 +108,69 @@
         transform: translate(3px, -3px);
 }
 .card-body p{
-    font-size: 15px;
-    color: black;
+    font-size: 16px;
+    color: rgb(99, 89, 89);
+    font-weight:bold;
 
 }
+
+.wrapper-slide-blog{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+}
+.slider-blog{
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 86%;
+}
+.slider-blog .slide-blog{
+    height: 250px;
+    width: 250px;
+}
+.slider-blog .slide-blog img{
+    width: 90%;
+    height: 170px;
+    border-radius: 15px;
+    transition: all 0.2s;
+    
+}
+.slider-blog .slide-blog img:hover{
+    transform: scale(1.08); /*phong to 105%*/
+    border-radius: 10px;
+    border-radius: 15px; 
+}
+
+
+@-webkit-keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-1500px));
+    }
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-1500px));
+    }
+
+}
+.slider-blog .slide-block-track {
+    -webkit-animation: scroll 100s linear infinite;
+    animation: scroll 100s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+
 
 
 

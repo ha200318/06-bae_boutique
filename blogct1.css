@@ -26,6 +26,14 @@
 .main-content h3{
     font-weight: bold;
 }
+.main-content p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(31, 30, 30);
+}
+.text-center img{
+    border-radius: 20px;
+}
 
 .small-news {
     display: flex;
@@ -45,36 +53,44 @@
 .left img{
     width: 100%;
     border:  0.75px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     float: left;
   
 }
 .right a,
 .right span{
     display: block;
-    color: #5A5252;
+    color: rgb(99, 89, 89);
+    font-weight:600;
     font-size: 16px;
     transition: transform 0.3s ease;
+    
 }
 .right a:hover{
-    color: rgb(28, 120, 120);
+    color: #8295A1;
     transform: translate(3px, -3px);
     text-decoration:underline;
 }
-.col-lg-6 input{
+.right .date:hover{
+    color: #8295A1;;
+}
+.comment input{
     width: 100%;
-    border-radius: 5px;
-    border: 0.75px solid grey;
+    border-radius: 15px;
+    border: 0.5px solid rgb(146, 139, 139);
     height: 40px;
 }
 
+.comment button{
+    border-radius: 20px;
+}
 .content-comment{
     margin-top: 15px;
     margin-left: 5px;
 }
 .comment h4{
-    color: #4F6F7D;;
-    font-weight: 400;
+    color: #8295A1;;
+    font-weight: 600;
 }
 .comment button{
     width: 15%; 
