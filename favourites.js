@@ -42,7 +42,6 @@ $(document).ready(function() {
     function displayFavorites() {
         var favorites = JSON.parse(localStorage.getItem("favorites")) || [];
         favoritesListElement.innerHTML = ""; // Clear the list
-        
         if (favorites.length === 0) {
             // Nếu ko có sp yêu thích nào
             favoritesListElement.innerHTML = "<p id='emptyFavoritesMessage'>Chưa có sản phẩm yêu thích nào.</p>";
@@ -51,10 +50,14 @@ $(document).ready(function() {
             favorites.forEach(function (product) {
                 var listItem = document.createElement("li");
                 listItem.innerHTML = `
-                    <img width="150px" src="${product.img}" alt="">
-                    <span>${product.name}</span>
-                    <span>${product.price.toLocaleString()}₫</span>
-                    <button class="btn btn-danger delete-btn" onclick="deleteFromFavorites('${product.name}')">Loại bỏ</button>
+                <div class="col-md-3 col-sm-4">
+                    <img width="150em" src="${product.img}" alt=""></div>
+                    <div class="col-md-5 col-sm-4">
+                        <span style="font-weight:bold; font-size:1em;">${product.name}</span> </div>
+                        <div class="col-md-3 col-sm-3">   
+                    <span style="font-weight:bold">${product.price.toLocaleString()}₫</span></div>
+                    <div class="col-md-3 col-sm-2">
+                    <button class="btn btn-danger delete-btn" onclick="deleteFromFavorites('${product.name}')">Loại bỏ</button></div>
                     `;
                     favoritesListElement.appendChild(listItem);
                 });

@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Chính sách đổi trả</title>
+  <title>Danh mục sản phẩm</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!--Css Ly-->
   <link rel="stylesheet" href="product.css">
-  <link rel="stylesheet" href="chinhsach.css">
   <!--font icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!--css Hà-->
-  <link rel="stylesheet" href="index.css">
   <!-- Font chữ-->
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  <!-- ------------------------------ LINK MỚI ------------------------------- -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="product1.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- ------------------------------ LINK MỚI ------------------------------- -->
+  <style>
+          .accordion-button:not(.collapsed) {
+    color: white;
+    font-weight: 700;
+    background-color: #BED2DF;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+  .card{
+    margin-bottom: 30px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .card-title{
+  font-size: 18px; font-weight: 300;font-weight: 700;color: black;
+  }
+  .buy-now-btn{
+  border: 1px solid #8295A1;
+  background-color: white;
+  color: #8295A1;
+  font-weight: 700;
+  border-radius: 20px;
+}
+.buy-now-btn:hover{
+  border: 1px solid #8295A1;
+  background-color: #8295A1;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transform: scale(1.05,1.05);
+}
+.love{
+  border-radius: 50%;
+  border:none;
+  color: black;
+  background-color: white;
+  text-align: end;
+}
+.love:hover{
+  transform: scale(1.05,1.05);
+}
+.button-value{
+  border: 2px solid #8295A1;
+  border-radius: 15px;
+  background-color: white;
+  color: #8295A1;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.button-value:hover{
+  background-color: #8295A1;
+  color: white;
+}
+  </style>
 </head>
 <body>
   <!--Header-->
@@ -32,7 +87,7 @@
         <!--logo-->
         <div class="col-lg-3 col-md-2">
           <a href="index.html">
-            <img src="images/Bae Boutique.png" alt="logo" class="logo">
+            <img src="images/Bae Boutique.png" alt="logo" class="logo" >
           </a>
         </div>
         <!--thanh tìm kiếm-->
@@ -60,7 +115,7 @@
                   <span class="visually-hidden">unread messages</span>
                 </span>
                 <span class="fs-3">
-                  <i class="fa-regular fa-heart icon"></i>
+                  <i class="fa-regular fa-heart icon" style="color: #8295A1;"></i>
                 </span>
               </a>
             </div>
@@ -71,7 +126,7 @@
                   <span class="visually-hidden">unread messages</span>
                 </span>
                 <span class="fs-3">
-                  <i class="fa-solid fa-bag-shopping icon"></i>
+                  <i class="fa-solid fa-bag-shopping icon" style="color: #8295A1;"></i>
                 </span>
               </a>
             </div>
@@ -82,7 +137,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="fs-3">
-                      <i class="fa-regular fa-user icon"></i>
+                      <i class="fa-regular fa-user icon" style="color: #8295A1;"></i>
                     </span>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -173,7 +228,7 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-product">
     <div class="carousel-product active">
-      <img src="images/allpro.png" alt="banner all product-card" class="d-block" style="width:100%">
+      <img src="images/banner product.png" alt="banner all product-card" class="d-block" style="width:100%">
     </div>
   </div>
 
@@ -181,61 +236,87 @@
 
 
   <!--Trang chủ- Danh mục - sản Phẩm-->
+  <!--Trang chủ- Danh mục - sản Phẩm-->
   <div class="container my-5">
     <nav aria-label="breadcrumb" style="font-size: 18px; font-weight: bolder;">
       <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
         <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-        
-        <li class="breadcrumb-item active" aria-current="page">Chính sách thanh toán</li>
+        <li class="breadcrumb-item"><a href="product.html">Sản phẩm</a></li>
       </ol>
     </nav>
   </div>
 
-  <div class="container my-5">
-    <div id="chinhsach" class="chinhsach">
-        <h4>1. THỜI GIAN ĐỔI/TRẢ SẢN PHẨM</h4>
-            <ul>
-                <li>Áp dụng 01 lần đổi/ 01 đơn hàng.</li>
-                <li>BẢO HÀNH lỗi trong vòng 1 tháng kể từ ngày mua trên hóa đơn.</li>
-                <li>Sản phẩm mua tại hệ thống Showroom The Gallery of Bae Boutique được ĐỔI: Trong vòng 3 ngày kể từ ngày mua.</li>
-                <li>Sản phẩm mua Online trên website BU Baby và các trang Facebook, Instagram được ĐỔI: Trong vòng 3 ngày kể từ ngày nhận được sản phẩm.</li>
-            </ul>
-        <h4>2. ĐIỀU KIỆN SẢN PHẨM ĐẠT YÊU CẦU ĐỔI/TRẢ</h4>
-            <h5>2.1. Điều kiện ĐỔI/TRẢ sản phẩm</h5>
-            <ul>
-                <li>Áp dụng với các sản phẩm nguyên giá.</li>
-                <li>Sản phẩm chưa giặt và chưa qua sử dụng, còn nguyên tem mác trên sản phẩm.</li>
-                <li>Các trường hợp lỗi do nhà sản xuất gồm: Sản phẩm lệch lạc/không cân đối, lỗi đường may, lỗi cúc/khuy/khoá kéo/dây buộc, lỗi Logo/size (số)/tag, sai chất liệu so với thông tin công bố… (*Tùy trường hợp cụ thể mà chúng tôi sẽ đổi hoặc bảo hành cho khách hàng)</li>
-                <li>Sản phẩm thỏa mãn điều kiện của THỜI HẠN ĐỔI/TRẢ SẢN PHẨM.</li>
-                <li>Sản phâm không bị làm dơ, bẩn, hư hỏng bởi những tác nhân bên ngoài sau khi mua sản phẩm.</li>
-                <li>Hàng hóa được xác định nguồn gốc mua tại cửa hàng chính hãng của Bae và kênh bán hàng trực thuộc của Bae.</li>
-            </ul>
-            <h5>2.2 Sản phẩm KHÔNG nhận ĐỔI/TRẢ</h5>
-            <ul>
-                <li>Sản phẩm đã sử dụng.</li>
-                <li>Sản phẩm quá thời hạn đổi.</li>
-                <li>Sản phẩm không còn tem mác, ma sát với vật cứng làm trầy xước, hư hỏng.</li>
-                <li>Sản phẩm mua không xác định được nguồn gốc mua hoặc nguồn gốc mua không phải là cửa hàng chính hãng của Bae hoặc các kênh bán hàng trực thuộc Bae.</li>
-            </ul>
-            <h5>2.3 Giá trị ĐỔI sản phẩm</h5>
-                <p>Sản phẩm đổi mới sẽ có giá trị ngang bằng hoặc lớn hơn giá trị sản phẩm đã mua trước đó. Trường hợp sản phẩm mới có giá trị cao hơn khách hàng cần trả phần tiền phát sinh thêm.
-                    Nếu sản phẩm đổi nằm trong set combo sẽ được đổi sang sản phẩm có giá trị tương ứng trong set combo đó.</p>
-        <h4>3. CHI PHÍ VẬN CHUYỂN SẢN PHẨM KHI ĐỔI/TRẢ</h4>
-            <p>Đối với lỗi do nhà sản xuất: BU sẽ thanh toán chi phí vận chuyển 2 chiều theo đơn giá: hoàn hàng và nhận lại đơn hàng đổi mới của đơn vị vận chuyển.
-                Đối với nhu cầu của khách hàng: Khách hàng thanh toán chi phí vận chuyển 2 chiều: hoàn hàng và nhận lại đơn hàng đổi mới theo đơn giá của đơn vị vận chuyển.</p>                
-                
-        <h4>4. LIÊN HỆ ĐỔI/TRẢ SẢN PHẨM</h4>
-            <p>Khách hàng có thể liên hệ trực tiếp tới Bae Boutique theo các địa chỉ dưới đây:
-                <ul>
-                    <li>Showroom The Gallery of Bae Boutique: 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
-                    <li><a href="#">Website: baeboutique.com</a></li>
-                    <li>Hotline: 039 972 5203</li>
-                    <li>Facebook: <a href="https://www.facebook.com/baeboutique04" style="color: #7995a3; text-decoration: underline;font-weight: bold;">Bae Boutique</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/baeboutique04/" style="color: #7995a3; text-decoration: underline;font-weight: bold;">Bae Boutique</a></li>
-                </ul>
-            </p>
+
+  <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
+  <div class="container">
+    <!-- ------------------------------- LỌC SP -------------------------------- -->
+    <div class="filterProducts" style="font-weight: bolder; font-size: 16px;">
+      <span>Bộ lọc</span>
+      <div>
+        <div>
+          <label for="sizeFilter" >Lọc theo size:</label>
+          <select id="sizeFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+            <option value="">Tất cả</option>
+            <option value="0-3M">0-3M</option>
+            <option value="3-6M">3-6M</option>
+            <option value="6-9M">6-9M</option>
+            <option value="9-12M">9-12M</option>
+            <option value="12-18M">12-18M</option>
+            <option value="18-24M">18-24M</option>
+           
+          </select>
+        </div>
+        <div>
+          <label for="priceFilter">Lọc theo giá:</label>
+          <select id="priceFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+            <option value="">Tất cả</option>
+            <option value="500000">Dưới 500,000₫</option>
+            <option value="1000000">Dưới 1,000,000₫</option>
+          
+          </select>
+        </div>
+        <div>
+          <label for="genderFilter">Lọc theo giới tính:</label>
+          <select id="genderFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+              <option value="">Tất cả</option>
+              <option value="boy">Nam</option>
+              <option value="girl">Nữ</option>
+              <option value="unisex">Unisex</option>
+          </select>
       </div>
+      
+        <div>
+          <label for="sortOrder">Sắp xếp:</label>
+          <select id="sortOrder" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;"> 
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="asc">Giá tăng dần</option>
+            <option value="desc">Giá giảm dần</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------- LỌC SP -------------------------------- -->
+    <!-- Card sản phẩm -->
+    <div id="listProduct" class="row">
+      <!-- Sản phẩm sẽ được tải ra tại đây -->
+    </div>
+    <!-- Card sản phẩm -->
+    <!-- ------------------------------ YÊU THÍCH ------------------------------ -->
+    
+    <div style="display: none;" id="favorites" class="favourites">
+      <div>
+        <h2>Sản phẩm yêu thích</h2>
+        <button id="close-love"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul id="favoritesList">
+        <!-- Sản phẩm yêu thích sẽ được hiển thị tại đây -->
+      </ul>
+    </div>
+
+    <!-- ------------------------------ YÊU THÍCH ------------------------------ -->
   </div>
+  <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
  <!--liên hệ cho ctoi-->
  <div class="contact_us">
   <div class="container">
@@ -316,7 +397,26 @@
     </div>
     </div>
 </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./product.js"></script>
+   <!--script của bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="./product.js"></script>
+       <!--backtop-->
+   <div id="backtop" >
+    <i class='bx bxs-chevrons-up' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 40px; right: 20px; cursor: pointer;"></i>
+   </div>
+   <script>
+    $(document).ready(function() {
+      $(window).scroll(function(){
+        if($(this).scrollTop()){
+          $('#backtop').fadeIn();
+        }else{
+          $('#backtop').fadeOut();
+        }
+      });
+      $('#backtop').click(function(){
+      $('html, body').animate({scrollTop: 0}, 100);
+    });
+    });
+   </script>
 </body>
 </html>

@@ -1,59 +1,7 @@
-$(document).ready(function () {
-    // Khi di chuột vào ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseover(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(70%)"); // Giảm độ sáng
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeIn(); // Hiện nút mua ngay
-    });
-
-    // Khi di chuột ra khỏi ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseleave(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(100%)"); // Khôi phục độ sáng ban đầu
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeOut(); // Ẩn nút mua ngay
-    });
-});
-
 
 var products = [
     {
-        name: "Bộ liền penguin",
-        price: 279000,
-        discount: 5,
-        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
-        gender: "unisex",
-        img: "images/c1/bộ_liền_penguin.jpg",
-    },
-    {
-        name: "Áo liền quần mùa đông",
-        price: 300000,
-        discount: 10,
-        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
-        gender: "girl",
-        img: "images/c1/bộ_liền_mùa_đông.jpg",
-    },
-    {
-        name: "Bộ 3 món kèm cà vạt",
-        price: 299000,
-        discount: 5,
-        size: ["9-12M","12-18M","18-24M"],
-        gender: "boy",
-        img: "images/c1/bộ_3_món.jpg",
-    },
-    {
-        name: "Bộ liền thân kèm mũ",
-        price: 279000,
-        discount: 5,
-        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
-        gender: "unisex",
-        img: "images/c1/bộ_liền_thân.jpg",
-    },
-    {
-        name: "Mũ bóng chày cotton",
+        name: "Bae - Mũ bóng chày cotton",
         price: 25000,
         discount: 5,
         size: ["6-9M","9-12M","12-18M","18-24M"],
@@ -61,15 +9,39 @@ var products = [
         img: "images/c1/mũ_bóng_chày.jpg",
     },
     {
-        name: "Giày tập đi",
-        price: 250000,
+        name: "Bae - Bộ liền penguin",
+        price: 279000,
         discount: 5,
-        size: ["9-12M","12-18M","18-24M"],
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
         gender: "unisex",
-        img: "images/c1/giày_tập_đi.jpg",
+        img: "images/c1/bộ_liền_penguin.jpg",
     },
     {
-        name: "Mũ len nhung cột dây",
+        name: "Bae - Áo liền quần mùa đông",
+        price: 300000,
+        discount: 10,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "girl",
+        img: "images/c1/bộ_liền_mùa_đông.jpg",
+    },
+    {
+        name: "Bae - Bộ 3 món kèm cà vạt",
+        price: 299000,
+        discount: 5,
+        size: ["9-12M","12-18M","18-24M"],
+        gender: "boy",
+        img: "images/c1/bộ_3_món.jpg",
+    },
+    {
+        name: "Bae - Bộ liền thân kèm mũ",
+        price: 279000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/bộ_liền_thân.jpg",
+    },
+    {
+        name: "Bae - Mũ len nhung cột dây",
         price: 80000,
         discount: 5,
         size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
@@ -77,7 +49,7 @@ var products = [
         img: "images/c1/mũ_len_nhung.jpg",
     },
     {
-        name: "Bộ liền gấu trúc",
+        name: "Bae - Bộ liền gấu trúc",
         price: 150000,
         discount: 5,
         size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
@@ -85,7 +57,7 @@ var products = [
         img: "images/c1/bộ_liền_gấu_trúc.jpg",
     },
     {
-        name: "Bộ váy Giáng sinh",
+        name: "Bae - Bộ váy Giáng sinh",
         price: 600000,
         discount: 10,
         size: ["3-6M","9-12M"],
@@ -93,39 +65,13 @@ var products = [
         img: "images/c1/bộ_váy_giáng_sinh.jpg",
     },
     {
-        name: "Set váy Giáng sinh",
+        name: "Bae - Set váy Giáng sinh",
         price: 590000,
         discount: 5,
         size: "18-24M",
         gender: "girl",
         img: "images/c1/set_váy_giáng_sinh.jpg",
-    },
-    {
-        name: "Choàng tắm unicorn",
-        price: 350000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/choàng_tắm_unicorn.jpg",
-    },
-    {
-        name: "Bộ liền Giáng sinh",
-        price: 390000,
-        discount: 20,
-        size: "9-12M",
-        gender: "boy",
-        img: "images/c1/bộ_liền_giáng_sinh.jpg",
-    },
-    {
-        name: "Yếm len Giáng sinh",
-        price: 360000,
-        discount: 0,
-        size: "9-12M",
-        gender: "unisex",
-        img: "images/c1/yếm_len_giáng_sinh.jpg",
-    },
-     // { name: "Choàng tắm gấu trắng", price: 350000, discount: 10, size: "9-12M", gender: "unisex", img: "images/c1/choàng_tắm_gấu_trắng.jpg" },
-    
+    },    
 ];
 
 /* ------------------------- Tạo các biến cần thiết ------------------------- */
@@ -310,7 +256,8 @@ products.forEach(function (product) {
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
         }">
         <div class="card-body">
-        <a href="./product-detail.html"><h5 class="card-title">${product.name
+        <a href="./${product.name
+        }.html"><h5 class="card-title">${product.name
         }</h5></a>
         <div class="box-pro-prices">
         <p class="pro-price-highlight">

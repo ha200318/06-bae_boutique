@@ -1,27 +1,7 @@
-$(document).ready(function () {
-    // Khi di chuột vào ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseover(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(70%)"); // Giảm độ sáng
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeIn(); // Hiện nút mua ngay
-    });
-
-    // Khi di chuột ra khỏi ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseleave(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(100%)"); // Khôi phục độ sáng ban đầu
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeOut(); // Ẩn nút mua ngay
-    });
-});
-
 
 var products = [
     {
-        name: "Heo gấu bông",
+        name: "Bae - Heo gấu bông",
         price: 129000,
         discount: 5,
         size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
@@ -29,7 +9,7 @@ var products = [
         img: "images/c1/heo_gấu_bông.jpg",
     },
     {
-        name: "Bát ăn dặm 3 trong 1",
+        name: "Bae - Bát ăn dặm 3 trong 1",
         price: 299000,
         discount: 10,
         size: ["6-9M","9-12M","12-18M","18-24M"],
@@ -37,7 +17,7 @@ var products = [
         img: "images/c1/bát_ăn_dặm.jpg",
     },
     {
-        name: "Nôi tự động E1",
+        name: "Bae - Nôi tự động E1",
         price: 1890000,
         discount: 10,
         size: ["0-3M","3-6M","6-9M","9-12M","12-18M"],
@@ -45,7 +25,7 @@ var products = [
         img: "images/c1/nôi_tự_động_e1.jpg",
     },
     {
-        name: "Bình sữa Kamidi 210ml",
+        name: "Bae - Bình sữa Kamidi 210ml",
         price: 349000,
         discount: 5,
         size: ["0-3M","3-6M"],
@@ -53,7 +33,7 @@ var products = [
         img: "images/c1/bình_sữa_kamidi.jpg",
     },
     {
-        name: "Ghế ăn tựa lưng trẻ em",
+        name: "Bae - Ghế ăn tựa lưng trẻ em",
         price: 299000,
         discount: 10,
         size: ["6-9M","9-12M","12-18M","18-24M"],
@@ -61,7 +41,7 @@ var products = [
         img: "images/c1/ghế_ăn_tựa_lưng.jpg",
     },
     {
-        name: "Vòi sen mini",
+        name: "Bae - Vòi sen mini",
         price: 1290000,
         discount: 0,
         size: "9-12M",
@@ -69,7 +49,7 @@ var products = [
         img: "images/c1/vòi_sen_mini.jpg",
     },
     {
-        name: "Set cắt móng tay",
+        name: "Bae - Set cắt móng tay",
         price: 199000,
         discount: 0,
         size: "9-12M",
@@ -77,7 +57,7 @@ var products = [
         img: "images/c1/set_cắt_móng_tay.jpg",
     },
     {
-        name: "Xe tập đi",
+        name: "Bae - Xe tập đi",
         price: 1190000,
         discount: 0,
         size: "9-12M",
@@ -85,7 +65,7 @@ var products = [
         img: "images/c1/xe_tập_đi.jpg",
     },
     {
-        name: "Xe đẩy",
+        name: "Bae - Xe đẩy",
         price: 2390000,
         discount: 5,
         size: "9-12M",

@@ -5,12 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="stylesheet" href="dangki.css">
-   <title></title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+   <title>Đăng kí</title>
+   <style>
+      .nut-x:hover{
+        background-color: #7995A3;
+        color: white;
+        font-weight: bolder;
+        border: 2px dashed white;
+    }
+    .nut-x{
+        color: #7995A3; 
+        border-radius: 50%;padding: 5px;
+        border: 2px dashed #7995A3;
+    }
+   </style>
 </head>
 <body>
     <div class="wrapper-login">
         <div class="login">
-            <form action="" method="GET">
+            <form id="registrationForm" action="" method="GET">
+                <div class="recovery">
+                    <a href="index.html"  class="nut-x"><i class='bx bx-x' style="text-align: right;"></i></a>
+                </div>
                 <div class="title">Tạo tài khoản</div>
                 <div class="group">
                     <input type="text" id="username" placeholder="Họ và tên">
@@ -30,7 +48,7 @@
 
                 <div class="signIn">
                    <p id="errorMessage" hidden></p>
-                    <button type="submit"  style="font-family: quicksand; font-size: 20px; font-weight:bold;">Đăng ký</button>
+                    <button type="button" onclick="register()" style="font-family: quicksand; font-size: 20px; font-weight:bold;">Đăng ký</button>
                 </div>
                 <div class="or" style="color: #7995A3 ;font-size: 15px; font-weight: 600;">Or continue with</div>
                 <div class="list">

@@ -48,7 +48,7 @@ function displayCart() {
             var listItem = document.createElement("li");
             listItem.innerHTML = `
             <div class="col-lg-2">        
-              <img width="120em" src="${product.img}" alt="">
+              <img width="80em" src="${product.img}" alt="">
             </div>
             <div class="col-lg-4">
               <span style="font-weight:bold; font-size:1em;">${product.name}</span>
@@ -57,14 +57,14 @@ function displayCart() {
               <span style="font-weight:bold; font-size:1em;">${product.price.toLocaleString()}₫</span>
             </div>
             <div class="col-lg-3">
-              <span><button class="quantity-btn" onclick="decreaseQuantity('${product.name}')">-</button> ${product.quantity} <button class="quantity-btn" onclick="increaseQuantity('${product.name}')">+</button></span>
+              <span>${product.quantity} </span>
             </div>
-            <div class="col-lg-2">
-            <button class="btn btn-danger delete-btn" onclick="removeFromCart('${product.name}')">Xóa</button></div>
+
             `;
             cartItemsListElement.appendChild(listItem);
             totalAmount += product.price * product.quantity;
         });
+
         totalAmountElement.innerText = totalAmount.toLocaleString() + "₫";
     }
 }

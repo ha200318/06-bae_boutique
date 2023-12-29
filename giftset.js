@@ -158,7 +158,8 @@ function displayProducts(filteredProducts) {
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
             }">
             <div class="card-body">
-            <a href="./product-detail.html"><h5 class="card-title">${product.name
+            <a href="./${product.name
+            }.html"><h5 class="card-title">${product.name
             }</h5></a>
             <div class="box-pro-prices">
             <p class="pro-price-highlight">
@@ -209,7 +210,8 @@ function displayProducts(filteredProducts) {
       <div class="card product-card">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name}">
         <div class="card-body">
-          <a href="./product-detail.html"><h5 class="card-title">${product.name}</h5></a>
+          <a href="./${product.name
+          }.html"><h5 class="card-title">${product.name}</h5></a>
           <div class="box-pro-prices">
             <p class="pro-price-highlight">
               <span style="font-weight: bold; font-size: large;">${discountedPrice.toLocaleString()}₫</span>
@@ -278,7 +280,8 @@ products.forEach(function (product) {
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
         }">
         <div class="card-body">
-        <a href="./product-detail.html"><h5 class="card-title">${product.name
+        <a href="./${product.name
+        }.html"><h5 class="card-title">${product.name
         }</h5></a>
         <div class="box-pro-prices">
         <p class="pro-price-highlight">

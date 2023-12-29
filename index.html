@@ -10,38 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!--css Hà-->
-    <link rel="stylesheet" href="bae.css">
+    <link rel="stylesheet" href="index.css">
     <!--phong chu-->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <!--brand-->
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
-    
+    <style>
+      .card-title:hover{
+        font-weight: bold;
+        color: #8295A1;
+      }
+    </style>
   </head>
 <body>
-    <div id="fb-root"></div>
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "164415083416551");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
     <!--Header-->
      <section class="myheader">
       <div class="container py-2" >
@@ -49,23 +31,20 @@
           <!--logo-->
           <div class="col-lg-3 col-md-2">
             <a href="index.html">
-              <img src="images/Bae Boutique.png" alt="logo" class="logo" >
+              <img src="images/Bae Boutique.png" alt="logo" class="logo">
             </a>
           </div>
           <!--thanh tìm kiếm-->
           <div class="col-md-5 col-12 py-4">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Nhập nội dung cần tìm" name="sản phẩm" style="border-radius: 30px;">
+                <input type="text" oninput="searchProducts()" class="form-control" placeholder="Nhập nội dung cần tìm" name="sản phẩm" style="border-radius: 30px;">
                 <span class="input-group-text" style="border-radius: 30px;">
                   <i class="fa-solid fa-magnifying-glass icon"></i>
                 </span>
               </div>
           </div>
           <!--Liên hệ-->
-          <div class="col-md-2">
-            
-          </div>
-    
+          <div class="col-md-2"></div>
           <!--công cụ-->
          <div class="col-md-2 py-4">
           <div class="row">
@@ -73,7 +52,6 @@
               <a href="./favourites.html" class="position-relative" id="open-love">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="favoritesCount">
                   0
-               
                 </span>
                 <span class="fs-3">
                   <i class="fa-regular fa-heart icon"></i>
@@ -84,7 +62,6 @@
               <a href="./cart.html" class="position-relative">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartsCount">
                   0
-                  
                 </span>
                 <span class="fs-3">
                   <i class="fa-solid fa-bag-shopping icon"></i>
@@ -94,7 +71,6 @@
             <div class="col">
               <a href="#" class="position-relative">
                 <div class="col">      
-
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="fs-3">
                       <i class="fa-regular fa-user icon"></i>
@@ -133,22 +109,21 @@
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="test.html">Sản phẩm</a>
-                      <a class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" >
-                      </a>
-                      <div class="active-img nav justify-content-end">
-                        <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Thời trang cho bé</a></li>
-                        <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
-                        <li><a class="dropdown-item" href="#">Đồ dùng cho bé</a></li>
-                        <li><a class="dropdown-item" href="#">Bỉm sữa cho bé</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
-                      </ul>
-                    </li>
+                      <li class="nav-item dropdown">
+                            <a href="product.html" class="san-pham">Sản Phẩm</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="product.html"></a>
+                            <div class="active-img nav justify-content-end">
+                              <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="product_clothes.html">Thời trang cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Đồ dùng cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Đồ chơi cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Phụ kiện cho bé</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
+                            </ul>
+                          </li>
                     <li class="nav-item">
                       <a class="nav-link " href="blog.html">Blog</a>
                       <div class="active-img nav justify-content-end">
@@ -162,7 +137,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disable" href="#">Đội ngũ</a>
+                      <a class="nav-link disable" href="team.html">Đội ngũ</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
@@ -182,15 +157,15 @@
         </div>
        </div> 
      </section>
-<!--banenr-->
+<!--slideshow-->
 <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 50px;">
-  <!-- Indicators/dots -->
+  <!-- nút trái tim ở slide show-->
   <div class="carousel-indicators">
     <img src="images/heart.webp" alt="Slide 1" data-bs-target="#demo" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px;">
     <img src="images/heart.webp" alt="Slide 2" data-bs-target="#demo" data-bs-slide-to="1" style="width: 10px; height: 10px;">
     <img src="images/heart.webp" alt="Slide 3" data-bs-target="#demo" data-bs-slide-to="2" style="width: 10px; height: 10px;">
   </div>
-  <!-- The slideshow/carousel -->
+  <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="images/1.png" alt="banner 1" class="d-block" style="width:100%">
@@ -212,11 +187,11 @@
 </div>
      <!--Content-->
      <section class="mycontent">
-      <!--banner-->
+      <!--1. banner-->
       <div class="container">
         <div class="row">
-          <div class="col"> 
-            <div class="banner-img" >
+          <div class="col-lg-4 col-12 d-flex justify-content-center"> 
+            <div class="banner-img w-100" >
             <div class="content-img">
                 <img id="image1" src="images/aodo.png" alt="" style="width: 15em;display:flex;">
             </div>
@@ -226,13 +201,13 @@
                     <p >Full month for boy baby</p>
                 </div>
                 <div class="content-text-2" >
-                    <h3 >Xem sản phẩm</h3>
+                  <a href="#"><h3 >Xem sản phẩm</h3></a>
                     <span ></span>
                 </div>
             </div>
         </div></div>
-          <div class="col">
-             <div class="banner-img">
+          <div class="col-lg-4 col-12 d-flex justify-content-center">
+             <div class="banner-img w-100">
                 <div class="content-img">
                     <img id="image1" src="images/aophaogau.png" alt="" style="width: 15em;display:flex;">
                 </div>
@@ -242,15 +217,16 @@
                         <p>Full month for girl baby</p>
                     </div>
                     <div class="content-text-2" >
-                        <h3 >Xem sản phẩm</h3>
+                      <a href=""><h3 >Xem sản phẩm</h3>
+                      </a>
                         <span ></span>
                     </div>
                 </div>
             </div>
   
           </div>
-          <div class="col">
-            <div class="banner-img">
+          <div class="col-lg-4 col-12 d-flex justify-content-center">
+            <div class="banner-img w-100">
               <div class="content-img">
                   <img id="image1" src="images/bobodysuite.png" alt="" style="width: 15em;display: flex;">
               </div>
@@ -260,7 +236,7 @@
                       <p>For mum and baby</p>
                   </div>
                   <div class="content-text-2">
-                      <h3 >Xem sản phẩm</h3>
+                    <a href="#"><h3 >Xem sản phẩm</h3></a>
                       <span ></span>
                   </div>
               </div>
@@ -276,7 +252,9 @@
               <span style="   background: url(images/tim.png) center no-repeat; display: flex; height: 50px; padding: 0 200px 0 0;  margin: auto;  text-align: left;"></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-              <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">SẢN PHẨM MỚI VỀ</p>
+              <a href="giftset.html">              
+                <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">SẢN PHẨM MỚI VỀ</p>
+              </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
               <span style=" background: url(images/tim.png) center no-repeat;  display: flex;  height: 50px; padding: 0 200px 0 0;  margin: auto; text-align: left;"></span>
@@ -289,79 +267,61 @@
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/new-mum-baby-girl-hamper-basket.jpg?v=1683103431&width=1080" alt="Card image">
                     <div class="card-body">
-                      <a href="Bae - Giftset fullmonth for baby girl 01.html">                      <h4 class="card-title" style="font-size: 18px;">Bae - Giftset fullmonth for baby girl 01</h4>
+                      <a href="Bae - Giftset fullmonth for baby girl 01.html">                      
+                        <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby girl 01</h4>
                       </a>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size:16px;">450,000₫</span>
                         </p>
                     </div>
                       <div class="row">
-                        <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                        <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                        <div class="col-8" style="text-align: left;"><a href="Bae - Giftset fullmonth for baby girl 01.html" class="btn buy-now-btn">Xem thêm</a></div>
+                        <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby girl 01', img: 'https://www.bumblesandboo.com/cdn/shop/files/new-mum-baby-girl-hamper-basket.jpg?v=1683103431&width=1080', price: 450000 })"><a href="#"><i class='bx bx-heart' ></i></a></div>
                       </div>
                     </div>
                   </div><div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-welcome.jpg?v=1674218658&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby girl 02</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby girl 02</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">540,000₫</span>
+
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby girl 02', img: 'https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-welcome.jpg?v=1674218658&width=1080', price: 540000 })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div><div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/baby-girl-gifts-hamper-bunny-rattle.jpg?v=1699346747&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby girl 03</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby girl 03</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">585.000₫</span>
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby girl 03', img: 'https://www.bumblesandboo.com/cdn/shop/files/baby-girl-gifts-hamper-bunny-rattle.jpg?v=1699346747&width=1080', price: 585000 })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                    <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top product-image" src="https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-steiff-bear_2a6e366a-e7d4-45bb-8913-60ba18ceae12.jpg?v=1678362778&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby girl 04</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby girl 04</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">476,100₫</span>
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby girl 04', img: 'https://www.bumblesandboo.com/cdn/shop/products/baby-girl-hamper-steiff-bear_2a6e366a-e7d4-45bb-8913-60ba18ceae12.jpg?v=1678362778&width=1080', price: 467100 })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
@@ -369,156 +329,141 @@
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/Baby-boy-hamper-gift-steiff-bunny.jpg?v=1667323792&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby boy 01</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby boy 01</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">351,000₫</span>
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby boy 01', img: 'https://www.bumblesandboo.com/cdn/shop/products/Baby-boy-hamper-gift-steiff-bunny.jpg?v=1667323792&width=1080', price: 351000 })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-gifts-hamper-love-mummy.jpg?v=1674155316&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby boy 02</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby boy 02</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">539,100₫</span>
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({ name: 'Bae - Giftset fullmonth for baby boy 02', 
+                      img: 'https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-precious-little-one.jpg?v=1669222252&width=1080', price: 539.100 })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-precious-little-one.jpg?v=1669222252&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby boy 03</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby boy 03</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">504,000₫</span>
                         </p>
                     </div><div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites(  {
+                      name: 'Bae - Giftset fullmonth for baby boy 03',
+                        price: 504000,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-precious-little-one.jpg?v=1669222252&width=1080',
+                    })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-welcome.jpg?v=1674216507&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for baby boy 04</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for baby boy 04</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">441,000₫</span>
                         </p>
                     </div><div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites( {
+                        name: 'Bae - Giftset fullmonth for baby boy 04',
+                        price: 441000,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/products/baby-boy-hamper-welcome.jpg?v=1674216507&width=1080',
+                    })"><a href="#"><i class='bx bx-heart' ></i></a></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-basket-bunny.jpg?v=1683650210&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for morther and baby 01</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for morther and baby 01</h4>
                          <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">575,100₫</span>
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites( {
+                        name: 'Bae - Giftset fullmonth for morther and baby 01',
+                        price: 575100,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-basket-bunny.jpg?v=1683650210&width=1080',
+                    })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-gift-froggin-awesome_5.jpg?v=1683787738&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for mother and baby 02</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for mother and baby 02</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">540,000₫</span>
                         </p>
                     </div><div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({
+                        name: 'Bae - Giftset fullmonth for morther and baby 02',
+                        price: 540000,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/files/mum-to-be-hamper-gift-froggin-awesome_5.jpg?v=1683787738&width=1080',
+                    })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-basket-noughty.jpg?v=1673555947&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for mother and baby 03</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for mother and baby 03</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">485,100₫</span>
                         </p>
                     </div><div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style="text-align: end; cursor: pointer;" onclick="addToFavorites({
+                        name: 'Bae - Giftset fullmonth for morther and baby 03',
+                        price: 485100,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-basket-noughty.jpg?v=1673555947&width=1080',
+                      })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
                   <div class="card product-card h-100" style="max-width: 90%;">
                     <img class="card-img-top" src="https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-box-cook-voucher.jpg?v=1674503395&width=1080" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title" style="font-size: 18px; font-weight: 300;">Bae - Giftset fullmonth for mother and baby 04</h4>
+                      <h4 class="card-title" style="font-size: 18px; font-weight: 700;">Bae - Giftset fullmonth for mother and baby 04</h4>
                       <div class="box-pro-prices">
                         <p class="pro-price-highlight">
-                          <span style="font-weight: bold;font-size: large;">1,290,000₫</span>
-                          <span class="pro-price-del">
-                            <del class="compare-price" style="opacity:70%;">
-                              490,000₫
-                            </del>
-                          </span>
+                          <span style="font-weight: bold;font-size: large;">395,100₫ </span>                   
                         </p>
                     </div>
                     <div class="row">
                       <div class="col-8" style="text-align: left;"><a href="#" class="btn buy-now-btn">Xem thêm</a></div>
-                      <div class="col-4 fs-2" style="color: #8295A1; text-align: end;"><a href="#"><i class='bx bx-heart' ></i></a></div>
+                      <div class="col-4 fs-2" style=" text-align: end; cursor: pointer;" onclick="addToFavorites({
+                        name: 'Bae - Giftset fullmonth for morther and baby 04',
+                        price: 395100,
+                        img: 'https://www.bumblesandboo.com/cdn/shop/products/mum-to-be-hamper-box-cook-voucher.jpg?v=1674503395&width=1080',
+                    })"><i class='bx bx-heart' ></i></div>
                     </div>
                     </div>
                   </div>
@@ -591,7 +536,7 @@
               text-align: left;"></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-              <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">SẢN PHẨM BÁN CHẠY</p>
+              <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">BỘ SƯU TẬP NỔI BẬT</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
               <span style=" background: url(images/tim.png) center no-repeat;
@@ -603,64 +548,23 @@
             </div>
           </div>
           <!--san pham-->
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/aodo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Bộ áo liền quần dày dặn chống lạnh</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
-              </div>
+          <div class="container">
+            <div class="row" id="button" style="margin-bottom: 40px; margin-top: 20px;">
+               <!--bo loc giftset-->
+               <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"><button class="button-value"onclick="filterProduct('all')">Tất cả</button></div>
+               <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"><button class="button-value" onclick="filterProduct('noel')">Noel hạnh phúc cùng Bae</button></div>
+               <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"><button class="button-value" onclick="filterProduct('winter')">Mùa đông ấm áp cùng Bae</button></div>
+               <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"><button class="button-value" onclick="filterProduct('tet')">Tết đủ đầy cùng Bae</button></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/chimcanhcut.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Bộ quần áo liền quần cho bé freesize</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/tat.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Tất trẻ em trơn hai bông hoa cổ cao</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/mubongchya.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Mũ bóng chày bằng vải cotton mùa hè</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/aophaogau.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Áo phao tai gấu dễ thương cho bé</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-1">
-              <div class="card" style="max-width: 90%;">
-                <img src="images/bobodysuite.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bae - Bộ bodysuite chất cotton kèm mũ cho bé</h5>
-                  <a href="#" class="btn mua-ngay">Xem sản phẩm</a>
-                </div>
+            <div class="row">
+              <!-- Card sản phẩm -->
+              <div id="listProduct" class="row" style="margin-bottom: 30px;">
+                <!-- Sản phẩm sẽ được tải ra tại đây -->
               </div>
             </div>
           </div>
           <div class="btn-product">
-            <a href="">Xem thêm</a>
+            <a href="product.html">Xem thêm</a>
         </div>
         </div>
       </section>
@@ -677,7 +581,7 @@
                 text-align: left;"></span>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">BLOG NHÀ BAE</p>
+                <a href="blog.html"> <p style="font-size: 30px; color: black; font-weight: bold; text-align: center;">BLOG NHÀ BAE</p></a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <span style=" background: url(images/tim.png) center no-repeat;
@@ -693,49 +597,49 @@
                 <a class="col-lg-6 d-none d-lg-block" href="chuyennhabae.html" title="Chuyện nhà Bae" >
                   <img src="images/CHUYỆN NHÀ.png" alt="" style="max-width: 100%; border-radius: 15px;">
                 </a>
-                <div class="col-lg-6 col-12 col-md-12">
+                <div class="col-lg-6 col-12 col-md-12 ">
                   <ul class="blog_wrap">
-                    <li class="item-blog">
+                    <li class="item-blog ">
                       <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
-                        <a class="thumb" href="#" title="Không chỉ là trang sức, ngọc trai còn ẩn chứa hàng trăm điều kỳ diệu khác">  
+                        <a class="thumb" href="blogct1.html" title="">  
                           <img src="images/blog1.png" style="max-width: 100%;border-radius: 15px; ">                        
                         </a>
                         <div class="content_blog">
-                          <h3><a href="#" title="5 bí quyết chăm sóc da cho bé yêu mùa khô" class="a-title" style="font-size: 0.75em; color: #7995a3; font-weight: bold;">5 bí quyết chăm sóc da cho bé yêu mùa khô</a></h3>
+                          <h3><a href="blogct1.html" title="Giấc ngủ ảnh hưởng đến sự phát triển chiều cao trẻ" class="a-title" style="font-size: 0.75em; color: #7995a3; font-weight: bold;">Giấc ngủ ảnh hưởng đến sự phát triển chiều cao trẻ</a></h3>
                           <div class="date">
-                            <span>15/09/2022</span>
+                            <span>1/12/2023</span>
                             <br>
-                            <a href="#" title="Xem thêm">Xem thêm</a>
+                            <a href="blogct1.html" title="Xem thêm">Xem thêm</a>
                           </div>
                         </div>
                       </article>
                     </li>
                     <li class="item-blog">
                       <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
-                        <a class="thumb" href="#" title="Món quà nào khiến chị em muôn phần may mắn?">
+                        <a class="thumb" href="blogct2.html" title="Thời trang màu hè thoáng mát cho bé">
                           <img src="images/blog2.png" style="max-width: 100%; border-radius: 15px;">
                         </a>
                         <div class="content_blog">
-                          <h3><a href="#" title="8 sai lầm thường gặp khi mua quần áo cho bé" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">8 sai lầm thường gặp khi mua quần áo cho bé</a></h3>
+                          <h3><a href="blogct2.html" title="Thời trang màu hè thoáng mát cho bé" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">Thời trang màu hè thoáng mát cho bé</a></h3>
                           <div class="date">
-                            <span>15/09/2022</span>
+                            <span>5/12/2023</span>
                             <br>
-                            <a href="#" title="Xem thêm">Xem thêm</a>
+                            <a href="blogct2.html" title="Xem thêm">Xem thêm</a>
                           </div>
                         </div>
                       </article>
                     </li>
                     <li class="item-blog">
                       <article class="item_blog_base d-flex flex-column flex-md-row align-items-md-center">
-                        <a class="thumb" href="#" title="baeboutique">
+                        <a class="thumb" href="blogct4.html" title="baeboutique">
                           <img src="images/blog3.png" style="max-width: 100%; border-radius: 15px;">
                         </a>
                         <div class="content_blog">
-                          <h3><a href="#" title="Tip để mẹ bỉm sữa bớt stress" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">Tip để mẹ bỉm sữa bớt stress, trầm cảm sau sinh</a></h3>
+                          <h3><a href="blogct4.html" title="Thực đơn bổ xung dinh dưỡng cho trẻ" class="a-title" style="font-size: 20px; color: #7995a3; font-weight: bold;">Thực đơn bổ xung dinh dưỡng cho trẻ</a></h3>
                           <div class="date">
-                            <span>15/09/2022</span>
+                            <span>6/12/2023</span>
                             <br>
-                            <a href="#" title="Xem thêm">Xem thêm</a>
+                            <a href="blogct4.html" title="Xem thêm">Xem thêm</a>
                           </div>
                         </div>
                       </article>
@@ -771,48 +675,54 @@
                 text-align: left;"></span>
               </div>
             </div>
-          </div>
-          <div id="danhgiakhachhang" class="carousel slide" data-bs-ride="carousel">
-            <!--dot-->
-            <div class="carousel-indicators">
-              <img src="images/heart.webp" alt="Slide 1" data-bs-target="#danhgiakhachhang" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px;">
-              <img src="images/heart.webp" alt="Slide 2" data-bs-target="#danhgiakhachhang" data-bs-slide-to="1" style="width: 10px; height: 10px;">
-              <img src="images/heart.webp" alt="Slide 3" data-bs-target="#danhgiakhachhang" data-bs-slide-to="2" style="width: 10px; height: 10px;">
-            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <img src="images/truonggiang.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
-                  <div style = 'font-weight:bold; color:#8295A1; font-size: 18px;'>Gia đình anh Trường Giang và chị Nhã Phương</div>
-                  <p style="font-weight: bolder; font-size: 0.8em;">"Không biết đã là lần thứ bao nhiêu chúng tôi mua sắm tại Bae Boutique và chúng tôi vẫn rất hài lòng với trải nghiệm của mình. Sản phẩm ở đây luôn vượt quá mong đợi của chúng tôi. Chúng tôi đã trở thành khách hàng trung thành với cửa hàng này vì dịch vụ tận tâm và sự đa dạng của sản phẩm. Và chắc chắn rằng, tôi sẽ tiếp tục ủng hộ Bae Boutique trong tương lai."</p>
+                  <div class="row">
+                      <div class="col-lg-4">
+                          <div class="card-cmt">
+                              <div class="box front">
+                                  <img alt="" src="data:image/jpeg;base64,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">
+                                  <h3>Trường Giang - Nhã Phương</h3>
+                                  <h4><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i></h4>
+                              </div>
+                              <div class="box back">
+                                  <span class="fa fa-quote-left"></span>
+                                  <p>
+                                    "Không biết đã là lần thứ bao nhiêu chúng tôi mua sắm tại Bae Boutique và chúng tôi vẫn rất hài lòng với trải nghiệm của mình. Sản phẩm ở đây luôn vượt quá mong đợi của chúng tôi. Chúng tôi đã trở thành khách hàng trung thành với cửa hàng này vì dịch vụ tận tâm và sự đa dạng của sản phẩm. Và chắc chắn rằng, tôi sẽ tiếp tục ủng hộ Bae Boutique trong tương lai."                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card-cmt">
+                            <div class="box front">
+                                <img alt="" src="https://thanhnien.mediacdn.vn/Uploaded/nguyenvan/2022_07_27/viechannel-photos-co-van-tran-thanh-hari-won-1-9917.jpg">
+                                <h3>Trấn Thành - Hari Won</h3>
+                                <h4><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i></h4>
+                            </div>
+                            <div class="box back">
+                                <span class="fa fa-quote-left"></span>
+                                <p>
+                                  "Chúng tôi chưa có em bé nhưng đã mua một bộ giftset - đầy tháng cho con của bạn thân tại Bae Boutique và thực sự rất ấn tượng. Sản phẩm trong bộ quà tặng rất đẹp và chất lượng. Chúng tôi rất hạnh phúc khi nhận được phản hồi tích cực từ bạn thân của mình khi tặng bộ quà này. Mặc dù không có cơ hội mua hàng thường xuyên tại cửa hàng dành cho bé, nhưng trải nghiệm này chắc chắn khiến chúng tôi muốn quay lại nếu có cơ hội trong tương lai!" </p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-lg-4">
+                          <div class="card-cmt">
+                              <div class="box front">
+                                  <img alt="" src="https://newsmd2fr.keeng.vn/tiin/archive/images/2021/11/20/tinngan_105641_430351020_0.jpg">
+                                  <h3>Đông Nhi - Ông Cao Thắng</h3>
+                                  <h4><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i><i class='bx bxs-heart' ></i></h4>
+                              </div>
+                              <div class="box back">
+                                  <span class="fa fa-quote-left"></span>
+                                  <p>
+                                    "Không biết đã là lần thứ bao nhiêu chúng tôi mua sắm tại Bae Boutique và chúng tôi vẫn rất hài lòng với trải nghiệm của mình. Sản phẩm ở đây luôn vượt quá mong đợi của chúng tôi. Chúng tôi đã trở thành khách hàng trung thành với cửa hàng này vì dịch vụ tận tâm và sự đa dạng của sản phẩm. Và chắc chắn rằng, tôi sẽ tiếp tục ủng hộ Bae Boutique trong tương lai."</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-80" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <img src="images/nhi.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
-                  <div  style = 'font-weight:bold; color: #8295A1; font-size: 18px;'>Gia đình bé Winnie</div>
-                  <p style="font-weight: bolder; font-size: 0.8em;">"Chúng tôi biết đến cửa hàng qua lời giới thiệu từ bạn bè và thực sự không hề thất vọng. Nhân viên rất nhiệt tình và sản phẩm thực sự đáng để mua. Sự đa dạng của sản phẩm và chất lượng dịch vụ làm  chúng tôi tin tưởng vào thương hiệu này. Chúng tôi cũng đã giới thiệu Bae Boutique cho một số người bạn và họ cũng rất hài lòng. Sẽ tiếp tục ủng hộ cửa hàng này trong tương lai!"</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-100" alt="..." style="max-width: 100%;">
-                <div class="carousel-caption d-md-block">
-                  <img src="images/hari.png" alt="" style="max-width: 40%; margin-bottom: 10vw;">
-                  <div style = 'font-weight:bold; color:#8295A1; font-size: 18px;'>Gia đình anh Trấn Thành, chị Hari Won</div>
-                  <p style="font-weight: bolder; font-size: 0.8em;">"Chúng tôi chưa có em bé nhưng đã mua một bộ giftset - đầy tháng cho con của bạn thân tại Bae Boutique và thực sự rất ấn tượng. Sản phẩm trong bộ quà tặng rất đẹp và chất lượng. Chúng tôi rất hạnh phúc khi nhận được phản hồi tích cực từ bạn thân của mình khi tặng bộ quà này. Mặc dù không có cơ hội mua hàng thường xuyên tại cửa hàng dành cho bé, nhưng trải nghiệm này chắc chắn khiến chúng tôi muốn quay lại nếu có cơ hội trong tương lai! ❤️❤️❤️"</p>
-                </div>
+                      </div>
+                  </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </section>
         <!--end đánh giá khách hàng-->
@@ -939,9 +849,7 @@
         <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
           <h3 class="title">Đăng ký nhận tin</h3>
           <div class="ft-sub-wrapper">
-            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-              <input name="form_type" type="hidden" value="customer">
-              <input name="utf8" type="hidden" value="✓">
+            <form accept-charset="UTF-8" action="" class="contact-form" method="post">
               <div class="input-group">
                 <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" aria-label="email@example.com" style="border-radius: 20px !important;
                 border: 1px solid #DBDCDD;">
@@ -950,16 +858,6 @@
                   <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
                 </span>
               </div>
-              <input id="dddbd9b6fa6f4535847e249c164b70b2" name="g-recaptcha-response" type="hidden" value="...">
-              <!-- Script Google Recaptcha -->
-              <script src="https://www.google.com/recaptcha/api.js?render=..."></script>
-              <script>
-                grecaptcha.ready(function() {
-                  grecaptcha.execute('...', { action: 'submit' }).then(function(token) {
-                    document.getElementById('dddbd9b6fa6f4535847e249c164b70b2').value = token;
-                  });
-                });
-              </script>
             </form>
           </div>
         </div>
@@ -974,26 +872,26 @@
         <div class="col-md-2 mt-4">
           <h3 style="text-align:left;">Chuyện nhà Bae </h3>
           <ul>
-            <li><a href="">Hoạt động</a></li>
-            <li><a href="">Giải đáp</a></li>
-            <li><a href="">Chứng nhận</a></li>
+            <li><a href="#">Hoạt động</a></li>
+            <li><a href="#">Giải đáp</a></li>
+            <li><a href="#">Chứng nhận</a></li>
         </ul>
         </div>
         <div class="col-md-3 mt-4">
           <h3>Chính sách</h3>
           <ul>
-            <li><a href="">Chính sách thanh toán</a></li>
-            <li><a href="">Chính sách kiểm hàng</a></li>
-            <li><a href="">Chính sách đổi và trả hàng</a></li>
-            <li><a href="">Chính sách vẫn chuyển</a></li>
+            <li><a href="chinhsachthanhtoan.html">Chính sách thanh toán</a></li>
+            <li><a href="chinhsachkiemhang.html">Chính sách kiểm hàng</a></li>
+            <li><a href="chinhsachdoitra.html">Chính sách đổi và trả hàng</a></li>
+            <li><a href="chinhsachvanchuyen.html">Chính sách vẫn chuyển</a></li>
         </ul>
         </div>
         <div class="col-md-2 mt-4">
           <h3>Thông tin</h3>        
           <ul>
-            <li><a href="">Tổng đài hỗ trợ</a></li>
+            <li><a href="team.html">Đội ngũ</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
-            <li><a href="">Danh sách địa chỉ bán</a></li>
+            <li><a href="chuyennhabae.html">Giới thiệu</a></li>
         </ul>
         </div>
         <div class="col-md-5">
@@ -1002,8 +900,8 @@
                 <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
                   <i class='bx bx-map' ></i>
                 </box-icon> Địa chỉ: 12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội, Vietnam</a><br><br>
-                <a href="#"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
-                <a href="https://baeboutique04@gmail.com/" target="_blank">
+                <a href="tel:0399725203"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
+                <a href="mailto:https://baeboutique04@gmail.com/" target="_blank">
                   <i class='bx bx-envelope'></i>
                 </box-icon> Email: baeboutique04@gmail.com</a>
             </div>
@@ -1014,7 +912,7 @@
                 </div>
         </div>
       </div>
-      <div class="row"><p>Copyright 2023 &copy; by <a href="#" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
+      <div class="row"><p>Copyright 2023 &copy; by <a href="index.html" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
     </div>
     </div>
 </footer>
@@ -1050,7 +948,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
    <!--backtop-->
    <div id="backtop" >
-    <i class='bx bxs-chevrons-up' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 40px; right: 20px; cursor: pointer;"></i>
+    <i class='bx bxs-chevrons-up' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 80px; right: 20px; cursor: pointer;"></i>
    </div>
    <script>
     $(document).ready(function() {
@@ -1066,8 +964,12 @@
     });
     });
    </script>
+   
+  
+   <script src="index.js"></script>
+   <script src="favourites.js"></script>
+   <script src="cart.js"></script>
   </body>
 </html>
-
 </body>
 </html>

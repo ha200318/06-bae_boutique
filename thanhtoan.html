@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Chính sách đổi trả</title>
+  <title>Giỏ hàng</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!--Css Ly-->
   <link rel="stylesheet" href="product.css">
-  <link rel="stylesheet" href="chinhsach.css">
   <!--font icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!--css Hà-->
   <link rel="stylesheet" href="index.css">
   <!-- Font chữ-->
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
+  <link rel="stylesheet" type="text/css" href="Footertn.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <!-- ------------------------------ LINK MỚI ------------------------------- -->
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- ------------------------------ LINK MỚI ------------------------------- -->
+  <style>
+    #cartItemsList {
+    list-style: none; /* Loại bỏ kiểu danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    }
+    #cartItemsList li {
+        margin-top:20px;
+        margin-bottom: 20px; /* Thêm khoảng cách giữa các mục danh sách */
+        
+    }
+    #cartItemsList li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+    #cartItemsList li:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Tạo đường kẻ ngang */
+    padding-bottom: 10px; /* Khoảng cách giữa các dòng */
+    margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    }
+    .btn-checkout {
+        width: 100%;
+        text-align: right;
+        margin: 30px;
+    }
+    .btn-checkout a {
+        text-decoration: none;
+        color: #8295A1;
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        transition: .3s linear;
+        border: 1px solid #8295A1;
+    }
+    .btn-checkout a:hover {
+        background-color: #8295A1;
+        color: white;
+        transition: .3s linear;
+    }
+  </style>
 </head>
 <body>
   <!--Header-->
@@ -32,7 +76,7 @@
         <!--logo-->
         <div class="col-lg-3 col-md-2">
           <a href="index.html">
-            <img src="images/Bae Boutique.png" alt="logo" class="logo">
+            <img src="images/Bae Boutique.png" alt="logo" class="logo" >
           </a>
         </div>
         <!--thanh tìm kiếm-->
@@ -47,47 +91,42 @@
         </div>
         <!--Liên hệ-->
         <div class="col-md-2">
-
         </div>
-
         <!--công cụ-->
         <div class="col-md-2 py-4">
           <div class="row">
             <div class="col">
               <a href="./favourites.html" class="position-relative" id="open-love">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="favoritesCount">
-                  
-                  <span class="visually-hidden">unread messages</span>
+                  0
                 </span>
                 <span class="fs-3">
-                  <i class="fa-regular fa-heart icon"></i>
+                  <i class="fa-regular fa-heart icon" style="color: #8295A1;"></i>
                 </span>
               </a>
             </div>
             <div class="col">
               <a href="./cart.html" class="position-relative">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartsCount">
-                  3
-                  <span class="visually-hidden">unread messages</span>
+                  0
                 </span>
                 <span class="fs-3">
-                  <i class="fa-solid fa-bag-shopping icon"></i>
+                  <i class="fa-solid fa-bag-shopping icon" style="color: #8295A1;"></i>
                 </span>
               </a>
             </div>
             <div class="col">
               <a href="#" class="position-relative">
                 <div class="col">
-
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="fs-3">
-                      <i class="fa-regular fa-user icon"></i>
+                      <i class="fa-regular fa-user icon" style="color: #8295A1;"></i>
                     </span>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a id="loginLink" class="dropdown-item" href="#">Đăng nhập</a></li>
-                    <li><a id="registerLink" class="dropdown-item" href="#">Đăng ký</a></li>
+                    <li><a id="loginLink" class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                    <li><a id="registerLink" class="dropdown-item" href="dangki.html">Đăng ký</a></li>
                   </ul>
                 </div>
               </a>
@@ -136,30 +175,29 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">Blog</a>
+                      <a class="nav-link " href="blog.html">Blog</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">Bộ sưu tập</a>
+                      <a class="nav-link " href="giftset.html">Giftset</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">Giftset</a>
+                      <a class="nav-link disable" href="team.html">Đội ngũ</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disable" href="#">Đội ngũ</a>
+                      <a class="nav-link " href="contact.html">Liên hệ</a>
                       <div class="active-img nav justify-content-end">
                         <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                       </div>
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -169,74 +207,89 @@
       </div>
     </div>
   </section>
-
-  <!-- The slideshow/carousel -->
-  <div class="carousel-product">
-    <div class="carousel-product active">
-      <img src="images/allpro.png" alt="banner all product-card" class="d-block" style="width:100%">
-    </div>
-  </div>
-
-
-
-
   <!--Trang chủ- Danh mục - sản Phẩm-->
   <div class="container my-5">
     <nav aria-label="breadcrumb" style="font-size: 18px; font-weight: bolder;">
       <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
         <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-        
-        <li class="breadcrumb-item active" aria-current="page">Chính sách thanh toán</li>
+        <li class="breadcrumb-item"><a href="product.html">Sản phẩm</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Trang thanh toán</li>
       </ol>
     </nav>
   </div>
-
-  <div class="container my-5">
-    <div id="chinhsach" class="chinhsach">
-        <h4>1. THỜI GIAN ĐỔI/TRẢ SẢN PHẨM</h4>
-            <ul>
-                <li>Áp dụng 01 lần đổi/ 01 đơn hàng.</li>
-                <li>BẢO HÀNH lỗi trong vòng 1 tháng kể từ ngày mua trên hóa đơn.</li>
-                <li>Sản phẩm mua tại hệ thống Showroom The Gallery of Bae Boutique được ĐỔI: Trong vòng 3 ngày kể từ ngày mua.</li>
-                <li>Sản phẩm mua Online trên website BU Baby và các trang Facebook, Instagram được ĐỔI: Trong vòng 3 ngày kể từ ngày nhận được sản phẩm.</li>
-            </ul>
-        <h4>2. ĐIỀU KIỆN SẢN PHẨM ĐẠT YÊU CẦU ĐỔI/TRẢ</h4>
-            <h5>2.1. Điều kiện ĐỔI/TRẢ sản phẩm</h5>
-            <ul>
-                <li>Áp dụng với các sản phẩm nguyên giá.</li>
-                <li>Sản phẩm chưa giặt và chưa qua sử dụng, còn nguyên tem mác trên sản phẩm.</li>
-                <li>Các trường hợp lỗi do nhà sản xuất gồm: Sản phẩm lệch lạc/không cân đối, lỗi đường may, lỗi cúc/khuy/khoá kéo/dây buộc, lỗi Logo/size (số)/tag, sai chất liệu so với thông tin công bố… (*Tùy trường hợp cụ thể mà chúng tôi sẽ đổi hoặc bảo hành cho khách hàng)</li>
-                <li>Sản phẩm thỏa mãn điều kiện của THỜI HẠN ĐỔI/TRẢ SẢN PHẨM.</li>
-                <li>Sản phâm không bị làm dơ, bẩn, hư hỏng bởi những tác nhân bên ngoài sau khi mua sản phẩm.</li>
-                <li>Hàng hóa được xác định nguồn gốc mua tại cửa hàng chính hãng của Bae và kênh bán hàng trực thuộc của Bae.</li>
-            </ul>
-            <h5>2.2 Sản phẩm KHÔNG nhận ĐỔI/TRẢ</h5>
-            <ul>
-                <li>Sản phẩm đã sử dụng.</li>
-                <li>Sản phẩm quá thời hạn đổi.</li>
-                <li>Sản phẩm không còn tem mác, ma sát với vật cứng làm trầy xước, hư hỏng.</li>
-                <li>Sản phẩm mua không xác định được nguồn gốc mua hoặc nguồn gốc mua không phải là cửa hàng chính hãng của Bae hoặc các kênh bán hàng trực thuộc Bae.</li>
-            </ul>
-            <h5>2.3 Giá trị ĐỔI sản phẩm</h5>
-                <p>Sản phẩm đổi mới sẽ có giá trị ngang bằng hoặc lớn hơn giá trị sản phẩm đã mua trước đó. Trường hợp sản phẩm mới có giá trị cao hơn khách hàng cần trả phần tiền phát sinh thêm.
-                    Nếu sản phẩm đổi nằm trong set combo sẽ được đổi sang sản phẩm có giá trị tương ứng trong set combo đó.</p>
-        <h4>3. CHI PHÍ VẬN CHUYỂN SẢN PHẨM KHI ĐỔI/TRẢ</h4>
-            <p>Đối với lỗi do nhà sản xuất: BU sẽ thanh toán chi phí vận chuyển 2 chiều theo đơn giá: hoàn hàng và nhận lại đơn hàng đổi mới của đơn vị vận chuyển.
-                Đối với nhu cầu của khách hàng: Khách hàng thanh toán chi phí vận chuyển 2 chiều: hoàn hàng và nhận lại đơn hàng đổi mới theo đơn giá của đơn vị vận chuyển.</p>                
-                
-        <h4>4. LIÊN HỆ ĐỔI/TRẢ SẢN PHẨM</h4>
-            <p>Khách hàng có thể liên hệ trực tiếp tới Bae Boutique theo các địa chỉ dưới đây:
-                <ul>
-                    <li>Showroom The Gallery of Bae Boutique: 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
-                    <li><a href="#">Website: baeboutique.com</a></li>
-                    <li>Hotline: 039 972 5203</li>
-                    <li>Facebook: <a href="https://www.facebook.com/baeboutique04" style="color: #7995a3; text-decoration: underline;font-weight: bold;">Bae Boutique</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/baeboutique04/" style="color: #7995a3; text-decoration: underline;font-weight: bold;">Bae Boutique</a></li>
-                </ul>
-            </p>
-      </div>
+  <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
+  <div class="container">
+    <!-- -------------------------------- CART --------------------------------- -->
+  <!-- Cart List -->
+  <div id="cartList" class="cartList">
+    <!-- <h2 style="font-weight: 600; text-align: center;">THANH TOÁN NGAY</h2> -->
+    <div class="row">
+        <div class="col-lg-6 col-12">    
+            <div class="form-vertical clearfix">
+                <form action="https://formsubmit.co/0a93ad13169c905679d7db72b86eb62f" method="POST" >
+                      <div class="mb-3">
+                          <input type="text" id="ContactFormName" name="name" class="form-control" placeholder="Họ tên của bạn" 
+                          style="height: 56px; background: transparent !important;   border: 2px solid #8295A1;  border-radius: 10px;  color: #8295A1;  margin-bottom: 30px;">
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">  <div class="mb-3">
+                            <input type="email" id="ContactFormEmail" name="email" class="form-control" placeholder="Địa chỉ email của bạn" 
+                            style="height: 56px; background: transparent !important;   border: 2px solid #8295A1;  border-radius: 10px;  color: #8295A1; margin-bottom: 30px;">
+                        </div></div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <input type="tel" id="ContactFormPhone" class="form-control" name="tel" placeholder="Số điện thoại của bạn" pattern="[0-9\-]*" value=""
+                                style="height: 56px; background: transparent !important;   border: 2px solid #8295A1;  border-radius: 10px;  color: #8295A1;  margin-bottom: 30px;">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <textarea rows="2" id="ContactFormMessage" class="form-control" name="messsenger" placeholder="Chi tiết địa chỉ"
+                        style="border-radius: 10px; border: 2px solid #8295A1;margin-bottom: 30px;"></textarea>
+                    </div>
+                    <!--dia chi-->
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-4" >   <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm" style="border-radius: 10px; border: 2px solid #8295A1;margin-bottom: 30px;height: 56px;">
+                                <option value="" selected>Chọn tỉnh thành</option>           
+                                </select> </div>
+                            <div class="col-lg-4"> <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm" style="border-radius: 10px; border: 2px solid #8295A1;margin-bottom: 30px;height: 56px;">
+                                <option value="" selected>Chọn quận huyện</option>
+                                </select> </div>
+                            <div class="col-lg-4"> <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm" style="border-radius: 10px; border: 2px solid #8295A1;margin-bottom: 30px;height: 56px;">
+                                <option value="" selected>Chọn phường xã</option>
+                                </select></div>
+                        </div>     
+                         </div>    
+                      <div class="mb-3">
+                          <textarea rows="3" id="ContactFormMessage" class="form-control" name="messsenger" placeholder="Nội dung ghi chú"
+                          style="border-radius: 10px; border: 2px solid #8295A1;margin-bottom: 30px;"></textarea>
+                      </div>
+   
+                  </form>
+              </div>
+              <br><br><br><br><br>
+        </div>
+        <div class="col-lg-6 col-12" style="border-left: 1px solid #8295A1;">
+             <ul id="cartItemsList">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <p style="text-align: right; font-weight: bold; font-size: 1rem;">Tổng cộng: <span id="totalAmount">0₫</span></p>
+          <div class="btn-checkout"> 
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3"> <a href="" title="Thanh toan">Đặt hàng</a></div>
+                <div class="col-lg-4" style="text-align: right;"><a href="cart.html">Quay lại giỏ hàng</a></div>
+            </div>   
+          </div></div>
+    </div>
+   
   </div>
- <!--liên hệ cho ctoi-->
+
+  <!-- -------------------------------- CART --------------------------------- -->
+  </div>
+  <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
+  <!--liên hệ cho ctoi-->
  <div class="contact_us">
   <div class="container">
     <div class="row align-items-center">
@@ -317,6 +370,53 @@
     </div>
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./product.js"></script>
+  <script src="./thanhtoan.js"></script>
+  <script src="./product.js"></script>
+  <script src="./favourites.js"></script>
+<!--tham khảo code 63 tỉnh thành :)))-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script>
+  var citis = document.getElementById("city");
+var districts = document.getElementById("district");
+var wards = document.getElementById("ward");
+var Parameter = {
+url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
+method: "GET", 
+responseType: "application/json", 
+};
+var promise = axios(Parameter);
+promise.then(function (result) {
+renderCity(result.data);
+});
+
+function renderCity(data) {
+for (const x of data) {
+  citis.options[citis.options.length] = new Option(x.Name, x.Id);
+}
+citis.onchange = function () {
+  district.length = 1;
+  ward.length = 1;
+  if(this.value != ""){
+    const result = data.filter(n => n.Id === this.value);
+
+    for (const k of result[0].Districts) {
+      district.options[district.options.length] = new Option(k.Name, k.Id);
+    }
+  }
+};
+district.onchange = function () {
+  ward.length = 1;
+  const dataCity = data.filter((n) => n.Id === citis.value);
+  if (this.value != "") {
+    const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+    for (const w of dataWards) {
+      wards.options[wards.options.length] = new Option(w.Name, w.Id);
+    }
+  }
+};
+}
+  </script>
 </body>
+
 </html>

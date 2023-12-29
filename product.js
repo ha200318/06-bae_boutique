@@ -1,69 +1,47 @@
-$(document).ready(function () {
-    // Khi di chuột vào ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseover(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(70%)"); // Giảm độ sáng
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeIn(); // Hiện nút mua ngay
-    });
-
-    // Khi di chuột ra khỏi ảnh sản phẩm
-    $(".product-image, .buy-now-btn").mouseleave(function () {
-        $(this)
-            .closest(".product-card")
-            .find(".product-image")
-            .css("filter", "brightness(100%)"); // Khôi phục độ sáng ban đầu
-        $(this).siblings(".card-body").find(".buy-now-btn").fadeOut(); // Ẩn nút mua ngay
-    });
-});
 
 /* -------------------------------------------------------------------------- */
 /*                                  CODE MỚI                                  */
 /* -------------------------------------------------------------------------- */
 var products = [
     {
-        name: "Bộ váy Giáng sinh",
-        price: 600000,
+        name: "Bae - Bodysuit liền thân dài tay lót nhung",
+        price: 199000,
         discount: 10,
-        size: ["3-6M","9-12M"],
-        gender: "girl",
-        img: "images/c1/bộ_váy_giáng_sinh.jpg",
-    },
+        img: "images/c1/Bodysuit liền thân dài tay lót nhung.png",
+        gift: "tet",
+      },
+      {
+        name: "Bae - Set quần yếm màu đỏ và mũ Noel cho bé",
+        price: 250000,
+        discount: 10,
+        img: "images/c1/Set quần yếm màu đỏ.png",
+        gift: "noel",
+      },
+      {
+        name: "Bae - Bộ gấu trúc có mũ lót lông cho bé",
+        price: 239000,
+        discount: 10,
+        img: "images/gấu trúc.png",
+        gift:"winter",
+      },
     {
-        name: "Set váy Giáng sinh",
-        price: 590000,
+        name: "Bae - Choàng tắm con voi cho bé",
+        price: 100000,
         discount: 5,
-        size: "18-24M",
-        gender: "girl",
-        img: "images/c1/set_váy_giáng_sinh.jpg",
-    },
-    {
-        name: "Choàng tắm unicorn",
-        price: 350000,
-        discount: 0,
-        size: "9-12M",
+        size: ["3-6M","9-12M"],
         gender: "unisex",
-        img: "images/c1/choàng_tắm_unicorn.jpg",
+        img: "images/c1/choàng con voi.png",
     },
     {
-        name: "Vòi sen mini",
-        price: 1290000,
+        name: "Bae - Vòi sen mini cầm tay cho bé",
+        price: 129000,
         discount: 0,
         size: "9-12M",
         gender: "unisex",
         img: "images/c1/vòi_sen_mini.jpg",
     },
     {
-        name: "Bộ liền Giáng sinh",
-        price: 390000,
-        discount: 20,
-        size: "9-12M",
-        gender: "boy",
-        img: "images/c1/bộ_liền_giáng_sinh.jpg",
-    },
-    {
-        name: "Set cắt móng tay",
+        name: "Bae - Set cắt móng tay kèm hộp cho bé",
         price: 199000,
         discount: 0,
         size: "9-12M",
@@ -71,15 +49,15 @@ var products = [
         img: "images/c1/set_cắt_móng_tay.jpg",
     },
     {
-        name: "Yếm len Giáng sinh",
-        price: 360000,
+        name: "Bae - Áo len Tuần lộc cho bé đón Noel",
+        price: 50000,
         discount: 0,
         size: "9-12M",
         gender: "unisex",
-        img: "images/c1/yếm_len_giáng_sinh.jpg",
+        img: "images/áo len.png",
     },
     {
-        name: "Xe tập đi",
+        name: "Bae - Xe tập đi cho bé ngộ nghĩnh đáng yêu",
         price: 1190000,
         discount: 0,
         size: "9-12M",
@@ -87,15 +65,132 @@ var products = [
         img: "images/c1/xe_tập_đi.jpg",
     },
     {
-        name: "Xe đẩy",
+        name: "Bae - Xe đẩy cho bé nhiều màu, có thể gấp gọn",
         price: 2390000,
         discount: 5,
         size: "9-12M",
         gender: "unisex",
         img: "images/c1/xe_đẩy.jpg",
+    },  {
+        name: "Bae - Bộ liền penguin",
+        price: 279000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/bộ_liền_penguin.jpg",
     },
-    // { name: "Choàng tắm gấu trắng", price: 350000, discount: 10, size: "9-12M", gender: "unisex", img: "images/c1/choàng_tắm_gấu_trắng.jpg" },
-    // Có thể thêm sản phẩm tương tự nhé
+    {
+        name: "Bae - Áo liền quần mùa đông",
+        price: 300000,
+        discount: 10,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "girl",
+        img: "images/c1/bộ_liền_mùa_đông.jpg",
+    },
+    {
+        name: "Bae - Bộ 3 món kèm cà vạt",
+        price: 299000,
+        discount: 5,
+        size: ["9-12M","12-18M","18-24M"],
+        gender: "boy",
+        img: "images/c1/bộ_3_món.jpg",
+    },
+    {
+        name: "Bae - Bộ liền thân kèm mũ",
+        price: 279000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/bộ_liền_thân.jpg",
+    },
+    {
+        name: "Bae - Mũ bóng chày cotton",
+        price: 25000,
+        discount: 5,
+        size: ["6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/mũ_bóng_chày.jpg",
+    },
+    {
+        name: "Bae - Giày tập đi cho bé mềm mại",
+        price: 250000,
+        discount: 5,
+        size: ["9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/giày_tập_đi.jpg",
+    },
+    {
+        name: "Bae - Mũ len nhung cột dây",
+        price: 80000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "girl",
+        img: "images/c1/mũ_len_nhung.jpg",
+    },
+    {
+        name: "Bae - Bộ liền gấu trúc",
+        price: 150000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/bộ_liền_gấu_trúc.jpg",
+    },
+    {
+        name: "Bae - Bộ váy Giáng sinh",
+        price: 600000,
+        discount: 10,
+        size: ["3-6M","9-12M"],
+        gender: "girl",
+        img: "images/c1/bộ_váy_giáng_sinh.jpg",
+    },
+    {
+        name: "Bae - Set váy Giáng sinh",
+        price: 590000,
+        discount: 5,
+        size: "18-24M",
+        gender: "girl",
+        img: "images/c1/set_váy_giáng_sinh.jpg",
+    },   
+    {
+        name: "Bae - Heo gấu bông",
+        price: 129000,
+        discount: 5,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/heo_gấu_bông.jpg",
+    },
+    {
+        name: "Bae - Bát ăn dặm 3 trong 1",
+        price: 299000,
+        discount: 10,
+        size: ["6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/bát_ăn_dặm.jpg",
+    },
+    {
+        name: "Bae - Nôi tự động E1",
+        price: 1890000,
+        discount: 10,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M"],
+        gender: "unisex",
+        img: "images/c1/nôi_tự_động_e1.jpg",
+    },
+    {
+        name: "Bae - Bình sữa Kamidi 210ml",
+        price: 349000,
+        discount: 5,
+        size: ["0-3M","3-6M"],
+        gender: "unisex",
+        img: "images/c1/bình_sữa_kamidi.jpg",
+    },
+    {
+        name: "Bae - Ghế ăn tựa lưng trẻ em",
+        price: 299000,
+        discount: 10,
+        size: ["6-9M","9-12M","12-18M","18-24M"],
+        gender: "unisex",
+        img: "images/c1/ghế_ăn_tựa_lưng.jpg",
+    },
 ];
 
 /* ------------------------- Tạo các biến cần thiết ------------------------- */
@@ -270,7 +365,7 @@ function addToCart(product) {
 }
 /* ------------------------ Thêm sản phẩm vào giỏ hàng ----------------------- */
 
-// Hiển thị tất cả các sp khi trang được tải  (ko cần phải copy từng sp bên HTML, chạy vòng lặp và tải từng sp tương ứng với từng thông tin)
+// Hiển thị tất cả các sp khi trang được tải  
 products.forEach(function (product) {
     var discountedPrice =
         product.price - product.price * (product.discount / 100);
@@ -299,7 +394,7 @@ products.forEach(function (product) {
         ).replace(
             /"/g,
             "&quot;"
-        )})"><i class="fa-regular fa-heart"></i></button>
+        )})"><i class="fa-regular fa-heart fs-4"></i></button>
               </div>
               </div>
               </div>
@@ -311,8 +406,8 @@ products.forEach(function (product) {
 displayFavorites();
 /* ----------------------- Hiển thị sản phẩm yêu thích ---------------------- */
 displayCart();
+
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.getElementById("cartsCount").innerText = cart.length;
-/* -------------------------------------------------------------------------- */
-/*                                  CODE MỚI                                  */
-/* -------------------------------------------------------------------------- */
+
+

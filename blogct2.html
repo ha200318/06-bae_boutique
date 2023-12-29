@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--phong chu-->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
     <!--banner-->
     <!--css blogct-->
     <link rel="stylesheet" type="text/css" href="blogct1.css">
@@ -19,8 +20,6 @@
     <!--JS-->
     <script src="footertn.js"></script>
     <script src="blogct.js"></script>
-
-
 </head>
 <body>
   <header>     
@@ -54,14 +53,16 @@
                             </div>
                           </li>
                           <li class="nav-item dropdown">
-                            <a href="test.html" class="san-pham">Sản Phẩm</a>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="test.html"></a>
+                            <a href="product.html" class="san-pham">Sản Phẩm</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="product.html"></a>
                             <div class="active-img nav justify-content-end">
                               <img src="images/heart.webp" alt="iconheart" style="width: 53px; height: 47px;">
                             </div>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="test.html">Thời trang cho bé</a></li>
-                              <li><a class="dropdown-item" href="#">Đồ chơi cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_clothes.html">Thời trang cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Đồ dùng cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Đồ chơi cho bé</a></li>
+                              <li><a class="dropdown-item" href="product_thing.html">Phụ kiện cho bé</a></li>
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="#">Mẹ bầu</a></li>
                             </ul>
@@ -146,9 +147,9 @@
             </nav>-->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
-                <li class="breadcrumb-item"><a href="index.html" style="color: #72a0bc;"><span style="color:#72a0bc; "><strong style="font-size: 16px">Trang chủ</strong></span></a></li>
-                <li class="breadcrumb-item"><a href="blog.html" style="color: #72a0bc;"><span style="color: #72a0bc;"> <strong style="font-size: 16px; ">Blog</strong></span></a></li>
-                <li class="breadcrumb-item"><a href="blogcttn.html" style="color: #72a0bc;"><span style="color: #72a0bc;"> <strong style="font-size: 16px; text-decoration: underline">Thời trang mùa hè thoáng mát cho bé</strong></a></span></li>
+                <li class="breadcrumb-item"><a href="index.html" style="color: #72a0bc;"><span style="color:black; "><strong style="font-size: 18px">Trang chủ</strong></span></a></li>
+                <li class="breadcrumb-item"><a href="blog.html" style="color: #72a0bc;"><span style="color: black;"> <strong style="font-size: 18px; ">Blog</strong></span></a></li>
+                <li class="breadcrumb-item"><a href="blogcttn.html" style="color: #72a0bc;"><span style="color: black;"> <strong style="font-size: 18px; text-decoration: underline">Thời trang mùa hè thoáng mát cho bé</strong></a></span></li>
               </ol>
             </nav>
         </div>
@@ -281,108 +282,86 @@
 
         </div>
  </section> 
-  <!--liên hệ cho ctoi-->
-  <div class="contact_us">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
-            <img src="images/Bae Boutique.png" alt="logo" class="img-fluid" style="width: 20vw;">
+ <!--liên hệ cho ctoi-->
+ <div class="contact_us">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+        <div class="logo_bottom wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="0.75s">
+          <img src="images/Bae Boutique.png" alt="logo" class="img-fluid" style="width: 15vw;">
         </div>
-        <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
-          <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
-            <h3 class="title">Đăng ký nhận tin</h3>
-            <div class="ft-sub-wrapper">
-              <form onsubmit="sendEmail(); reset(); return false;">
-                <input name="form_type" type="hidden" value="customer">
-                <input name="utf8" type="hidden" value="✓">
-                <div class="input-group">
-                  <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" 
-                  aria-label="email@example.com" 
-                  style="border-radius: 20px !important;
-                  border: 1px solid #DBDCDD;">
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <span class="input-group-btn">
-                    <button type="submit" name="subscribe" id="subscribe" class="btn" 
-                    style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">
-                    Gửi</button>
-                  </span>
-                </div>
-              </form>
-            </div>
+      </div>
+      <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
+        <div class="ft-sub fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.75s">
+          <h3 class="title">Đăng ký nhận tin</h3>
+          <div class="ft-sub-wrapper">
+            <form accept-charset="UTF-8" action="" class="contact-form" method="post">
+              <div class="input-group">
+                <input type="email" value="" placeholder="Nhập email..." name="contact[email]" id="Email" class="form-control" aria-label="email@example.com" style="border-radius: 20px !important;
+                border: 1px solid #DBDCDD;">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <span class="input-group-btn">
+                  <button type="submit" name="subscribe" id="subscribe" class="btn" style="padding: 15px 35px; margin-left: 20px; background: #7995a3; color: #ffffff; border-radius: 20px; word-break: normal; line-height: 22.5px;">Gửi</button>
+                </span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--script gán đến email-->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail(){
-      Email.send({
-    Host : "smtp.gmail.com",
-    Username : "username",
-    Password : "password",
-    To : 'baeboutique04@gmail.com',
-    From : document.getElementById("email").value,
-   
-}).then(
-  message => alert(message)
-);
-    }
-  </script>
-<!--footer-->
-  <footer>
-    <div class="myfooter">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-2 mt-4">
-            <h3 style="text-align:left;">Chuyện nhà Bae </h3>
-            <ul>
-              <li><a href="">Hoạt động</a></li>
-              <li><a href="">Giải đáp</a></li>
-              <li><a href="">Chứng nhận</a></li>
-          </ul>
-          </div>
-          <div class="col-md-3 mt-4">
-            <h3>Chính sách</h3>
-            <ul>
-              <li><a href="">Chính sách thanh toán</a></li>
-              <li><a href="">Chính sách kiểm hàng</a></li>
-              <li><a href="">Chính sách đổi và trả hàng</a></li>
-              <li><a href="">Chính sách vẫn chuyển</a></li>
-          </ul>
-          </div>
-          <div class="col-md-2 mt-4">
-            <h3>Thông tin</h3>        
-            <ul>
-              <li><a href="">Tổng đài hỗ trợ</a></li>
-              <li><a href="contact.html">Liên hệ</a></li>
-              <li><a href="">Danh sách địa chỉ bán</a></li>
-          </ul>
-          </div>
-          
-          <div class="col-md-5" >
-            <h3>Liên hệ</h3>
-              <div class="icons1">
-                  <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
-                    <i class='bx bx-map' ></i>
-                  </box-icon> Địa chỉ: 12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội, Vietnam</a><br><br>
-                  <a href="#"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
-                  <a href="https://baeboutique04@gmail.com/" target="_blank">
-                    <i class='bx bx-envelope'></i>
-                  </box-icon> Email: baeboutique04@gmail.com</a>
-              </div>
-              <h3>Mạng xã hội</h3>
-              <div class="icons2">
-                     <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
-                      <span><a href="https://www.instagram.com/baeboutique04/"><i class='bx bxl-instagram-alt' ></i></a></span>
-                  </div>
-          </div>
+</div>
+<footer>
+  <div class="myfooter">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-2 mt-4">
+          <h3 style="text-align:left;">Chuyện nhà Bae </h3>
+          <ul>
+            <li><a href="#">Hoạt động</a></li>
+            <li><a href="#">Giải đáp</a></li>
+            <li><a href="#">Chứng nhận</a></li>
+        </ul>
         </div>
-        <div class="row"><p>Copyright 2023 &copy; by <a href="#" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
+        <div class="col-md-3 mt-4">
+          <h3>Chính sách</h3>
+          <ul>
+            <li><a href="chinhsachthanhtoan.html">Chính sách thanh toán</a></li>
+            <li><a href="chinhsachkiemhang.html">Chính sách kiểm hàng</a></li>
+            <li><a href="chinhsachdoitra.html">Chính sách đổi và trả hàng</a></li>
+            <li><a href="chinhsachvanchuyen.html">Chính sách vẫn chuyển</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2 mt-4">
+          <h3>Thông tin</h3>        
+          <ul>
+            <li><a href="team.html">Đội ngũ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="chuyennhabae.html">Giới thiệu</a></li>
+        </ul>
+        </div>
+        <div class="col-md-5">
+          <h3>Liên hệ</h3>
+            <div class="icons1">
+                <a href="https://maps.app.goo.gl/QbWZsasfHDen97Td6" target="_blank">
+                  <i class='bx bx-map' ></i>
+                </box-icon> Địa chỉ: 12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội, Vietnam</a><br><br>
+                <a href="tel:0399725203"><i class='bx bx-phone' ></i></box-icon> Hotline: 039 972 5203</a><br><br>
+                <a href="mailto:https://baeboutique04@gmail.com/" target="_blank">
+                  <i class='bx bx-envelope'></i>
+                </box-icon> Email: baeboutique04@gmail.com</a>
+            </div>
+            <h3>Mạng xã hội</h3>
+            <div class="icons2">
+                   <span><a href="https://www.facebook.com/baeboutique.04/"><i class='bx bxl-facebook-circle' ></i></a></span>
+                    <span><a href="https://www.instagram.com/baeboutique04/"><i class='bx bxl-instagram-alt' ></i></a></span>
+                </div>
+        </div>
       </div>
-      </div>
-  </footer>
+      <div class="row"><p>Copyright 2023 &copy; by <a href="index.html" style="text-decoration: none; color:#8295A1;">Bae Boutique</a></p></div>
+    </div>
+    </div>
+</footer>
    <!--script của bootstrap-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
    <!--them moi-->

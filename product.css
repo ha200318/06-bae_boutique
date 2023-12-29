@@ -1,39 +1,204 @@
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 1200px;
-    margin: 20px auto;
-  }
 
-  .product-card {
-    margin: 10px;
-    position: relative; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    height:auto;
-  }
+*{
+  font-family: quicksand;
+}
+a{
+  text-decoration: none;
+  color: #646464;
+}
+/* Reset margin và padding cho các phần tử mặc định */
+.myheader {
+margin: 0;
+padding: 0;
+}
 
-  .product-image {
-    max-width: 100%;
-    height: auto;
-    transition: filter 0.5s ease; /* Thêm hiệu ứng chuyển đổi màu tối */
-  }
-  
-  .buy-now-btn {
-    background-color: #7691A4;
-    border-color: #4e6474;
-    display: none;
-    position: absolute; /* Đặt vị trí tuyệt đối cho nút */
-    top: 40%; /* Đặt vị trí theo chiều dọc giữa card */
-    left: 50%; /* Đặt vị trí theo chiều ngang giữa card */
-    transform: translate(-50%, -50%); /* Để nút nằm chính giữa card */
-    z-index: 1; /* Đặt chỉ số z để nút hiển thị đè lên ảnh */
-  }
-  
-  .card-title{
-    cursor: pointer;
-    color: #7691A4;
-    font-weight: bolder;
-  }
+/* Reset margin và padding cho phần header và main menu */
+.myheader{
+margin: 0;
+padding: 0;
+background-color: white;
+/* Cố định header và main menu lên trên cùng */
+/* position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9999; */
+}
+
+.nav{
+  justify-content: center;
+  font-weight: bold;
+}
+.nav-item{
+  margin: 0 23px;
+  font-size: 1.2rem;
+}
+
+.icon-menu{
+  margin-right: 10px;
+}
+
+/* CSS để căn chỉnh các phần tử trong thanh điều hướng */
+.nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Ẩn biểu tượng trái tim ban đầu */
+.active-img {
+  display: none;
+  margin-left: 0px; /* Khoảng cách giữa văn bản và biểu tượng */
+}
+
+/* Hiển thị biểu tượng trái tim khi di chuột vào */
+.nav-item:hover .active-img {
+  display: block;
+}
+
+.nav-link:hover{
+  color: #728D98
+}
+
+/*banner*/
+.carousel-inner img {
+width: 100%;
+height: 100%;
+}
+
+/*footer*/
+/*lien he chung toi*/
+.contact_us {
+background: #E4F3FC;
+padding: 30px 0px;
+}
+
+.contact_us .ft-sub {
+width: 75%;
+margin: auto;
+}
+.contact_us .ft-sub h3 {
+font-size: 40px;
+margin-bottom: 20px;
+color: #7995a3;
+line-height: 1.5em;
+}
+form {
+margin-bottom: 0;
+}input, button, textarea {
+outline: 0px;
+}
+input, textarea, select {
+border: 1px solid #f7f8f9;
+max-width: 100%;
+padding: 8px 10px;
+}.footer_us .ft-sub .input-group_ {
+display: flex;
+align-items: center;
+}
+/*footer*/
+.myfooter .col-md-2 h3,
+.myfooter .col-md-3 h3,
+.myfooter .col-md-2 h3{
+color:#8295A1;
+font-size: 22px;
+font-style: normal;
+font-weight: bolder;
+}
+.myfooter .col-md-3 li a,
+.myfooter .col-md-2 li a,
+.myfooter .col-md-3 li a{
+text-decoration: none;  
+}
+
+.myfooter .col-md-3 li,
+.myfooter .col-md-2 li,
+.myfooter .col-md-3 li{
+
+padding-top: 19px;
+}
+.myfooter .col-md-3 a,
+.myfooter .col-md-2 a,
+.myfooter .col-md-3 a{
+display: block;
+color: #5A5252;
+font-size: 16px;
+transition: transform 0.3s ease;
+}
+.myfooter .col-md-3 a:hover,
+.myfooter .col-md-2 a:hover,
+.myfooter .col-md-3 a:hover{
+color: #8295A1;
+font-weight: 600;
+transform: translate(3px, -3px);
+}
+.myfooter .col-md-3 ul,
+.myfooter .col-md-2 ul,
+.myfooter .col-md-3 ul{
+list-style-type:none;
+
+}
+.myfooter .col-md-2 ul,
+.myfooter .col-md-3 ul{
+padding-left: 0;
+}
+.myfooter .col-md-5 h3{
+color: #8295A1;
+font-size: 22px;
+font-weight: bolder;
+}
+.myfooter .col-md-5 a{
+color: #5A5252;
+text-decoration: none;
+}
+.myfooter .icons1 a:hover{
+color: #8295A1;
+font-weight: 600;
+font-size: 16px;
+text-decoration: underline;
+}
+.icons2{
+text-align:left;
+}
+.icons2 a{
+display: inline-block;
+font-size: 24px;
+margin-right: 20px;
+transition: transform 0.3s ease;
+}
+.icons2 a:hover{
+transform: translate(3px, -3px);
+}
+
+.myfooter .col-md-5{
+background-color:#F2F2F2; 
+height:300px;
+}
+.myfooter .col-md-5 h3,
+.myfooter .col-md-5 a{
+padding-left: 20px;
+}
+.myfooter .col-md-5 h3{
+padding-top: 20px;
+font-weight: 600;
+
+}
+
+.myfooter .row p{
+color: #5A5252;
+font-size: 16px;
+padding-top: -30px;
+}
+.brand-icon button {
+margin: 5px;
+border-radius: 20px; /* Bo tròn viền */
+transition: transform 0.3s ease, border 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
+background-color:#FFFDFD; 
+border: 1px solid #8295A1;
+}
+.brand-icon button:hover {
+transform: scale(1.01); /* Tăng kích thước khi di chuột qua */
+border: 2px solid #8295A1; /* Border đậm */
+}
+
   

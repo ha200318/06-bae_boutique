@@ -7,42 +7,44 @@ showPassword.onclick = function(){
         inputpassword.type = 'password';
     }
 }
-/*js cho đăng kí tài khoản*/
 
-var username = document.getElementById("username");
-var email = document.getElementById("email");
-var password = document.getElementById("password");
-var form = document.querySelector("form");
-var errorMessage = document.getElementById("errorMessage");
+//js cho đăng kí
 
-form.addEventListener("submit", (e) => {
-    var errors = [];
+function register() {
+    var username = document.getElementById("username");
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    var errorMessage = document.getElementById("errorMessage");
 
-    if(username.value.trim() === ""){
-        errors.push("Hãy nhập tên")
-    }
-    if(email.value.trim() === ""){
-        errors.push("Hãy nhập email")
-    }else {
-        // Kiểm tra cú pháp email bằng biểu thức chính quy
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email.value)) {
-            errors.push("Email không hợp lệ");
+     var errors = [];
+
+        if(username.value.trim() === ""){
+            errors.push("Hãy nhập tên")
+        }
+        if(email.value.trim() === ""){
+            errors.push("Hãy nhập email")
+        }else {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value)) {
+                errors.push("Email không hợp lệ");
+            }
+        }
+        if(password.value.length < 4){
+            errors.push("Nhập Password có ít nhất 4 kí tự ")
+        }
+        if(errors.length > 0){
+            
+            errorMessage.toggleAttribute('hidden');
+            errorMessage.innerHTML = errors.join(', ');
+        }else {
+            alert('Đăng kí tài khoản thành công');
+            window.location.href = 'index.html';
         }
     }
-    if(password.value.length < 4){
-        errors.push("Nhập Password có ít nhất 4 kí tự ")
-    }
-    if(errors.length > 0){
-        e.preventDefault();
-        errorMessage.toggleAttribute('hidden');
-        errorMessage.innerHTML = errors.join(', ');
-    }else {
-        alert('Đăng kí tài khoản thành công');
-        return true;
-    }
-})
+
+
 /*js cho đăng nhập*/
+
 function kiemTradangnhap() {
     var email = document.getElementById('email').value;
     var matkhau = document.getElementById('password').value;
@@ -57,5 +59,6 @@ function kiemTradangnhap() {
     } else {
         // Gửi thông tin đăng ký đến server hoặc xử lý theo nhu cầu của bạn
         alert('Thông tin đăng nhập đã chính xác');
+        window.location.href = 'index.html';
     }
 }
