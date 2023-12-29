@@ -6,16 +6,20 @@ var products = [
     {
         name: "Bae - Bodysuit liền thân dài tay lót nhung",
         price: 199000,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
         discount: 10,
         img: "images/c1/Bodysuit liền thân dài tay lót nhung.png",
         gift: "tet",
+        gender: "unisex",
       },
       {
         name: "Bae - Set quần yếm màu đỏ và mũ Noel cho bé",
         price: 250000,
         discount: 10,
+        size: ["0-3M","3-6M","6-9M","9-12M","12-18M","18-24M"],
         img: "images/c1/Set quần yếm màu đỏ.png",
         gift: "noel",
+        gender: "girl",
       },
       {
         name: "Bae - Bộ gấu trúc có mũ lót lông cho bé",
