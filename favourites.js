@@ -53,7 +53,9 @@ $(document).ready(function() {
                 <div class="col-md-3 col-sm-4">
                     <img width="150em" src="${product.img}" alt=""></div>
                     <div class="col-md-5 col-sm-4">
-                        <span style="font-weight:bold; font-size:1em;">${product.name}</span> </div>
+                    <a href="./${product.name
+                    }.html">
+                        <span style="font-weight:bold; font-size:1em;">${product.name}</span></a> </div>
                         <div class="col-md-3 col-sm-3">   
                     <span style="font-weight:bold">${product.price.toLocaleString()}₫</span></div>
                     <div class="col-md-3 col-sm-2">
