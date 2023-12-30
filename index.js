@@ -208,7 +208,7 @@ function filterProduct(category) {
   filteredProducts.forEach(product => {
     const discountedPrice = product.price * (1 - product.discount / 100);
     const productCard = `
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
+    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-cente">
     <div class="card product-card">
     <div class="zoom-effect">
       <img src="${product.img}" class="card-img-top" alt="${product.name}"></div>
@@ -278,7 +278,7 @@ products.forEach(function (product) {
   var discountedPrice =
       product.price - product.price * (product.discount / 100);
   var productHtml = `
-      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-cente">
+      <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-cente">
       <div class="card product-card" >
       <div class="zoom-effect">
       <img src="${product.img}" class="card-img-top " alt="${product.name
