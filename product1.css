@@ -99,14 +99,15 @@
     width: 100%;
     transition: border 0.3s ease, transform 0.3s ease; /* Thêm transition cho hiệu ứng zoom và border */
   }
-  
   .zoom-effect img {
     width: 100%;
     height: auto;
   }
-  
-  
   .zoom-effect:hover img {
     transform: scale(1.1); /* Khi di chuột qua, phóng to ảnh lên 110% (1.1 lần kích thước ban đầu) */
   }
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
   
