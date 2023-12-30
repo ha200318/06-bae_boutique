@@ -145,7 +145,7 @@ function displayProducts(filteredProducts) {
         var discountedPrice =
             product.price - product.price * (product.discount / 100);
         var productHtml = `
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-12 col-lg-12 col-md-4 col-xl-3">
             <div class="card product-card">
             <div class="zoom-effect">
             <img src="${product.img}" class="card-img-top product-image" alt="${product.name
@@ -254,7 +254,7 @@ products.forEach(function (product) {
     var discountedPrice =
         product.price - product.price * (product.discount / 100);
     var productHtml = `
-        <div class="col-6 col-md-4 col-xl-3">
+        <div class="col-12 col-lg-3 col-md-4 col-xl-3">
         <div class="card product-card">
         <div class="zoom-effect">
         <img src="${product.img}" class="card-img-top product-image" alt="${product.name
