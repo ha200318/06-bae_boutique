@@ -419,5 +419,37 @@
     });
     });
    </script>
+     <!--nút-->
+<div class="button-ho-tro">
+  <div id="setting" >
+    <i class='bx bx-cog' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 20px; left: 20px; cursor: pointer; z-index: 9999999999;"></i>
+   </div>
+   <div id="heart" style="display: none;">
+    <a href="favourites.html">    <i class='bx bxs-heart' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 75px; left: 20px; cursor: pointer;border: 2px dashed white;"></i>
+    </a>
+   </div>
+   <div id="cart" style="display: none;">
+    <a href="cart.html">    <i class='bx bx-cart' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 130px; left: 20px; cursor: pointer;border: 2px dashed white;"></i>
+    </a>
+   </div>
+   <div id="find" style="display: none;">
+    <i class='bx bx-search-alt-2' style="color: white; background-color: #7995a3; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; bottom: 185px; left: 20px; cursor: pointer;border: 2px dashed white;"></i>
+   </div>
+<script>
+  document.getElementById('setting').addEventListener('click', function() {
+    toggleVisibility('heart');
+    toggleVisibility('cart');
+    toggleVisibility('find');
+});
+
+function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+</script>
 </body>
 </html>
