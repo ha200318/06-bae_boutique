@@ -18,6 +18,16 @@ ___
 - Font Awesome
 - Boxicons
 ___
+**Mô tả** 
+- Trang chủ: Cung cấp những thông tin tổng quan về cửa hàng
+- Trang chuyện nhà Bae: Câu chuyện về hàng trình xây dựng thương hiệu của cửa hàng
+- Trang sản phẩm: Danh mục sản phẩm và các thông tin chi tiết về sản phẩm
+- Trang Giftset: Set quà đặc biệt dành cho mẹ và bé
+- Trang Blog: cung cấp thông tin, tin tức liên quan đến sản phẩm đang kinh doanh
+- Trang Liên hệ: Thonong tin và cách thức liên hệ trực tiếp cửa hàng
+- Trang giỏ hàng: Chứa những sản phẩm khách hàng muốn mua
+- Trang yêu thích: Chứa những sản phẩm khách hàng đang quan tâm
+__
 **Link web tham khảo:** 
 1. https://rabity.vn/  
 2. https://babi.vn/  
