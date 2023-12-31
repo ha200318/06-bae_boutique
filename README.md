@@ -26,8 +26,8 @@ ___
 - Trang Blog: cung cấp thông tin, tin tức liên quan đến sản phẩm đang kinh doanh
 - Trang Liên hệ: Thonong tin và cách thức liên hệ trực tiếp cửa hàng
 - Trang giỏ hàng: Chứa những sản phẩm khách hàng muốn mua
-- Trang yêu thích: Chứa những sản phẩm khách hàng đang quan tâm
-__
+- Trang yêu thích: Chứa những sản phẩm khách hàng đang quan tâm  
+___
 **Link web tham khảo:** 
 1. https://rabity.vn/  
 2. https://babi.vn/  
