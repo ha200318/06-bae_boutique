@@ -1,23 +1,19 @@
-$(document).ready(function() {
-    // Khi di chuột vào ảnh sản phẩm
-    $('.product-image, .buy-now-btn').mouseover(function() {
-        $(this).closest('.product-card').find('.product-image').css('filter', 'brightness(70%)'); // Giảm độ sáng
-        $(this).siblings('.card-body').find('.buy-now-btn').fadeIn(); // Hiện nút mua ngay
-    });
-
-    // Khi di chuột ra khỏi ảnh sản phẩm
-    $('.product-image, .buy-now-btn').mouseleave(function() {
-        $(this).closest('.product-card').find('.product-image').css('filter', 'brightness(100%)'); // Khôi phục độ sáng ban đầu
-        $(this).siblings('.card-body').find('.buy-now-btn').fadeOut(); // Ẩn nút mua ngay
-    });
-     // Khi nhấp vào nút mua ngay, chuyển hướng đến trang chi tiết sản phẩm
-     $('.buy-now-btn').click(function() {
-        window.location.href = './product-detail.html';
-    });
-
-});
-
-
+// $(document).ready(function() {
+//     // Khi di chuột vào ảnh sản phẩm
+//     $('.product-image, .buy-now-btn').mouseover(function() {
+//         $(this).closest('.product-card').find('.product-image').css('filter', 'brightness(70%)'); // Giảm độ sáng
+//         $(this).siblings('.card-body').find('.buy-now-btn').fadeIn(); // Hiện nút mua ngay
+//     });
+//     // Khi di chuột ra khỏi ảnh sản phẩm
+//     $('.product-image, .buy-now-btn').mouseleave(function() {
+//         $(this).closest('.product-card').find('.product-image').css('filter', 'brightness(100%)'); // Khôi phục độ sáng ban đầu
+//         $(this).siblings('.card-body').find('.buy-now-btn').fadeOut(); // Ẩn nút mua ngay
+//     });
+//      // Khi nhấp vào nút mua ngay, chuyển hướng đến trang chi tiết sản phẩm
+//      $('.buy-now-btn').click(function() {
+//         window.location.href = './product-detail.html';
+//     });
+// });
 /* -------------------------------------------------------------------------- */
 /*                                  CODE MỚI                                  */
 /* -------------------------------------------------------------------------- */
