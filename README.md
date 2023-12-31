@@ -1,5 +1,7 @@
-Bae Boutique - Nơi Những Thiên Thần Nhỏ Bé Bắt Đầu Cuộc Hành Trình 
+**Bae Boutique - Nơi Những Thiên Thần Nhỏ Bé Bắt Đầu Cuộc Hành Trình**  
+___
 **Nhóm 6**  
+___
 | Họ và tên                    | Mã sinh viên |
 |------------------------------|--------------|
 | Nguyễn Thúy Hà (Nhóm trưởng) | 24A4040617   |
