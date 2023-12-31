@@ -252,51 +252,52 @@
 
 
   <!-- ----------------------------- KHU VỰC FIX ----------------------------- -->
-  <div class="container">
+   <div class="container">
     <!-- ------------------------------- LỌC SP -------------------------------- -->
     <div class="filterProducts" style="font-weight: bolder; font-size: 16px;">
-      <span>Bộ lọc</span>
+      <span style="font-weight: 700;font-size: 22px; margin-bottom: 5px;">Bộ lọc</span>
       <div>
-        <div>
-          <label for="sizeFilter" >Lọc theo size:</label>
-          <select id="sizeFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
-            <option value="">Tất cả</option>
-            <option value="0-3M">0-3M</option>
-            <option value="3-6M">3-6M</option>
-            <option value="6-9M">6-9M</option>
-            <option value="9-12M">9-12M</option>
-            <option value="12-18M">12-18M</option>
-            <option value="18-24M">18-24M</option>
-           
-          </select>
-        </div>
-        <div>
-          <label for="priceFilter">Lọc theo giá:</label>
-          <select id="priceFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
-            <option value="">Tất cả</option>
-            <option value="500000">Dưới 500,000₫</option>
-            <option value="1000000">Dưới 1,000,000₫</option>
-          
-          </select>
-        </div>
-        <div>
-          <label for="genderFilter">Lọc theo giới tính:</label>
-          <select id="genderFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+    <div class="row" style="margin-bottom: 5px;">
+          <div class="col-lg-3 col-md-6" style="margin-bottom: 10px;">
+            <label for="sizeFilter" >Lọc theo size:</label>
+            <select id="sizeFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
               <option value="">Tất cả</option>
-              <option value="boy">Nam</option>
-              <option value="girl">Nữ</option>
-              <option value="unisex">Unisex</option>
-          </select>
-      </div>
-      
-        <div>
-          <label for="sortOrder">Sắp xếp:</label>
-          <select id="sortOrder" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;"> 
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="asc">Giá tăng dần</option>
-            <option value="desc">Giá giảm dần</option>
-          </select>
+              <option value="0-3M">0-3M</option>
+              <option value="3-6M">3-6M</option>
+              <option value="6-9M">6-9M</option>
+              <option value="9-12M">9-12M</option>
+              <option value="12-18M">12-18M</option>
+              <option value="18-24M">18-24M</option>
+             
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6" style="margin-bottom: 10px;">
+            <label for="priceFilter">Lọc theo giá:</label>
+            <select id="priceFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+              <option value="">Tất cả</option>
+              <option value="500000">Dưới 500,000₫</option>
+              <option value="1000000">Dưới 1,000,000₫</option>
+            
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6" style="margin-bottom: 10px;">
+            <label for="genderFilter">Lọc theo giới tính:</label>
+            <select id="genderFilter" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;">
+                <option value="">Tất cả</option>
+                <option value="boy">Nam</option>
+                <option value="girl">Nữ</option>
+                <option value="unisex">Unisex</option>
+            </select>
+        </div>
+          <div class="col-lg-3 col-md-6" style="margin-bottom: 10px;">
+            <label for="sortOrder">Sắp xếp:</label>
+            <select id="sortOrder" onchange="searchProducts()" style="border: 1px solid black; border-radius: 10px;"> 
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="asc">Giá tăng dần</option>
+              <option value="desc">Giá giảm dần</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
