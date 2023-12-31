@@ -415,7 +415,7 @@ products.forEach(function (product) {
 displayFavorites();
 /* ----------------------- Hiển thị sản phẩm yêu thích ---------------------- */
 displayCart();
-
+Cập nhật số lượng chỗ icon giỏ hàng trên heade
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.getElementById("cartsCount").innerText = cart.length;
 
