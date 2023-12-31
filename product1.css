@@ -4,7 +4,7 @@
 .menusp:hover .menuphu{
     display: block;
 }
-.filterProducts{
+/* .filterProducts{
     padding-bottom: 20px;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
 .product-card{
     position: relative;
     overflow: hidden;
