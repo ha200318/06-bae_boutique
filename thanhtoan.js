@@ -1,4 +1,3 @@
-
 /* ------------------------ Thêm sản phẩm vào giỏ hàng ----------------------- */
 function addToCart(product) {
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -14,13 +13,11 @@ function addToCart(product) {
         product.quantity = 1;
         cart.push(product);
     }
-
     localStorage.setItem("cart", JSON.stringify(cart));
     alert("Đã thêm vào giỏ hàng!");
     displayCart();
 }
 /* ------------------------ Thêm sản phẩm vào giỏ hàng ----------------------- */
-
 /* ----------------------------- Xóa sản phẩm khỏi giỏ hàng ----------------------------- */
 function removeFromCart(productName) {
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -29,7 +26,6 @@ function removeFromCart(productName) {
     displayCart();
 }
 /* ----------------------------- Xóa sản phẩm khỏi giỏ hàng ----------------------------- */
-
 /* --------------------------- Hiển thị thông tin giỏ hàng -------------------------- */
 function displayCart() {
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -68,18 +64,14 @@ function displayCart() {
         totalAmountElement.innerText = totalAmount.toLocaleString() + "₫";
     }
 }
-
 /* --------------------------- Hiển thị thông tin giỏ hàng -------------------------- */
-
 /* ------------------------ Tăng số lượng sản phẩm ----------------------- */
 function increaseQuantity(productName) {
     updateQuantity(productName, 1);
 }
-
 function decreaseQuantity(productName) {
     updateQuantity(productName, -1);
 }
-
 function updateQuantity(productName, change) {
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
     var updatedCart = cart.map(function (product) {
@@ -94,9 +86,6 @@ function updateQuantity(productName, change) {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     displayCart(); // Gọi lại hàm displayCart để cập nhật tổng tiền
 }
-
-
-
 // ... (Trong phần hàm đã định nghĩa)
 var favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 document.getElementById("favoritesCount").innerText = favorites.length;
